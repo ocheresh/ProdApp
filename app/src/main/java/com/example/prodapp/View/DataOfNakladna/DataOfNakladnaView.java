@@ -579,6 +579,7 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
             StringWriter writer = new StringWriter();
             xmlSerializer.setOutput(writer);
             xmlSerializer.startDocument("UTF-8", true);
+            xmlSerializer.startTag(null, "FFF");
             xmlSerializer.startTag(null, "Info");
             xmlSerializer.startTag(null, "Dogovor");
             xmlSerializer.text(InfoOfNakladnaPresenter.infoOfNakladna.getNameDogovir());
@@ -611,12 +612,9 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
 
             for (int i = 0; i < list.size(); i++) {
                 xmlSerializer.startTag(null, "Product");
-                xmlSerializer.startTag(null, "Name");
-                xmlSerializer.text(list.get(i).getName());
-                xmlSerializer.endTag(null, "Name");
-                xmlSerializer.startTag(null, "Price");
-                xmlSerializer.text(String.valueOf(list.get(i).getPrice()));
-                xmlSerializer.endTag(null, "Price");
+                xmlSerializer.startTag(null, "Kod");
+                xmlSerializer.text(list.get(i).getKod());
+                xmlSerializer.endTag(null, "Kod");
                 xmlSerializer.startTag(null, "Kilbkistb");
                 xmlSerializer.text(String.valueOf(list.get(i).getKilbkistb()));
                 xmlSerializer.endTag(null, "Kilbkistb");
@@ -631,6 +629,7 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
                 xmlSerializer.endTag(null, "TerminVikorist");
                 xmlSerializer.endTag(null, "Product");
             }
+            xmlSerializer.endTag(null, "FFF");
             xmlSerializer.endDocument();
             xmlSerializer.flush();
             String dataWrite = writer.toString();
