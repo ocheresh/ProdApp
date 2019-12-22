@@ -32,6 +32,7 @@ public class ChoiseMenuView extends AppCompatActivity implements IChoiseMenuView
 
     Button butCreatePrihod;
     Button butArhiv;
+    Button butSettings;
 //    Button butScanPrihod;
     static public QrCodeParser qrCodeParser = null;
     IChoiseMenuPresenter iChoiseMenuPresenter;
@@ -54,6 +55,14 @@ public class ChoiseMenuView extends AppCompatActivity implements IChoiseMenuView
 
                 } catch (Exception e) {
                 }
+            }
+        });
+
+        butSettings = findViewById(R.id.choiseSettings);
+        butSettings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                iChoiseMenuPresenter.onSettings();
             }
         });
 
@@ -107,8 +116,8 @@ public class ChoiseMenuView extends AppCompatActivity implements IChoiseMenuView
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.settings, menu);
+//        MenuInflater inflater = getMenuInflater();
+//        inflater.inflate(R.menu.settings, menu);
         return true;
     }
 

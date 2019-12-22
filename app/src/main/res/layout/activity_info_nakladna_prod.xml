@@ -132,7 +132,7 @@
                         android:layout_marginTop="5dp"
                         android:background="@drawable/fields_edit"
                         android:gravity="left"
-                        android:hint="Встановіть дату накладної..(12/12/19)"
+                        android:hint="Встановіть дату накладної"
                         android:padding="5dp"
                         android:text=""
                         android:textSize="20sp" />

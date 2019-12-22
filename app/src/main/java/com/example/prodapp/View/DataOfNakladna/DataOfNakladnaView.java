@@ -136,7 +136,7 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.send, menu);
+//        inflater.inflate(R.menu.send, menu);
         inflater.inflate(R.menu.save, menu);
 //        inflater.inflate(R.menu.camera, menu);
         return true;
@@ -164,12 +164,12 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
 //                    openCamera();
 //                camera = true;
 //                return true;
-            case R.id.app_bar_send:
+//            case R.id.app_bar_send:
 //                if (camera == true && saveFile == true)
-                    iDataOfNakladnaPresenter.onSend();
+//                    iDataOfNakladnaPresenter.onSend();
 //                else
 //                    Toast.makeText(this, "Збережіть файл і зробіть фото накладної", Toast.LENGTH_SHORT).show();
-                return true;
+//                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -256,7 +256,7 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
             case 1000:{
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
                 {
-                    openCamera();
+//                    openCamera();
                 }
                 else
                     Toast.makeText(this, "Permission denied", Toast.LENGTH_SHORT).show();
