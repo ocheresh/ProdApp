@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Settings.SettingView">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewSetName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:background="@drawable/fields"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Ім'я:"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textViewSetName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=""
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textViewSetSurname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/fields"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Прізвище:"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textViewSetSurname2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=""
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textViewSetNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/fields"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Номер телефону:"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/textViewSetNumber2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:layout_marginTop="20dp"
+                android:inputType="text"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=""
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textViewSetRank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/fields"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Військове звання:"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/textViewSetRank2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:inputType="text"
+                android:padding="5dp"
+                android:text=""
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textViewSetMilitaryUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/fields"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Підрозділ:"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/textViewSetMilitaryUnit2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:inputType="text"
+                android:padding="5dp"
+                android:text=""
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textViewSetEmailToSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="80dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/fields"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Електронна пошта для відправки:"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/textViewSetEmailToSend2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="100dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=""
+                android:textSize="15dp" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

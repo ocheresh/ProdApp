@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.prodapp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".View.SplashActivity"></activity>
+        <activity android:name=".View.ArhivNakladni.ArhivNakladniView" />
+        <activity android:name=".View.QrCodeReader.QrCodeReader" />
+        <activity android:name=".View.Settings.SettingView" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.prodapp"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".View.ChooseProduct.ChooseProductView" />
+        <activity android:name=".View.DataOfNakladna.DataOfNakladnaView" />
+        <activity android:name=".View.InfoOfNakladna.InfoOfNakladnaProdView" />
+        <activity android:name=".View.ChoiseMenu.ChoiseMenuView" />
+        <activity android:name=".View.Register.RegisterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Облік продуктів харчування</string>
+    <string-array name="dogovora">
+        <item>286_2_18_178_2</item>
+        <item>286_2_18_179_3</item>
+        <item>286_2_18_180_4</item>
+        <item>286_2_19_24</item>
+    </string-array>
+    <string-array name="KEKV">
+        <item>особовий склад (2230)</item>
+        <item>службові собаки (2210)</item>
+    </string-array>
+    <string-array name="type">
+        <item>від постачальника</item>
+        <item>від військової частини</item>
+        <item>інший прихід</item>
+        <item>початкові залишки</item>
+        <item>прихід продуктів не за катологом</item>
+        <item>чекова вимога</item>
+        <item>повернення залишків</item>
+        <item>гуманітарна допомога</item>
+        <item>від ОЦЗ</item>
+        <item>децентралізована закупівля</item>
+        <item>додаткове переміщення у підрозділі</item>
+    </string-array>
+</resources>
