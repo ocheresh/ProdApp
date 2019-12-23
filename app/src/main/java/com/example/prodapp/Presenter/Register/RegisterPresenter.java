@@ -42,15 +42,15 @@ public class RegisterPresenter implements IRegisterPresenter {
         employe = new Employe();
 
 //                employe = new Employe();
-        employe.setFirstName("Олег");
-        employe.setLastName("Позняков");
-        employe.setContactNo("+380964587398");
-        employe.setEmail("oleg@gmail.com");
-        employe.setMilitaryRank("сержант");
-        employe.setMilitaryUnit("93 бригада");
-        employe.setUnitofMilitaryUnit("1 батальйон");
-        employe.setAdress("Слов'янськ");
-        employe.setEmailToSend("sashachereshnevy@gmail.com");
+//        employe.setFirstName("Олег");
+//        employe.setLastName("Позняков");
+//        employe.setContactNo("+380964587398");
+//        employe.setEmail("oleg@gmail.com");
+//        employe.setMilitaryRank("сержант");
+//        employe.setMilitaryUnit("93 бригада");
+//        employe.setUnitofMilitaryUnit("1 батальйон");
+//        employe.setAdress("Слов'янськ");
+//        employe.setEmailToSend("sashachereshnevy@gmail.com");
 
         registerView.checkFileExist(employe);
     }

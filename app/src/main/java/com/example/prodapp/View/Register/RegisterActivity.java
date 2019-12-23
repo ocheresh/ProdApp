@@ -97,7 +97,7 @@ public class RegisterActivity extends AppCompatActivity implements IRegisterView
     public void checkFileExist(Employe employe) {
         File temp_file = new File(getFilesDir(),"data_user.xml");
         if (temp_file.exists()) {
-            writeFileXml(employe); //delete
+//            writeFileXml(employe); //delete
             readFileXml(employe);
             if (employe != null && employe.check_class()) {
                 Intent intent = new Intent(RegisterActivity.this, SplashActivity.class);

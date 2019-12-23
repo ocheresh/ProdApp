@@ -6,4 +6,6 @@ public interface IChooseProductView {
 
     void pressAddElement(int position);
 
+    void pressAddElement(int position, String kilkst, String firstDate, String finishDate, String termin);
+
 }

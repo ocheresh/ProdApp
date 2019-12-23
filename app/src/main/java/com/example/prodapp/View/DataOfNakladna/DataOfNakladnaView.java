@@ -70,8 +70,8 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
     Uri file_uri;
     static int kod_poriadok = 1;
 
-//    boolean camera = false;
-//    static public boolean saveFile = false;
+    boolean camera = false;
+    static public boolean saveFile = false;
 
     TextView total;
     public Button buttonadd;
@@ -121,11 +121,33 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
                         String[] permission = {Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE};
                         requestPermissions(permission, 1000);
                     }
-                    else
-                        openCamera();
+                    else {
+                        if (camera == true)
+                        {
+                            iDataOfNakladnaPresenter.onSave();
+                            sendEmail();
+                        }
+                        if (camera == false)
+                        {
+                            openCamera();
+                            camera = true;
+                            buttonadd.setText("Надіслати оприбуткування");
+                        }
+                    }
                 }
-                else
-                    openCamera();
+                else {
+                    if (camera == true)
+                    {
+                        iDataOfNakladnaPresenter.onSave();
+                        sendEmail();
+                    }
+                    if (camera == false)
+                    {
+                        openCamera();
+                        camera = true;
+                        buttonadd.setText("Надіслати оприбуткування");
+                    }
+                }
 //                camera = true;
 
             }
@@ -176,13 +198,13 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
     }
 
 
-    private void openCamera() {
+    private boolean openCamera() {
         create_folder();
         String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
         String name = InfoOfNakladnaPresenter.infoOfNakladna.getNameDogovir() + "+"
                 + InfoOfNakladnaPresenter.infoOfNakladna.getNumberNakladna() + "+" +  InfoOfNakladnaPresenter.infoOfNakladna.getDateNakladna().replace('/', '_')
                 + "+" + currentDate;
-        Intent camera= new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+        Intent camera = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
 
         File img = new File(getFilesDir().getAbsolutePath() + "/"
                 + name + "/" +  name + "_photo.png");
@@ -194,6 +216,7 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
 
         camera.putExtra(MediaStore.EXTRA_OUTPUT, image_uri);
         startActivityForResult(camera, 1);
+        return (true);
     }
 
     private void verifyStoragePermission()
@@ -461,73 +484,6 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
             counter++;
         }
     }
-
-//    private void writeFileXml(List<ProductsData> list) {
-//        try {
-//            String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
-//            String nameFile = InfoOfNakladnaPresenter.infoOfNakladna.getNameDogovir() + "_" + currentDate + "_file.xml";
-//
-////            File folder = new File(getFilesDir() +
-////                    File.separator + "Tol");
-////            boolean success = true;
-////            if (!folder.exists()) {
-////                success = folder.mkdirs();
-////            }
-////
-////            File f = new File(folder, nameFile);
-//
-//            FileOutputStream fileos= getApplicationContext().openFileOutput(nameFile, Context.MODE_PRIVATE);
-//            XmlSerializer xmlSerializer = Xml.newSerializer();
-//            StringWriter writer = new StringWriter();
-//            xmlSerializer.setOutput(writer);
-//            xmlSerializer.startDocument("UTF-8", true);
-//            xmlSerializer.startTag(null, "Info");
-//            xmlSerializer.startTag(null, "Dogovor");
-//            xmlSerializer.text(InfoOfNakladnaPresenter.infoOfNakladna.getNameDogovir());
-//            xmlSerializer.endTag(null, "Dogovor");
-//            xmlSerializer.startTag(null, "Nakladna");
-//            xmlSerializer.text(InfoOfNakladnaPresenter.infoOfNakladna.getNumberNakladna());
-//            xmlSerializer.endTag(null, "Nakladna");
-//            xmlSerializer.startTag(null,"Data");
-//            xmlSerializer.text(InfoOfNakladnaPresenter.infoOfNakladna.getDateNakladna());
-//            xmlSerializer.endTag(null, "Data");
-//            xmlSerializer.endTag(null, "Info");
-//
-//            for (int i = 0; i < list.size(); i++) {
-//                xmlSerializer.startTag(null, "Product");
-//                xmlSerializer.startTag(null, "Name");
-//                xmlSerializer.text(list.get(i).getName());
-//                xmlSerializer.endTag(null, "Name");
-//                xmlSerializer.startTag(null, "Price");
-//                xmlSerializer.text(String.valueOf(list.get(i).getPrice()));
-//                xmlSerializer.endTag(null, "Price");
-//                xmlSerializer.startTag(null, "Kilbkistb");
-//                xmlSerializer.text(String.valueOf(list.get(i).getKilbkistb()));
-//                xmlSerializer.endTag(null, "Kilbkistb");
-//                xmlSerializer.endTag(null, "Product");
-//            }
-//            xmlSerializer.endDocument();
-//            xmlSerializer.flush();
-//            String dataWrite = writer.toString();
-//            fileos.write(dataWrite.getBytes());
-//            fileos.close();
-//        }
-//        catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        }
-//        catch (IllegalArgumentException e) {
-//            // TODO Auto-generated catch block
-//            e.printStackTrace();
-//        }
-//        catch (IllegalStateException e) {
-//            // TODO Auto-generated catch block
-//            e.printStackTrace();
-//        }
-//        catch (IOException e) {
-//            // TODO Auto-generated catch block
-//            e.printStackTrace();
-//        }
-//    }
 
     private void create_folder()
     {

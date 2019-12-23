@@ -150,7 +150,7 @@ public class ChooseProductView extends AppCompatActivity implements IChooseProdu
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         LayoutInflater inflater = ChooseProductView.this.getLayoutInflater();
         final View dialog_layout = inflater.inflate(R.layout.alertdialog, null);
-        alert.setTitle("Введіть інформацію про продукт:");
+        alert.setTitle("Введіть інформацію про продукт\n" + list.get(position).getKod() + " " + list.get(position).getName());
         alert.setView(dialog_layout);
 
         final TextView tt1 = dialog_layout.findViewById(R.id.tt1);
@@ -362,26 +362,296 @@ public class ChooseProductView extends AppCompatActivity implements IChooseProdu
 
                 if ((getKilkist.getText().length() != 0) && (getKilkist.getText().toString().matches("\\s*\\d+(\\.?|\\,?)\\d{0,3}\\s*")))
                 {
-                    DataOfNakladnaPresenter.list.add(new ProductsData.Builder()
-                            .setName(list.get(position).getName())
-                            .setPrice(list.get(position).getPrice())
-                            .setKod(list.get(position).getKod())
-                            .setEduch(list.get(position).getEdYch())
-                            .setUnit(list.get(position).getUnit())
-                            .setKilbkistb(Double.parseDouble(getKilkist.getText().toString().replace(',','.')))
-                            .setDateStart(getDateStart.getText().toString())
-                            .setDateFinish(getDateFinish.getText().toString())
-                            .setDateTriv(getAllDate.getText().toString())
-                            .build());
-                    DataOfNakladnaView.view.getAdapter().notifyDataSetChanged();
+                    if (getAllDate.getText().length() != 0 && getDateStart.getText().length() != 0 && getDateFinish.getText().length() != 0) {
+                        DataOfNakladnaPresenter.list.add(new ProductsData.Builder()
+                                .setName(list.get(position).getName())
+                                .setPrice(list.get(position).getPrice())
+                                .setKod(list.get(position).getKod())
+                                .setEduch(list.get(position).getEdYch())
+                                .setUnit(list.get(position).getUnit())
+                                .setKilbkistb(Double.parseDouble(getKilkist.getText().toString().replace(',', '.')))
+                                .setDateStart(getDateStart.getText().toString())
+                                .setDateFinish(getDateFinish.getText().toString())
+                                .setDateTriv(getAllDate.getText().toString())
+                                .build());
+                        DataOfNakladnaView.view.getAdapter().notifyDataSetChanged();
 //                    DataOfNakladnaView.saveFile = false;
-                    DataOfNakladnaPresenter.iDataOfNakladnaView.pressSummary(DataOfNakladnaPresenter.list);
-                    ChooseProductView.super.onBackPressed();
+                        DataOfNakladnaPresenter.iDataOfNakladnaView.pressSummary(DataOfNakladnaPresenter.list);
+                        ChooseProductView.super.onBackPressed();
+                    }
+                    else
+                    {
+                        Toast.makeText(ChooseProductView.this, "Помилка: Термін вживання/використання введений некоректно.", Toast.LENGTH_SHORT).show();
+                        pressAddElement(position, getKilkist.getText().toString(), getDateStart.getText().toString(), getDateFinish.getText().toString(), getAllDate.getText().toString());
+                    }
+                }
+                else
+                {
+                    Toast.makeText(ChooseProductView.this, "Помилка: Кількість введена некоректно", Toast.LENGTH_SHORT).show();
+                    pressAddElement(position, getKilkist.getText().toString(), getDateStart.getText().toString(), getDateFinish.getText().toString(), getAllDate.getText().toString());
+                }
+
+            }
+        });
+
+        alert.setNegativeButton("Відміна", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+                // Canceled.
+            }
+        });
+        alert.show();
+    }
+
+    @Override
+    public void pressAddElement(final int position, String kilkst, String firstDate, String finishDate, String termin) {
+
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        LayoutInflater inflater = ChooseProductView.this.getLayoutInflater();
+        final View dialog_layout = inflater.inflate(R.layout.alertdialog, null);
+        alert.setTitle("Введіть інформацію про продукт\n" + list.get(position).getKod() + " " + list.get(position).getName());
+        alert.setView(dialog_layout);
+
+        final TextView tt1 = dialog_layout.findViewById(R.id.tt1);
+        final TextView tt2 = dialog_layout.findViewById(R.id.tt2);
+        final TextView tt3 = dialog_layout.findViewById(R.id.tt3);
+        final TextView tt4 = dialog_layout.findViewById(R.id.tt4);
+
+        final EditText getKilkist = (EditText)dialog_layout.findViewById(R.id.editKilkist);
+        final EditText getAllDate = (EditText)dialog_layout.findViewById(R.id.editDateVikorist);
+        final EditText getDateStart = dialog_layout.findViewById(R.id.editDateStart);
+        final EditText getDateFinish = (EditText)dialog_layout.findViewById(R.id.editDateEnd);
+        String currentDate = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault()).format(new Date());
+        getDateStart.setText(currentDate);
+        setMyText(tt2);
+
+        getKilkist.setText(kilkst);
+        getDateStart.setText(firstDate);
+        getDateFinish.setText(finishDate);
+        getAllDate.setText(termin);
+
+        getKilkist.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                setMyText(tt1);
+            }
+        });
+
+        getDateStart.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                setMyText(tt2);
+            }
+        });
+
+        getDateFinish.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                setMyText(tt3);
+            }
+        });
+
+        getAllDate.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                setMyText(tt4);
+            }
+        });
+
+        getDateStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dateCalendar = Calendar.getInstance();
+
+                DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
+
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                        dateCalendar.set(Calendar.YEAR, year);
+                        dateCalendar.set(Calendar.MONTH, monthOfYear);
+                        dateCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                        String myFormat = "dd/MM/yyyy"; //In which you need put here
+                        SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+                        if (checkValueDate(sdf.format(dateCalendar.getTime()), getDateFinish.getText().toString())) {
+                            getDateStart.setText(sdf.format(dateCalendar.getTime()));
+                            setCorrectDateFin(getDateStart, getDateFinish, getAllDate);
+                        }
+                        else
+                            Toast.makeText(ChooseProductView.this, "Не коректна початкова дата використання", Toast.LENGTH_SHORT).show();
+                    }
+
+                };
+
+                new DatePickerDialog(ChooseProductView.this, date, dateCalendar
+                        .get(Calendar.YEAR), dateCalendar.get(Calendar.MONTH),
+                        dateCalendar.get(Calendar.DAY_OF_MONTH)).show();
+
+            }
+        });
+        getDateStart.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    getDateStart.callOnClick();
+                }
+            }
+        });
+
+        getDateFinish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dateCalendar = Calendar.getInstance();
+
+                DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
+
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                        dateCalendar.set(Calendar.YEAR, year);
+                        dateCalendar.set(Calendar.MONTH, monthOfYear);
+                        dateCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                        String myFormat = "dd/MM/yyyy"; //In which you need put here
+                        SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+                        if (checkValueDate(getDateStart.getText().toString(), sdf.format(dateCalendar.getTime()))) {
+                            getDateFinish.setText(sdf.format(dateCalendar.getTime()));
+                            setCorrectDateFin(getDateStart, getDateFinish, getAllDate);
+                        }
+                        else
+                            Toast.makeText(ChooseProductView.this, "Не коректна кінцева дата використання", Toast.LENGTH_SHORT).show();
+
+                    }
+
+                };
+
+                new DatePickerDialog(ChooseProductView.this, date, dateCalendar
+                        .get(Calendar.YEAR), dateCalendar.get(Calendar.MONTH),
+                        dateCalendar.get(Calendar.DAY_OF_MONTH)).show();
+            }
+        });
+        getDateFinish.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    getDateFinish.callOnClick();
+                }
+            }
+        });
+
+
+        getAllDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final Dialog d = new Dialog(ChooseProductView.this);
+                d.setTitle("NumberPicker");
+                d.setContentView(R.layout.dialog);
+                Button b1 = (Button) d.findViewById(R.id.button1);
+                Button b2 = (Button) d.findViewById(R.id.button2);
+                final NumberPicker np = (NumberPicker) d.findViewById(R.id.numberPicker1);
+                np.setMaxValue(200);
+                if (getAllDate.getText().length() > 0)
+                    np.setValue(Integer.parseInt(getAllDate.getText().toString()));
+                np.setMinValue(0);
+                np.setWrapSelectorWheel(false);
+                b1.setOnClickListener(new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View v) {
+                        getAllDate.setText(String.valueOf(np.getValue()));
+                        setCorrectDateAll(getDateStart, getDateFinish, getAllDate);
+                        d.dismiss();
+                    }
+                });
+                b2.setOnClickListener(new View.OnClickListener()
+                {
+                    @Override
+                    public void onClick(View v) {
+                        d.dismiss();
+                    }
+                });
+                d.show();
+            }
+        });
+        getAllDate.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (hasFocus) {
+                    getAllDate.callOnClick();
+                }
+            }
+        });
+
+
+
+        alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+
+                if ((getKilkist.getText().length() != 0) && (getKilkist.getText().toString().matches("\\s*\\d+(\\.?|\\,?)\\d{0,3}\\s*")))
+                {
+                    if (getAllDate.getText().length() != 0 && getDateStart.getText().length() != 0 && getDateFinish.getText().length() != 0) {
+                        DataOfNakladnaPresenter.list.add(new ProductsData.Builder()
+                                .setName(list.get(position).getName())
+                                .setPrice(list.get(position).getPrice())
+                                .setKod(list.get(position).getKod())
+                                .setEduch(list.get(position).getEdYch())
+                                .setUnit(list.get(position).getUnit())
+                                .setKilbkistb(Double.parseDouble(getKilkist.getText().toString().replace(',', '.')))
+                                .setDateStart(getDateStart.getText().toString())
+                                .setDateFinish(getDateFinish.getText().toString())
+                                .setDateTriv(getAllDate.getText().toString())
+                                .build());
+                        DataOfNakladnaView.view.getAdapter().notifyDataSetChanged();
+//                    DataOfNakladnaView.saveFile = false;
+                        DataOfNakladnaPresenter.iDataOfNakladnaView.pressSummary(DataOfNakladnaPresenter.list);
+                        ChooseProductView.super.onBackPressed();
+                    }
+                    else
+                    {
+                        Toast.makeText(ChooseProductView.this, "Термін вживання/використання введений некоректно.", Toast.LENGTH_SHORT).show();
+                        pressAddElement(position, getKilkist.getText().toString(), getDateStart.getText().toString(), getDateFinish.getText().toString(), getAllDate.getText().toString());
+                    }
                 }
                 else
                 {
                     Toast.makeText(ChooseProductView.this, "Кількість введена некоректно", Toast.LENGTH_SHORT).show();
-                    pressAddElement(position);
+                    pressAddElement(position, getKilkist.getText().toString(), getDateStart.getText().toString(), getDateFinish.getText().toString(), getAllDate.getText().toString());
                 }
 
             }
