@@ -77,6 +77,12 @@ public class ChooseProductView extends AppCompatActivity implements IChooseProdu
 
             iChooseProductPresenter.onReadData();
         }
+        else
+        {
+            list.clear();
+            iChooseProductPresenter.onReadData();
+
+        }
 
         recyclerView = findViewById(R.id.recycle);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

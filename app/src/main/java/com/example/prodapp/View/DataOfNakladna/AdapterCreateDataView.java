@@ -1,6 +1,7 @@
 package com.example.prodapp.View.DataOfNakladna;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -68,6 +69,9 @@ public class AdapterCreateDataView extends RecyclerView.Adapter<AdapterCreateDat
                 try {
 //                    Toast.makeText(context, list.get(i).getKod(), Toast.LENGTH_SHORT).show();
                     myHolder.onItemListener.OnCameraItemClick(list.get(i).getKod());
+                    myHolder.textView_photoind.setText("Фото додано");
+                    myHolder.textView_photoind.setTextColor(Color.parseColor("#20e631"));
+                    myHolder.imageButton.setImageResource(R.drawable.cameragreen);
                 }
                 catch (Exception e) {}
             }
@@ -88,6 +92,7 @@ public class AdapterCreateDataView extends RecyclerView.Adapter<AdapterCreateDat
         TextView textView_kilkis;
         TextView textView_number;
         TextView textView_sum;
+        TextView textView_photoind;
         ImageButton imageButton;
 
         AdapterCreateDataView.OnItemListener onItemListener;
@@ -102,6 +107,7 @@ public class AdapterCreateDataView extends RecyclerView.Adapter<AdapterCreateDat
             textView_number = itemView.findViewById(R.id.text_view_number);
             textView_sum = itemView.findViewById(R.id.text_view_suma);
             imageButton = itemView.findViewById(R.id.imageButton);
+            textView_photoind = itemView.findViewById(R.id.textPhotoind);
             this.onItemListener = onItemListener;
 
             itemView.setOnClickListener(this);

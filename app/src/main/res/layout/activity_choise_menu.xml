@@ -37,7 +37,7 @@
                 android:layout_marginRight="40dp"
                 android:padding="20dp"
                 android:background="@drawable/fields"
-                android:text="Архів накладних" />
+                android:text="Архів накладних\n(тестовий режим)" />
 
             <Button
                 android:id="@+id/choiseSettings"
@@ -48,7 +48,7 @@
                 android:layout_marginRight="40dp"
                 android:padding="20dp"
                 android:background="@drawable/fields"
-                android:text="Налаштування" />
+                android:text="Налаштування\n(тестовий режим)" />
 
 
 

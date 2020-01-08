@@ -1,9 +1,7 @@
-﻿<?xml version="1.0"?>
-
-<Company>  		
+﻿<Company>  		
   <Dogovor>  		
-      <NumberDogovora> 	286/2/19/24	</NumberDogovora>
-      <DataDogovora> 	10.04.2019	</DataDogovora>
+      <NumberDogovora> 	286/2/19/9/2	</NumberDogovora>
+      <DataDogovora> 	09.12.2019	</DataDogovora>
       <Postav> 	Латорица	</Postav>
   </Dogovor>  		
 <Product>  		
@@ -15,7 +13,7 @@
       <Kalor> 	24	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	0,05	</Kolichestvo>
-      <Price> 	64,62	</Price>
+      <Price> 	64,92	</Price>
       <Pakyvan> 	до 30 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -39,7 +37,7 @@
       <Kalor> 	28	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	18	</Kolichestvo>
-      <Price> 	15	</Price>
+      <Price> 	20,22	</Price>
       <Pakyvan> 	до 30 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -51,7 +49,7 @@
       <Kalor> 	42	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	18	</Kolichestvo>
-      <Price> 	10,98	</Price>
+      <Price> 	13,98	</Price>
       <Pakyvan> 	до 30 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -75,7 +73,7 @@
       <Kalor> 	41	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	4	</Kolichestvo>
-      <Price> 	34,98	</Price>
+      <Price> 	39,18	</Price>
       <Pakyvan> 	до 10 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -87,7 +85,7 @@
       <Kalor> 	154	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	12	</Kolichestvo>
-      <Price> 	30	</Price>
+      <Price> 	31,98	</Price>
       <Pakyvan> 	до 10 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -99,7 +97,7 @@
       <Kalor> 	122	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	7	</Kolichestvo>
-      <Price> 	30,96	</Price>
+      <Price> 	31,98	</Price>
       <Pakyvan> 	до 10 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -111,7 +109,7 @@
       <Kalor> 	28	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	9	</Kolichestvo>
-      <Price> 	30,96	</Price>
+      <Price> 	31,98	</Price>
       <Pakyvan> 	до 10 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -123,7 +121,7 @@
       <Kalor> 	23	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	0,05	</Kolichestvo>
-      <Price> 	30,96	</Price>
+      <Price> 	31,92	</Price>
       <Pakyvan> 	до 30 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -147,7 +145,7 @@
       <Kalor> 	27	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	40	</Kolichestvo>
-      <Price> 	12	</Price>
+      <Price> 	13,98	</Price>
       <Pakyvan> 	до 30 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -171,7 +169,7 @@
       <Kalor> 	23	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	20	</Kolichestvo>
-      <Price> 	22,2	</Price>
+      <Price> 	27	</Price>
       <Pakyvan> 	до 30 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -219,7 +217,7 @@
       <Kalor> 	80	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	220	</Kolichestvo>
-      <Price> 	9	</Price>
+      <Price> 	10,08	</Price>
       <Pakyvan> 	до 30 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -231,7 +229,7 @@
       <Kalor> 	80	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	10	</Kolichestvo>
-      <Price> 	16,98	</Price>
+      <Price> 	19,98	</Price>
       <Pakyvan> 	до 30 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -315,7 +313,7 @@
       <Kalor> 	34	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	40	</Kolichestvo>
-      <Price> 	12	</Price>
+      <Price> 	13,98	</Price>
       <Pakyvan> 	до 30 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -363,7 +361,7 @@
       <Kalor> 	13	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	20	</Kolichestvo>
-      <Price> 	22,56	</Price>
+      <Price> 	24,6	</Price>
       <Pakyvan> 	до 50 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -387,7 +385,7 @@
       <Kalor> 	81	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
-      <Price> 	105	</Price>
+      <Price> 	109,98	</Price>
       <Pakyvan> 	до 10 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -399,7 +397,7 @@
       <Kalor> 	26	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
-      <Price> 	70	</Price>
+      <Price> 	79,98	</Price>
       <Pakyvan> 	до 30 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -447,7 +445,7 @@
       <Kalor> 	26	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
-      <Price> 	72	</Price>
+      <Price> 	84	</Price>
       <Pakyvan> 	до 30 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -531,7 +529,7 @@
       <Kalor> 	23	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	15	</Kolichestvo>
-      <Price> 	12,96	</Price>
+      <Price> 	15	</Price>
       <Pakyvan> 	до 30 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -543,7 +541,7 @@
       <Kalor> 	15	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	15	</Kolichestvo>
-      <Price> 	24,96	</Price>
+      <Price> 	27,96	</Price>
       <Pakyvan> 	до 30 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -639,7 +637,7 @@
       <Kalor> 	22	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	0,3	</Kolichestvo>
-      <Price> 	88,98	</Price>
+      <Price> 	99	</Price>
       <Pakyvan> 	до 30 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -651,7 +649,7 @@
       <Kalor> 	29	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	0,3	</Kolichestvo>
-      <Price> 	49,98	</Price>
+      <Price> 	60	</Price>
       <Pakyvan> 	до 10 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -672,7 +670,7 @@
       <EdIzm>	г	</EdIzm>
       <EdYch> 	кг	</EdYch>
       <EdKoef> 	1000	 </EdKoef>
-      <Kalor> 	20	</Kalor>
+      <Kalor> 	22	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	0,3	</Kolichestvo>
       <Price> 	64,98	</Price>
@@ -696,7 +694,7 @@
       <EdIzm>	г	</EdIzm>
       <EdYch> 	кг	</EdYch>
       <EdKoef> 	1000	 </EdKoef>
-      <Kalor> 	36	</Kalor>
+      <Kalor> 	21	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
       <Price> 	26,16	</Price>
@@ -720,10 +718,10 @@
       <EdIzm>	г	</EdIzm>
       <EdYch> 	кг	</EdYch>
       <EdKoef> 	1000	 </EdKoef>
-      <Kalor> 	70	</Kalor>
+      <Kalor> 	49	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	0,3	</Kolichestvo>
-      <Price> 	240	</Price>
+      <Price> 	259,98	</Price>
       <Pakyvan> 	до 1 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -732,7 +730,7 @@
       <EdIzm>	г	</EdIzm>
       <EdYch> 	кг	</EdYch>
       <EdKoef> 	1000	 </EdKoef>
-      <Kalor> 	44	</Kalor>
+      <Kalor> 	42	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	2	</Kolichestvo>
       <Price> 	19,98	</Price>
@@ -744,7 +742,7 @@
       <EdIzm>	г	</EdIzm>
       <EdYch> 	кг	</EdYch>
       <EdKoef> 	1000	 </EdKoef>
-      <Kalor> 	72	</Kalor>
+      <Kalor> 	47	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	2	</Kolichestvo>
       <Price> 	19,98	</Price>
@@ -759,7 +757,7 @@
       <Kalor> 	80	</Kalor>
       <Grupa> 	ОВ	</Grupa>
       <Kolichestvo> 	220	</Kolichestvo>
-      <Price> 	9	</Price>
+      <Price> 	9,96	</Price>
       <Pakyvan> 	до 30 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -912,7 +910,7 @@
       <EdIzm>	г	</EdIzm>
       <EdYch> 	кг	</EdYch>
       <EdKoef> 	1000	 </EdKoef>
-      <Kalor> 	36	</Kalor>
+      <Kalor> 	44	</Kalor>
       <Grupa> 	ЗОФ	</Grupa>
       <Kolichestvo> 	0,3	</Kolichestvo>
       <Price> 	90	</Price>
@@ -1191,7 +1189,7 @@
       <Kalor> 	330	</Kalor>
       <Grupa> 	КР	</Grupa>
       <Kolichestvo> 	8	</Kolichestvo>
-      <Price> 	21	</Price>
+      <Price> 	21,96	</Price>
       <Pakyvan> 	до 30 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -1203,7 +1201,7 @@
       <Kalor> 	330	</Kalor>
       <Grupa> 	КР	</Grupa>
       <Kolichestvo> 	30	</Kolichestvo>
-      <Price> 	19,98	</Price>
+      <Price> 	21	</Price>
       <Pakyvan> 	до 30 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -1215,7 +1213,7 @@
       <Kalor> 	330	</Kalor>
       <Grupa> 	КР	</Grupa>
       <Kolichestvo> 	8	</Kolichestvo>
-      <Price> 	18,96	</Price>
+      <Price> 	21	</Price>
       <Pakyvan> 	до 30 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -1227,7 +1225,7 @@
       <Kalor> 	323	</Kalor>
       <Grupa> 	КР	</Grupa>
       <Kolichestvo> 	11	</Kolichestvo>
-      <Price> 	17,46	</Price>
+      <Price> 	18,96	</Price>
       <Pakyvan> 	до 30 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -1260,7 +1258,7 @@
       <EdIzm>	г	</EdIzm>
       <EdYch> 	кг	</EdYch>
       <EdKoef> 	1000	 </EdKoef>
-      <Kalor> 	336	</Kalor>
+      <Kalor> 	335	</Kalor>
       <Grupa> 	КР	</Grupa>
       <Kolichestvo> 	5	</Kolichestvo>
       <Price> 	42	</Price>
@@ -1419,7 +1417,7 @@
       <Kalor> 	32	</Kalor>
       <Grupa> 	СП	</Grupa>
       <Kolichestvo> 	2	</Kolichestvo>
-      <Price> 	39	</Price>
+      <Price> 	48	</Price>
       <Pakyvan> 	до 1 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -1431,7 +1429,7 @@
       <Kalor> 	31	</Kalor>
       <Grupa> 	СП	</Grupa>
       <Kolichestvo> 	5	</Kolichestvo>
-      <Price> 	69	</Price>
+      <Price> 	79,98	</Price>
       <Pakyvan> 	до 5 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -1443,7 +1441,7 @@
       <Kalor> 	25	</Kalor>
       <Grupa> 	СП	</Grupa>
       <Kolichestvo> 	0,01	</Kolichestvo>
-      <Price> 	75	</Price>
+      <Price> 	139,98	</Price>
       <Pakyvan> 	до 20 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -1539,7 +1537,7 @@
       <Kalor> 	49	</Kalor>
       <Grupa> 	СП	</Grupa>
       <Kolichestvo> 	6	</Kolichestvo>
-      <Price> 	84,96	</Price>
+      <Price> 	99,96	</Price>
       <Pakyvan> 	до 1 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -1563,7 +1561,7 @@
       <Kalor> 	271	</Kalor>
       <Grupa> 	СП	</Grupa>
       <Kolichestvo> 	0,2	</Kolichestvo>
-      <Price> 	51,96	</Price>
+      <Price> 	69,96	</Price>
       <Pakyvan> 	до 5 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -1611,7 +1609,7 @@
       <Kalor> 	0	</Kalor>
       <Grupa> 	СП	</Grupa>
       <Kolichestvo> 	12	</Kolichestvo>
-      <Price> 	8,46	</Price>
+      <Price> 	8,1	</Price>
       <Pakyvan> 	до 1 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -1635,7 +1633,7 @@
       <Kalor> 	96	</Kalor>
       <Grupa> 	СП	</Grupa>
       <Kolichestvo> 	8	</Kolichestvo>
-      <Price> 	30	</Price>
+      <Price> 	31,98	</Price>
       <Pakyvan> 	до 1 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -1656,7 +1654,7 @@
       <EdIzm>	г	</EdIzm>
       <EdYch> 	кг	</EdYch>
       <EdKoef> 	1000	 </EdKoef>
-      <Kalor> 	10	</Kalor>
+      <Kalor> 	261	</Kalor>
       <Grupa> 	СП	</Grupa>
       <Kolichestvo> 	0,01	</Kolichestvo>
       <Price> 	79,98	</Price>
@@ -1680,7 +1678,7 @@
       <EdIzm>	г	</EdIzm>
       <EdYch> 	кг	</EdYch>
       <EdKoef> 	1000	 </EdKoef>
-      <Kalor> 	402	</Kalor>
+      <Kalor> 	389	</Kalor>
       <Grupa> 	СП	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
       <Price> 	69,78	</Price>
@@ -1863,7 +1861,7 @@
       <Kalor> 	290	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	0,01	</Kolichestvo>
-      <Price> 	60,9	</Price>
+      <Price> 	60,96	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -1923,7 +1921,7 @@
       <Kalor> 	192	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
-      <Price> 	132	</Price>
+      <Price> 	138,96	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -1935,7 +1933,7 @@
       <Kalor> 	192	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
-      <Price> 	131,4	</Price>
+      <Price> 	139,98	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -1971,7 +1969,7 @@
       <Kalor> 	192	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	6	</Kolichestvo>
-      <Price> 	96,96	</Price>
+      <Price> 	99,96	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -1983,7 +1981,7 @@
       <Kalor> 	192	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	6	</Kolichestvo>
-      <Price> 	94,98	</Price>
+      <Price> 	99	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2007,7 +2005,7 @@
       <Kalor> 	113	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	4	</Kolichestvo>
-      <Price> 	90	</Price>
+      <Price> 	93	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2019,7 +2017,7 @@
       <Kalor> 	113	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	4	</Kolichestvo>
-      <Price> 	94,98	</Price>
+      <Price> 	96	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2031,7 +2029,7 @@
       <Kalor> 	185	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	2	</Kolichestvo>
-      <Price> 	46,02	</Price>
+      <Price> 	48,96	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2055,7 +2053,7 @@
       <Kalor> 	141	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	2	</Kolichestvo>
-      <Price> 	39,96	</Price>
+      <Price> 	43,98	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2103,7 +2101,7 @@
       <Kalor> 	241	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	10	</Kolichestvo>
-      <Price> 	48,96	</Price>
+      <Price> 	52,98	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2115,7 +2113,7 @@
       <Kalor> 	241	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	10	</Kolichestvo>
-      <Price> 	52,98	</Price>
+      <Price> 	54,96	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2139,7 +2137,7 @@
       <Kalor> 	841	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	20	</Kolichestvo>
-      <Price> 	30	</Price>
+      <Price> 	34,98	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2151,7 +2149,7 @@
       <Kalor> 	816	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	2	</Kolichestvo>
-      <Price> 	60	</Price>
+      <Price> 	66	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2163,7 +2161,7 @@
       <Kalor> 	198	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	3	</Kolichestvo>
-      <Price> 	54,96	</Price>
+      <Price> 	60	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2175,7 +2173,7 @@
       <Kalor> 	277	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	3	</Kolichestvo>
-      <Price> 	60,96	</Price>
+      <Price> 	64,98	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2199,7 +2197,7 @@
       <Kalor> 	384	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	3	</Kolichestvo>
-      <Price> 	109,98	</Price>
+      <Price> 	124,98	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2211,7 +2209,7 @@
       <Kalor> 	384	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	3	</Kolichestvo>
-      <Price> 	120	</Price>
+      <Price> 	124,98	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2223,7 +2221,7 @@
       <Kalor> 	384	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	2	</Kolichestvo>
-      <Price> 	105	</Price>
+      <Price> 	114,96	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2247,7 +2245,7 @@
       <Kalor> 	305	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	6	</Kolichestvo>
-      <Price> 	79,98	</Price>
+      <Price> 	94,98	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2271,7 +2269,7 @@
       <Kalor> 	355	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	19	</Kolichestvo>
-      <Price> 	65,94	</Price>
+      <Price> 	66,6	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2283,7 +2281,7 @@
       <Kalor> 	355	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	19	</Kolichestvo>
-      <Price> 	66,96	</Price>
+      <Price> 	67,2	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2295,7 +2293,7 @@
       <Kalor> 	491	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	4	</Kolichestvo>
-      <Price> 	109,98	</Price>
+      <Price> 	114,96	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2355,7 +2353,7 @@
       <Kalor> 	305	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	4	</Kolichestvo>
-      <Price> 	94,98	</Price>
+      <Price> 	99	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2415,7 +2413,7 @@
       <Kalor> 	157	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	0,3	</Kolichestvo>
-      <Price> 	2,7	</Price>
+      <Price> 	2,76	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2523,7 +2521,7 @@
       <Kalor> 	183	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	4	</Kolichestvo>
-      <Price> 	126,96	</Price>
+      <Price> 	129,96	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2547,7 +2545,7 @@
       <Kalor> 	172	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
-      <Price> 	120,6	</Price>
+      <Price> 	135	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2559,7 +2557,7 @@
       <Kalor> 	172	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
-      <Price> 	121,2	</Price>
+      <Price> 	135	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2571,7 +2569,7 @@
       <Kalor> 	172	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
-      <Price> 	119,4	</Price>
+      <Price> 	133,98	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2583,7 +2581,7 @@
       <Kalor> 	172	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
-      <Price> 	119,4	</Price>
+      <Price> 	133,98	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2619,7 +2617,7 @@
       <Kalor> 	172	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
-      <Price> 	126	</Price>
+      <Price> 	135	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2631,7 +2629,7 @@
       <Kalor> 	183	</Kalor>
       <Grupa> 	М	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
-      <Price> 	108	</Price>
+      <Price> 	120	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2643,7 +2641,7 @@
       <Kalor> 	86	</Kalor>
       <Grupa> 	Р	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
-      <Price> 	81	</Price>
+      <Price> 	82,98	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2655,7 +2653,7 @@
       <Kalor> 	151	</Kalor>
       <Grupa> 	Р	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
-      <Price> 	117	</Price>
+      <Price> 	120,36	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2667,7 +2665,7 @@
       <Kalor> 	90	</Kalor>
       <Grupa> 	Р	</Grupa>
       <Kolichestvo> 	10	</Kolichestvo>
-      <Price> 	48,96	</Price>
+      <Price> 	49,98	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2679,7 +2677,7 @@
       <Kalor> 	232	</Kalor>
       <Grupa> 	Р	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
-      <Price> 	121,98	</Price>
+      <Price> 	195	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2691,7 +2689,7 @@
       <Kalor> 	119	</Kalor>
       <Grupa> 	Р	</Grupa>
       <Kolichestvo> 	3	</Kolichestvo>
-      <Price> 	42,96	</Price>
+      <Price> 	49,98	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2703,7 +2701,7 @@
       <Kalor> 	134	</Kalor>
       <Grupa> 	Р	</Grupa>
       <Kolichestvo> 	3	</Kolichestvo>
-      <Price> 	43,98	</Price>
+      <Price> 	51,96	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2715,7 +2713,7 @@
       <Kalor> 	88	</Kalor>
       <Grupa> 	Р	</Grupa>
       <Kolichestvo> 	3	</Kolichestvo>
-      <Price> 	52,98	</Price>
+      <Price> 	58,56	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2727,7 +2725,7 @@
       <Kalor> 	88	</Kalor>
       <Grupa> 	Р	</Grupa>
       <Kolichestvo> 	3	</Kolichestvo>
-      <Price> 	78,96	</Price>
+      <Price> 	88,98	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2739,7 +2737,7 @@
       <Kalor> 	88	</Kalor>
       <Grupa> 	Р	</Grupa>
       <Kolichestvo> 	3	</Kolichestvo>
-      <Price> 	80,1	</Price>
+      <Price> 	99,96	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2751,7 +2749,7 @@
       <Kalor> 	88	</Kalor>
       <Grupa> 	Р	</Grupa>
       <Kolichestvo> 	3	</Kolichestvo>
-      <Price> 	78,96	</Price>
+      <Price> 	80,1	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2763,7 +2761,7 @@
       <Kalor> 	88	</Kalor>
       <Grupa> 	Р	</Grupa>
       <Kolichestvo> 	3	</Kolichestvo>
-      <Price> 	66,96	</Price>
+      <Price> 	69,96	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2775,7 +2773,7 @@
       <Kalor> 	88	</Kalor>
       <Grupa> 	Р	</Grupa>
       <Kolichestvo> 	3	</Kolichestvo>
-      <Price> 	69,96	</Price>
+      <Price> 	94,98	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2787,7 +2785,7 @@
       <Kalor> 	88	</Kalor>
       <Grupa> 	Р	</Grupa>
       <Kolichestvo> 	3	</Kolichestvo>
-      <Price> 	90,96	</Price>
+      <Price> 	90	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2799,7 +2797,7 @@
       <Kalor> 	88	</Kalor>
       <Grupa> 	Р	</Grupa>
       <Kolichestvo> 	3	</Kolichestvo>
-      <Price> 	94,98	</Price>
+      <Price> 	110,1	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2811,7 +2809,7 @@
       <Kalor> 	363	</Kalor>
       <Grupa> 	Р	</Grupa>
       <Kolichestvo> 	3	</Kolichestvo>
-      <Price> 	90,96	</Price>
+      <Price> 	90	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2847,7 +2845,7 @@
       <Kalor> 	88	</Kalor>
       <Grupa> 	Р	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
-      <Price> 	70,2	</Price>
+      <Price> 	90	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2859,7 +2857,7 @@
       <Kalor> 	70	</Kalor>
       <Grupa> 	Р	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
-      <Price> 	69,96	</Price>
+      <Price> 	72,96	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2883,7 +2881,7 @@
       <Kalor> 	70	</Kalor>
       <Grupa> 	Р	</Grupa>
       <Kolichestvo> 	5	</Kolichestvo>
-      <Price> 	60	</Price>
+      <Price> 	63	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2931,7 +2929,7 @@
       <Kalor> 	180	</Kalor>
       <Grupa> 	Р	</Grupa>
       <Kolichestvo> 	5	</Kolichestvo>
-      <Price> 	55,98	</Price>
+      <Price> 	63	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -2967,7 +2965,7 @@
       <Kalor> 	153	</Kalor>
       <Grupa> 	Р	</Grupa>
       <Kolichestvo> 	5	</Kolichestvo>
-      <Price> 	72	</Price>
+      <Price> 	75,96	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -3063,7 +3061,7 @@
       <Kalor> 	899	</Kalor>
       <Grupa> 	Ж	</Grupa>
       <Kolichestvo> 	25	</Kolichestvo>
-      <Price> 	81,66	</Price>
+      <Price> 	95,1	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -3075,7 +3073,7 @@
       <Kalor> 	899	</Kalor>
       <Grupa> 	Ж	</Grupa>
       <Kolichestvo> 	3	</Kolichestvo>
-      <Price> 	85,68	</Price>
+      <Price> 	95,1	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -3087,7 +3085,7 @@
       <Kalor> 	747	</Kalor>
       <Grupa> 	Ж	</Grupa>
       <Kolichestvo> 	2	</Kolichestvo>
-      <Price> 	64,8	</Price>
+      <Price> 	84,06	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -3267,7 +3265,7 @@
       <Kalor> 	254	</Kalor>
       <Grupa> 	МДШ	</Grupa>
       <Kolichestvo> 	0,01	</Kolichestvo>
-      <Price> 	83,94	</Price>
+      <Price> 	83,76	</Price>
       <Pakyvan> 	до 20 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -3363,7 +3361,7 @@
       <Kalor> 	546	</Kalor>
       <Grupa> 	МДШ	</Grupa>
       <Kolichestvo> 	0,01	</Kolichestvo>
-      <Price> 	179,98	</Price>
+      <Price> 	180	</Price>
       <Pakyvan> 	до 0,03 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -3375,7 +3373,7 @@
       <Kalor> 	546	</Kalor>
       <Grupa> 	МДШ	</Grupa>
       <Kolichestvo> 	0,01	</Kolichestvo>
-      <Price> 	179,98	</Price>
+      <Price> 	180	</Price>
       <Pakyvan> 	до 2 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -3387,7 +3385,7 @@
       <Kalor> 	298	</Kalor>
       <Grupa> 	МОЛ	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
-      <Price> 	96	</Price>
+      <Price> 	106,08	</Price>
       <Pakyvan> 	до 0,1 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -3531,7 +3529,7 @@
       <Kalor> 	156	</Kalor>
       <Grupa> 	МОЛ	</Grupa>
       <Kolichestvo> 	5	</Kolichestvo>
-      <Price> 	45	</Price>
+      <Price> 	59,4	</Price>
       <Pakyvan> 	до 5 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -3543,7 +3541,7 @@
       <Kalor> 	89	</Kalor>
       <Grupa> 	МОЛ	</Grupa>
       <Kolichestvo> 	1,5	</Kolichestvo>
-      <Price> 	42	</Price>
+      <Price> 	63	</Price>
       <Pakyvan> 	до 5 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -3567,7 +3565,7 @@
       <Kalor> 	371	</Kalor>
       <Grupa> 	МОЛ	</Grupa>
       <Kolichestvo> 	9	</Kolichestvo>
-      <Price> 	89,4	</Price>
+      <Price> 	90,6	</Price>
       <Pakyvan> 	до 5 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -3579,7 +3577,7 @@
       <Kalor> 	348	</Kalor>
       <Grupa> 	МОЛ	</Grupa>
       <Kolichestvo> 	9	</Kolichestvo>
-      <Price> 	68,4	</Price>
+      <Price> 	90,6	</Price>
       <Pakyvan> 	до 5 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -3591,7 +3589,7 @@
       <Kalor> 	380	</Kalor>
       <Grupa> 	МОЛ	</Grupa>
       <Kolichestvo> 	9	</Kolichestvo>
-      <Price> 	88,2	</Price>
+      <Price> 	90,6	</Price>
       <Pakyvan> 	до 5 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -3603,7 +3601,7 @@
       <Kalor> 	226	</Kalor>
       <Grupa> 	МОЛ	</Grupa>
       <Kolichestvo> 	0,5	</Kolichestvo>
-      <Price> 	120	</Price>
+      <Price> 	121,98	</Price>
       <Pakyvan> 	до 10 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -3903,7 +3901,7 @@
       <Kalor> 	377	</Kalor>
       <Grupa> 	Н	</Grupa>
       <Kolichestvo> 	20	</Kolichestvo>
-      <Price> 	15	</Price>
+      <Price> 	19,8	</Price>
       <Pakyvan> 	до 10 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -3915,7 +3913,7 @@
       <Kalor> 	379	</Kalor>
       <Grupa> 	Н	</Grupa>
       <Kolichestvo> 	40	</Kolichestvo>
-      <Price> 	12,96	</Price>
+      <Price> 	15	</Price>
       <Pakyvan> 	до 10 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -4011,7 +4009,7 @@
       <Kalor> 	42	</Kalor>
       <Grupa> 	Н	</Grupa>
       <Kolichestvo> 	0,1	</Kolichestvo>
-      <Price> 	133,98	</Price>
+      <Price> 	144,96	</Price>
       <Pakyvan> 	до 0,5 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -4047,7 +4045,7 @@
       <Kalor> 	52	</Kalor>
       <Grupa> 	Фр	</Grupa>
       <Kolichestvo> 	2	</Kolichestvo>
-      <Price> 	60	</Price>
+      <Price> 	66	</Price>
       <Pakyvan> 	до 10 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -4083,7 +4081,7 @@
       <Kalor> 	72	</Kalor>
       <Grupa> 	Фр	</Grupa>
       <Kolichestvo> 	2	</Kolichestvo>
-      <Price> 	68,4	</Price>
+      <Price> 	79,98	</Price>
       <Pakyvan> 	до 10 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -4215,7 +4213,7 @@
       <Kalor> 	47	</Kalor>
       <Grupa> 	Фр	</Grupa>
       <Kolichestvo> 	3	</Kolichestvo>
-      <Price> 	42	</Price>
+      <Price> 	45,96	</Price>
       <Pakyvan> 	до 5 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -4311,7 +4309,7 @@
       <Kalor> 	253	</Kalor>
       <Grupa> 	Фр	</Grupa>
       <Kolichestvo> 	12	</Kolichestvo>
-      <Price> 	30	</Price>
+      <Price> 	33,78	</Price>
       <Pakyvan> 	-	</Pakyvan>
   </Product>		
 <Product>  		
@@ -4419,7 +4417,7 @@
       <Kalor> 	53	</Kalor>
       <Grupa> 	Фр	</Grupa>
       <Kolichestvo> 	0,01	</Kolichestvo>
-      <Price> 	33,66	</Price>
+      <Price> 	33,06	</Price>
       <Pakyvan> 	до 10 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -4431,7 +4429,7 @@
       <Kalor> 	51	</Kalor>
       <Grupa> 	Фр	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
-      <Price> 	46,98	</Price>
+      <Price> 	49,62	</Price>
       <Pakyvan> 	до 30 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -4443,7 +4441,7 @@
       <Kalor> 	46	</Kalor>
       <Grupa> 	Фр	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
-      <Price> 	31,8	</Price>
+      <Price> 	31,86	</Price>
       <Pakyvan> 	до 5 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -4467,7 +4465,7 @@
       <Kalor> 	257	</Kalor>
       <Grupa> 	Фр	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
-      <Price> 	106,8	</Price>
+      <Price> 	129,96	</Price>
       <Pakyvan> 	до 20 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -4503,7 +4501,7 @@
       <Kalor> 	46	</Kalor>
       <Grupa> 	Фр	</Grupa>
       <Kolichestvo> 	1	</Kolichestvo>
-      <Price> 	96	</Price>
+      <Price> 	109,62	</Price>
       <Pakyvan> 	до 40 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -4527,7 +4525,7 @@
       <Kalor> 	243	</Kalor>
       <Grupa> 	Хл	</Grupa>
       <Kolichestvo> 	50	</Kolichestvo>
-      <Price> 	11,82	</Price>
+      <Price> 	12,96	</Price>
       <Pakyvan> 	до 40 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -4539,7 +4537,7 @@
       <Kalor> 	305	</Kalor>
       <Grupa> 	Хл	</Grupa>
       <Kolichestvo> 	45	</Kolichestvo>
-      <Price> 	6	</Price>
+      <Price> 	6,96	</Price>
       <Pakyvan> 	до 40 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -4551,7 +4549,7 @@
       <Kalor> 	329	</Kalor>
       <Grupa> 	Хл	</Grupa>
       <Kolichestvo> 	45	</Kolichestvo>
-      <Price> 	8,46	</Price>
+      <Price> 	9	</Price>
       <Pakyvan> 	до 30 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -4599,7 +4597,7 @@
       <Kalor> 	542	</Kalor>
       <Grupa> 	Хл	</Grupa>
       <Kolichestvo> 	7	</Kolichestvo>
-      <Price> 	50,4	</Price>
+      <Price> 	55,98	</Price>
       <Pakyvan> 	до 40 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -4611,7 +4609,7 @@
       <Kalor> 	334	</Kalor>
       <Grupa> 	Хл	</Grupa>
       <Kolichestvo> 	3	</Kolichestvo>
-      <Price> 	51	</Price>
+      <Price> 	51,96	</Price>
       <Pakyvan> 	до 40 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -4635,7 +4633,7 @@
       <Kalor> 	288	</Kalor>
       <Grupa> 	Хл	</Grupa>
       <Kolichestvo> 	12	</Kolichestvo>
-      <Price> 	40,98	</Price>
+      <Price> 	49,98	</Price>
       <Pakyvan> 	до 40 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -4671,7 +4669,7 @@
       <Kalor> 	447	</Kalor>
       <Grupa> 	Хл	</Grupa>
       <Kolichestvo> 	2	</Kolichestvo>
-      <Price> 	60,6	</Price>
+      <Price> 	69,96	</Price>
       <Pakyvan> 	до 50 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -4719,7 +4717,7 @@
       <Kalor> 	214	</Kalor>
       <Grupa> 	Хл	</Grupa>
       <Kolichestvo> 	200	</Kolichestvo>
-      <Price> 	11,58	</Price>
+      <Price> 	12,9	</Price>
       <Pakyvan> 	до 50 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -4731,7 +4729,7 @@
       <Kalor> 	214	</Kalor>
       <Grupa> 	Хл	</Grupa>
       <Kolichestvo> 	25	</Kolichestvo>
-      <Price> 	12,3	</Price>
+      <Price> 	13,62	</Price>
       <Pakyvan> 	до 25 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -4743,7 +4741,7 @@
       <Kalor> 	226	</Kalor>
       <Grupa> 	Хл	</Grupa>
       <Kolichestvo> 	200	</Kolichestvo>
-      <Price> 	11,82	</Price>
+      <Price> 	12,9	</Price>
       <Pakyvan> 	до 25 кг	</Pakyvan>
   </Product>		
 <Product>  		
@@ -4755,7 +4753,7 @@
       <Kalor> 	226	</Kalor>
       <Grupa> 	Хл	</Grupa>
       <Kolichestvo> 	25	</Kolichestvo>
-      <Price> 	12,3	</Price>
+      <Price> 	13,62	</Price>
       <Pakyvan> 	до 25 кг	</Pakyvan>
   </Product>		
 </Company>  		

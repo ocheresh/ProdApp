@@ -74,12 +74,12 @@ public class InfoOfNakladnaProdView extends AppCompatActivity implements IInfoOf
         spinnerDogovir.setAdapter(adapter);
 
         ArrayAdapter<?> adapter2 =
-                ArrayAdapter.createFromResource(this, R.array.KEKV, android.R.layout.simple_spinner_item);
+                ArrayAdapter.createFromResource(this, R.array.KEKV, android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerKekv.setAdapter(adapter2);
 
         ArrayAdapter<?> adapter3 =
-                ArrayAdapter.createFromResource(this, R.array.type, android.R.layout.simple_spinner_item);
+                ArrayAdapter.createFromResource(this, R.array.type, android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerType.setAdapter(adapter3);
 

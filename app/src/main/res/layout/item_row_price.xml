@@ -68,6 +68,19 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textPhotoind"
+                android:text="Фото не додано"
+                android:textColor="#e62929"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
     </LinearLayout>
 
     <View
@@ -82,7 +95,8 @@
         app:layout_anchor="@+id/linearLayout"
         android:onClick="onClickImageButton"
         app:layout_anchorGravity="end|center"
-        app:srcCompat="@drawable/camera1" />
+        android:background="#ffffff"
+        app:srcCompat="@drawable/camerared" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

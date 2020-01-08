@@ -155,6 +155,11 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
 
     }
 
+    private void photoNakladna()
+    {
+
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -566,6 +571,7 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
             xmlSerializer.endTag(null, "NumberPlomba");
             xmlSerializer.endTag(null, "Info");
 
+            xmlSerializer.startTag(null,"Specification");
             for (int i = 0; i < list.size(); i++) {
                 xmlSerializer.startTag(null, "Product");
                 xmlSerializer.startTag(null, "Kod");
@@ -585,6 +591,7 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
                 xmlSerializer.endTag(null, "TerminVikorist");
                 xmlSerializer.endTag(null, "Product");
             }
+            xmlSerializer.endTag(null, "Specification");
             xmlSerializer.endTag(null, "FFF");
             xmlSerializer.endDocument();
             xmlSerializer.flush();
