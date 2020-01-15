@@ -24,6 +24,7 @@ import com.example.prodapp.Presenter.Register.IRegisterPresenter;
 import com.example.prodapp.Presenter.Register.RegisterPresenter;
 import com.example.prodapp.R;
 import com.example.prodapp.View.ChoiseMenu.ChoiseMenuView;
+import com.example.prodapp.View.ImageViewer.ImageActivity;
 import com.example.prodapp.View.SplashActivity;
 
 import org.xmlpull.v1.XmlPullParser;
@@ -100,8 +101,8 @@ public class RegisterActivity extends AppCompatActivity implements IRegisterView
 //            writeFileXml(employe); //delete
             readFileXml(employe);
             if (employe != null && employe.check_class()) {
+//                Intent intent = new Intent(RegisterActivity.this, ImageActivity.class);
                 Intent intent = new Intent(RegisterActivity.this, SplashActivity.class);
-//                Toast.makeText(this, employe.get_info(), Toast.LENGTH_LONG).show();
                 startActivity(intent);
                 finish();
             }

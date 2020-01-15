@@ -136,14 +136,14 @@ public class InfoOfNakladnaProdView extends AppCompatActivity implements IInfoOf
     @Override
     public boolean pressSaveInfo(InfoOfNakladna infoOfNakladna) {
         infoOfNakladna.setNameDogovir(spinnerDogovir.getSelectedItem().toString());
-        infoOfNakladna.setDateNakladna(textViewDate.getText().toString());
-        infoOfNakladna.setMarkaAvto(editTextMarkaAvto.getText().toString());
-        infoOfNakladna.setNameDriver(editTextVodii.getText().toString());
-        infoOfNakladna.setNomerAvto(editTextNomerZnak.getText().toString());
-        infoOfNakladna.setNumberNakladna(editTextnumbernakladna.getText().toString());
-        infoOfNakladna.setKEKV(spinnerKekv.getSelectedItem().toString());
-        infoOfNakladna.setTypePostach(spinnerType.getSelectedItem().toString());
-        infoOfNakladna.setNomerPlombi(editTextPlomba.getText().toString());
+        infoOfNakladna.setDateNakladna(textViewDate.getText().toString().replace("/", "_"));
+        infoOfNakladna.setMarkaAvto(editTextMarkaAvto.getText().toString().replace("/", "_"));
+        infoOfNakladna.setNameDriver(editTextVodii.getText().toString().replace("/", "_"));
+        infoOfNakladna.setNomerAvto(editTextNomerZnak.getText().toString().replace("/", "_"));
+        infoOfNakladna.setNumberNakladna(editTextnumbernakladna.getText().toString().replace("/", "_"));
+        infoOfNakladna.setKEKV(spinnerKekv.getSelectedItem().toString().replace("/", "_"));
+        infoOfNakladna.setTypePostach(spinnerType.getSelectedItem().toString().replace("/", "_"));
+        infoOfNakladna.setNomerPlombi(editTextPlomba.getText().toString().replace("/", "_"));
 
         String err = infoOfNakladna.checkInfoClass();
         if (!("Помилка:\n".equals(err))){

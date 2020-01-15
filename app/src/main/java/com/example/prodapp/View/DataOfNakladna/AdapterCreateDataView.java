@@ -1,11 +1,14 @@
 package com.example.prodapp.View.DataOfNakladna;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -17,6 +20,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.prodapp.Model.ProductsData;
 import com.example.prodapp.R;
+import com.example.prodapp.View.Register.RegisterActivity;
+import com.example.prodapp.View.SplashActivity;
 
 import java.io.IOException;
 import java.text.DecimalFormat;
@@ -69,11 +74,24 @@ public class AdapterCreateDataView extends RecyclerView.Adapter<AdapterCreateDat
                 try {
 //                    Toast.makeText(context, list.get(i).getKod(), Toast.LENGTH_SHORT).show();
                     myHolder.onItemListener.OnCameraItemClick(list.get(i).getKod());
-                    myHolder.textView_photoind.setText("Фото додано");
-                    myHolder.textView_photoind.setTextColor(Color.parseColor("#20e631"));
-                    myHolder.imageButton.setImageResource(R.drawable.cameragreen);
+                    myHolder.imageButton.setImageResource(R.drawable.photo_icon_green);
+//                    myHolder.textView_photoind.setText("Фото додано");
+//                    myHolder.textView_photoind.setTextColor(Color.parseColor("#20e631"));
+
+                    myHolder.but_viewphoto.setClickable(true);
+                    myHolder.but_viewphoto.setVisibility(View.VISIBLE);
+
                 }
                 catch (Exception e) {}
+            }
+        });
+
+        myHolder.but_viewphoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Animation animation = AnimationUtils.loadAnimation(context, R.anim.fadein);
+                myHolder.but_viewphoto.startAnimation(animation);
+                myHolder.onItemListener.OnViewPhoto(list.get(i).getKod().replaceAll("\\D", ""));
             }
         });
 
@@ -93,6 +111,7 @@ public class AdapterCreateDataView extends RecyclerView.Adapter<AdapterCreateDat
         TextView textView_number;
         TextView textView_sum;
         TextView textView_photoind;
+        Button but_viewphoto;
         ImageButton imageButton;
 
         AdapterCreateDataView.OnItemListener onItemListener;
@@ -107,7 +126,8 @@ public class AdapterCreateDataView extends RecyclerView.Adapter<AdapterCreateDat
             textView_number = itemView.findViewById(R.id.text_view_number);
             textView_sum = itemView.findViewById(R.id.text_view_suma);
             imageButton = itemView.findViewById(R.id.imageButton);
-            textView_photoind = itemView.findViewById(R.id.textPhotoind);
+            but_viewphoto = itemView.findViewById(R.id.button_viewphoto);
+//            textView_photoind = itemView.findViewById(R.id.textPhotoind);
             this.onItemListener = onItemListener;
 
             itemView.setOnClickListener(this);
@@ -124,6 +144,7 @@ public class AdapterCreateDataView extends RecyclerView.Adapter<AdapterCreateDat
     {
         void OnItemClick(int position);
         void OnCameraItemClick(String kod);
+        void OnViewPhoto(String kod);
     }
 
 //    public interface OnCameraItemListener

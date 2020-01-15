@@ -69,15 +69,26 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/textPhotoind"
-                android:text="Фото не додано"
-                android:textColor="#e62929"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/button_viewphoto"
+                android:clickable="false"
+                android:visibility="invisible"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#ffad99"
+                android:text="Переглянути фото" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/textPhotoind"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="50dp"-->
+<!--                android:text="Фото не додано"-->
+<!--                android:textColor="#e62929" />-->
 
         </LinearLayout>
 
@@ -90,13 +101,13 @@
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="57dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_anchor="@+id/linearLayout"
-        android:onClick="onClickImageButton"
-        app:layout_anchorGravity="end|center"
         android:background="#ffffff"
-        app:srcCompat="@drawable/camerared" />
+        android:onClick="onClickImageButton"
+        app:layout_anchor="@+id/linearLayout"
+        app:layout_anchorGravity="end|center"
+        app:srcCompat="@drawable/photo_icon_red" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
