@@ -12,6 +12,9 @@ public class ProductsData {
     private String dataFinish = "";
     private String dataTrival = "";
 
+
+    private String addphoto = "false";
+
     public ProductsData()
     {
 
@@ -24,6 +27,7 @@ public class ProductsData {
         this.kilbkistb = data.getKilbkistb();
         this.unit = data.getUnit();
         this.kod = data.getKod();
+        this.addphoto = data.getAddphoto();
     }
 
     public ProductsData(String name)
@@ -36,6 +40,15 @@ public class ProductsData {
         this.name = name;
         this.price = price;
     }
+
+    public String getAddphoto() {
+        return addphoto;
+    }
+
+    public void setAddphoto(String addphoto) {
+        this.addphoto = addphoto;
+    }
+
 
     public String getDataTrival() { return dataTrival; }
 
@@ -145,6 +158,12 @@ public class ProductsData {
         public Builder setDateTriv(String triv)
         {
             productsData.dataTrival = triv;
+            return this;
+        }
+
+        public Builder setAddPhoto(String photo)
+        {
+            productsData.addphoto = photo;
             return this;
         }
 

@@ -19,12 +19,11 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.prodapp.Model.Employe;
+import com.example.prodapp.Model.Employe.Employe;
 import com.example.prodapp.Presenter.Register.IRegisterPresenter;
 import com.example.prodapp.Presenter.Register.RegisterPresenter;
 import com.example.prodapp.R;
 import com.example.prodapp.View.ChoiseMenu.ChoiseMenuView;
-import com.example.prodapp.View.ImageViewer.ImageActivity;
 import com.example.prodapp.View.SplashActivity;
 
 import org.xmlpull.v1.XmlPullParser;

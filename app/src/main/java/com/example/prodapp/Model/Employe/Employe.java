@@ -1,4 +1,4 @@
-package com.example.prodapp.Model;
+package com.example.prodapp.Model.Employe;
 
 public class Employe {
 

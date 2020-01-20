@@ -1,9 +1,8 @@
 package com.example.prodapp.View.DataOfNakladna;
 
-import com.example.prodapp.Model.Employe;
+import com.example.prodapp.Model.Employe.Employe;
 import com.example.prodapp.Model.ProductsData;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public interface IDataOfNakladnaView {

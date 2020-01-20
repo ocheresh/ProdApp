@@ -1,6 +1,6 @@
 package com.example.prodapp.Presenter.Settings;
 
-import com.example.prodapp.Model.Employe;
+import com.example.prodapp.Model.Employe.Employe;
 import com.example.prodapp.View.Settings.ISettingView;
 
 public class SettingsPresenter implements ISettingsPresenter {

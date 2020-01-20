@@ -1,85 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tt1"
-        android:text="Кількість товару"
-        android:textSize="1dp"
-        android:textColor="#48f542"
-        android:visibility="invisible"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/editKilkist"
-        android:inputType="numberDecimal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginRight="4dp"
-        android:layout_marginBottom="4dp"
-        android:hint="Кількість товару" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tt2"
-        android:text="Дата виготовлення"
-        android:textSize="1dp"
-        android:textColor="#48f542"
-        android:visibility="invisible"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Кількість товару"
+                android:textColor="#48f542"
+                android:textSize="1dp"
+                android:visibility="invisible" />
 
-    <EditText
-        android:id="@+id/editDateStart"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginRight="4dp"
-        android:layout_marginBottom="4dp"
-        android:hint="Дата виготовлення" />
+            <EditText
+                android:id="@+id/editKilkist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:hint="Кількість товару"
+                android:inputType="numberDecimal" />
 
-    <TextView
-        android:id="@+id/tt3"
-        android:text="Кінцева дата використання"
-        android:textSize="1dp"
-        android:textColor="#48f542"
-        android:visibility="invisible"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Дата виготовлення"
+                android:textColor="#48f542"
+                android:textSize="1dp"
+                android:visibility="invisible" />
 
-    <EditText
-        android:id="@+id/editDateEnd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginRight="4dp"
-        android:layout_marginBottom="4dp"
-        android:hint="Кінцева дата використання" />
+            <EditText
+                android:id="@+id/editDateStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:hint="Дата виготовлення" />
 
-    <TextView
-        android:id="@+id/tt4"
-        android:text="Термін використання (днів)"
-        android:textSize="1dp"
-        android:textColor="#48f542"
-        android:visibility="invisible"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Кінцева дата використання"
+                android:textColor="#48f542"
+                android:textSize="1dp"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/editDateEnd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:hint="Кінцева дата використання" />
+
+            <TextView
+                android:id="@+id/tt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Термін використання (днів)"
+                android:textColor="#48f542"
+                android:textSize="1dp"
+                android:visibility="invisible" />
 
 
-    <EditText
-        android:id="@+id/editDateVikorist"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginRight="4dp"
-        android:layout_marginBottom="4dp"
-        android:hint="Термін використання (днів)" />
+            <EditText
+                android:id="@+id/editDateVikorist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:hint="Термін використання (днів)" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
 
 
 </LinearLayout>

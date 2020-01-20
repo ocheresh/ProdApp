@@ -9,19 +9,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.Manifest;
 import android.app.AlertDialog;
-import android.content.ContentValues;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
-import android.provider.ContactsContract;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.util.Xml;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -32,18 +27,17 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.prodapp.Model.DBHelper;
 import com.example.prodapp.Model.DataOfNakladna.SummaryTotal;
-import com.example.prodapp.Model.Employe;
+import com.example.prodapp.Model.Employe.Employe;
+import com.example.prodapp.Model.InfoOfNakladna.DBInfoOfNakladna;
+import com.example.prodapp.Model.InfoOfNakladna.InfoOfNakladna;
 import com.example.prodapp.Model.ProductsData;
 import com.example.prodapp.Presenter.DataOfNakladna.DataOfNakladnaPresenter;
 import com.example.prodapp.Presenter.DataOfNakladna.IDataOfNakladnaPresenter;
-import com.example.prodapp.Presenter.InfoOfNakladna.InfoOfNakladnaPresenter;
 import com.example.prodapp.R;
-import com.example.prodapp.View.ChoiseMenu.ChoiseMenuView;
 import com.example.prodapp.View.ChooseProduct.ChooseProductView;
 import com.example.prodapp.View.ImageViewer.ImageActivity;
-import com.example.prodapp.View.Register.RegisterActivity;
-import com.example.prodapp.View.SplashActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.xmlpull.v1.XmlPullParser;
@@ -69,8 +63,10 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
 
     private static final int IMAGE_CAPTURE_CODE = 1001;
     public static RecyclerView view;
-    AdapterCreateDataView adapter;
-    ArrayList<Uri> list_uri_img = new ArrayList<Uri>();
+
+    public AdapterCreateDataView adapter = null;
+    public static DBHelper dbHelper;
+    public static ArrayList<Uri> list_uri_img = new ArrayList<Uri>();
     String folder_uri_string;
     Uri image_uri;
     Uri file_uri;
@@ -81,38 +77,62 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
     static public String correctPathForPhotoFolder = "";
     static public String correctPathForPhotoPhoto = "";
 
+    private static final String TAG = "DataOfNakladnaView";
+
     TextView total;
     public Button buttonadd;
+    FloatingActionButton fab;
 
-    IDataOfNakladnaPresenter iDataOfNakladnaPresenter;
+    public static IDataOfNakladnaPresenter iDataOfNakladnaPresenter = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data_of_nakladna);
 
-        iDataOfNakladnaPresenter = new DataOfNakladnaPresenter(this);
-
         total = findViewById(R.id.textTotal);
         buttonadd = findViewById(R.id.buttonAdd);
-
         view = findViewById(R.id.recycleid);
-        view.setLayoutManager(new LinearLayoutManager(this));
-        if (ChoiseMenuView.qrCodeParser != null)
-            iDataOfNakladnaPresenter.setList(ChoiseMenuView.qrCodeParser.getProductsDatalist());
-        adapter = new AdapterCreateDataView(DataOfNakladnaView.this, iDataOfNakladnaPresenter.getList(), this);
-        view.setAdapter(adapter);
+        fab = findViewById(R.id.fab);
 
+        iDataOfNakladnaPresenter = new DataOfNakladnaPresenter(this);
+        dbHelper = new DBHelper(this);
+
+        if (savedInstanceState != null)
+        {
+            iDataOfNakladnaPresenter.setList(dbHelper.readData());
+//            adapter = new AdapterCreateDataView(DataOfNakladnaView.this, dbHelper.readData(), this);
+        }
+        else
+        {
+            dbHelper.restartData();
+        }
+
+        view.setLayoutManager(new LinearLayoutManager(this));
+        adapter = new AdapterCreateDataView(DataOfNakladnaView.this, iDataOfNakladnaPresenter.getList(), this);
+//        if (savedInstanceState == null)
+//            adapter = new AdapterCreateDataView(DataOfNakladnaView.this, iDataOfNakladnaPresenter.getList(), this);
+        view.setAdapter(adapter);
         iDataOfNakladnaPresenter.onSummary();
 
         verifyStoragePermission();
+        Toast.makeText(getApplicationContext(), "onCreate()", Toast.LENGTH_SHORT).show();
+        Log.i(TAG, "onCreate()");
 
-        FloatingActionButton fab = findViewById(R.id.fab);
+
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(DataOfNakladnaView.this, ChooseProductView.class);
-                startActivity(myIntent);
+                try {
+                    Log.i("Error add element: ", "Enter");
+                    Intent myIntent = new Intent(DataOfNakladnaView.this, ChooseProductView.class);
+                    startActivity(myIntent);
+                }
+                catch (Exception e)
+                {
+                    Log.i("Error add element: ", e.getMessage());
+                }
+
             }
         });
 
@@ -122,44 +142,24 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
             @Override
             public void onClick(View v) {
                 photoNakladna();
-//                iDataOfNakladnaPresenter.onSave();
-//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-//                    if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_DENIED ||
-//                            checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_DENIED) {
-//                        String[] permission = {Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE};
-//                        requestPermissions(permission, 1000);
-//                    }
-//                    else {
-//                        if (camera == true)
-//                        {
-//                            iDataOfNakladnaPresenter.onSave();
-//                            sendEmail();
-//                        }
-//                        if (camera == false)
-//                        {
-//                            openCamera();
-//                            camera = true;
-//                            buttonadd.setText("Надіслати оприбуткування");
-//                        }
-//                    }
-//                }
-//                else {
-//                    if (camera == true)
-//                    {
-//                        iDataOfNakladnaPresenter.onSave();
-//                        sendEmail();
-//                    }
-//                    if (camera == false)
-//                    {
-//                        openCamera();
-//                        camera = true;
-//                        buttonadd.setText("Надіслати оприбуткування");
-//                    }
-//                }
             }
         });
 
     }
+
+//    @Override
+//    protected void onRestoreInstanceState(Bundle state){
+//        super.onRestoreInstanceState(state);
+////        name_array.addAll(state.getStringArrayList("key"));
+//        setListAdapter(arrayAdapter);
+//        arrayAdapter.notifyDataSetChanged();
+//    }
+//
+//    @Override
+//    protected void onSaveInstanceState(Bundle outState){
+//        super.onSaveInstanceState(outState);
+////        outState.putStringArrayList("key",name_array);
+//    }
 
     //Вспливаюче вікно для фотографування основної накладної та надсилання сформованого файлу
     private void photoNakladna()
@@ -213,30 +213,11 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.app_bar_save:
-                iDataOfNakladnaPresenter.onSave();
-//                saveFile = true;
-                Toast.makeText(this, "Файл збережений.", Toast.LENGTH_SHORT).show();
-                return true;
-//            case R.id.app_bar_camera:
-//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-//                    if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_DENIED ||
-//                            checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_DENIED) {
-//                        String[] permission = {Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE};
-//                        requestPermissions(permission, 1000);
-//                    }
-//                    else
-//                        openCamera();
-//                }
-//                else
-//                    openCamera();
-//                camera = true;
+//                iDataOfNakladnaPresenter.onSave();
+////                saveFile = true;
+//                Toast.makeText(this, "Файл збережений.", Toast.LENGTH_SHORT).show();
 //                return true;
-//            case R.id.app_bar_send:
-//                if (camera == true && saveFile == true)
-//                    iDataOfNakladnaPresenter.onSend();
-//                else
-//                    Toast.makeText(this, "Збережіть файл і зробіть фото накладної", Toast.LENGTH_SHORT).show();
-//                return true;
+//
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -246,8 +227,9 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
     private boolean openCamera() {
         create_folder();
         String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
-        String name = InfoOfNakladnaPresenter.infoOfNakladna.getNameDogovir() + "+"
-                + InfoOfNakladnaPresenter.infoOfNakladna.getNumberNakladna() + "+" +  InfoOfNakladnaPresenter.infoOfNakladna.getDateNakladna().replace('/', '_')
+        InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
+        String name = DBtemp.getNameDogovir() + "+"
+                + DBtemp.getNumberNakladna() + "+" +  DBtemp.getDateNakladna().replace('/', '_')
                 + "+" + currentDate;
         Intent camera = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
 
@@ -278,8 +260,9 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
     private void create_folder()
     {
         String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
-        String name = InfoOfNakladnaPresenter.infoOfNakladna.getNameDogovir() + "+"
-                + InfoOfNakladnaPresenter.infoOfNakladna.getNumberNakladna() + "+" +  InfoOfNakladnaPresenter.infoOfNakladna.getDateNakladna().replace('/', '_')
+        InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
+        String name = DBtemp.getNameDogovir() + "+"
+                + DBtemp.getNumberNakladna() + "+" +  DBtemp.getDateNakladna().replace('/', '_')
                 + "+" + currentDate;
 
         File folder = new File(getFilesDir().getAbsolutePath() +
@@ -294,8 +277,9 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
     private void create_folder_photo_kod(String kod)
     {
         String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
-        String name = InfoOfNakladnaPresenter.infoOfNakladna.getNameDogovir() + "+"
-                + InfoOfNakladnaPresenter.infoOfNakladna.getNumberNakladna() + "+" +  InfoOfNakladnaPresenter.infoOfNakladna.getDateNakladna().replace('/', '_')
+        InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
+        String name = DBtemp.getNameDogovir() + "+"
+                + DBtemp.getNumberNakladna() + "+" +  DBtemp.getDateNakladna().replace('/', '_')
                 + "+" + currentDate;
 
         String name_photo = kod.replaceAll("\\s", "") + "_photofolder";
@@ -313,33 +297,37 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
         create_folder();
         create_folder_photo_kod(kod);
         String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
-        String name = InfoOfNakladnaPresenter.infoOfNakladna.getNameDogovir() + "+"
-                + InfoOfNakladnaPresenter.infoOfNakladna.getNumberNakladna() + "+" +  InfoOfNakladnaPresenter.infoOfNakladna.getDateNakladna().replace('/', '_')
+        InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
+        String name = DBtemp.getNameDogovir() + "+"
+                + DBtemp.getNumberNakladna() + "+" +  DBtemp.getDateNakladna().replace('/', '_')
                 + "+" + currentDate;
         String name_photo = kod.replaceAll("\\s", "") + "_photofolder";
 
         Intent camera= new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
-        File img = new File(getFilesDir().getAbsolutePath() + "/"
-                + name + "/" + name_photo + "/" +  kod.replaceAll("\\s", "")
-                + "_" + String.valueOf(kod_poriadok) + "_photo.png");
+        File img = null;
+        img = new File(getFilesDir().getAbsolutePath() + "/"
+                        + name + "/" + name_photo + "/" + kod.replaceAll("\\s", "")
+                        + "_" + String.valueOf(kod_poriadok) + "_photo.png");
         kod_poriadok++;
 
-        Uri temp = FileProvider.getUriForFile(
-                DataOfNakladnaView.this,
-                "com.example.prodapp", //(use your app signature + ".provider" )
-                img);
+            Uri temp = FileProvider.getUriForFile(
+                    DataOfNakladnaView.this,
+                    "com.example.prodapp", //(use your app signature + ".provider" )
+                    img);
 
 
-        list_uri_img.add(temp);
+            list_uri_img.add(temp);
 
-//        image_uri = FileProvider.getUriForFile(
-//                DataOfNakladnaView.this,
-//                "com.example.prodapp", //(use your app signature + ".provider" )
-//                img);
+//        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+//        if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
+//            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+//        }
 
-        camera.putExtra(MediaStore.EXTRA_OUTPUT, temp);
-        startActivityForResult(camera, 1);
+
+            camera.putExtra(MediaStore.EXTRA_OUTPUT, temp);
+            if (camera.resolveActivity(getPackageManager()) != null)
+                startActivityForResult(camera, 1);
     }
 
 //    private void compress_photo(String photoPath)
@@ -410,23 +398,26 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
 
     @Override
     public void OnCameraItemClick(String kod) {
-
-
-        String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
-        String name = InfoOfNakladnaPresenter.infoOfNakladna.getNameDogovir() + "+"
-                + InfoOfNakladnaPresenter.infoOfNakladna.getNumberNakladna() + "+" +  InfoOfNakladnaPresenter.infoOfNakladna.getDateNakladna().replace('/', '_')
-                + "+" + currentDate;
+        try {
+    String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+    InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
+    String name = DBtemp.getNameDogovir() + "+"
+            + DBtemp.getNumberNakladna() + "+" + DBtemp.getDateNakladna().replace('/', '_')
+            + "+" + currentDate;
 //        String nameFile = name + "+file.xml";
 
 
-        File folder = new File(getFilesDir().getAbsolutePath() +
-                File.separator + name);
-        boolean success = true;
-        if (!folder.exists()) {
-            success = folder.mkdirs();
-        }
-        openCameraKod(kod);
-
+    File folder = new File(getFilesDir().getAbsolutePath() +
+            File.separator + name);
+    boolean success = true;
+    if (!folder.exists()) {
+        success = folder.mkdirs();
+    }
+    openCameraKod(kod);
+}
+catch (Exception e) {
+    Log.i("Error camera click: ", e.getMessage());
+}
     }
 
     @Override
@@ -434,8 +425,9 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
 //        Toast.makeText(this, "Завантаження....", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(DataOfNakladnaView.this, ImageActivity.class);
         String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
-        String name_folder = InfoOfNakladnaPresenter.infoOfNakladna.getNameDogovir() + "+"
-                + InfoOfNakladnaPresenter.infoOfNakladna.getNumberNakladna() + "+" +  InfoOfNakladnaPresenter.infoOfNakladna.getDateNakladna().replace('/', '_')
+        InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
+        String name_folder = DBtemp.getNameDogovir() + "+"
+                + DBtemp.getNumberNakladna() + "+" +  DBtemp.getDateNakladna().replace('/', '_')
                 + "+" + currentDate;
 
         String name_photo = kod.replaceAll("\\s", "") + "_photofolder";
@@ -485,6 +477,8 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
 
         alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
+                Log.i("Position: ", String.valueOf(position));
+                dbHelper.deleteData(String.valueOf(position));
                 remove_element_list(position, list);
 //                saveFile = false;
                 iDataOfNakladnaPresenter.onSummary();
@@ -622,8 +616,9 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
     private void writeFileXml(List<ProductsData> list) {
         try {
             String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
-            String name = InfoOfNakladnaPresenter.infoOfNakladna.getNameDogovir() + "+"
-                    + InfoOfNakladnaPresenter.infoOfNakladna.getNumberNakladna() + "+" +  InfoOfNakladnaPresenter.infoOfNakladna.getDateNakladna().replace('/', '_')
+            InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
+            String name = DBtemp.getNameDogovir() + "+"
+                    + DBtemp.getNumberNakladna() + "+" +  DBtemp.getDateNakladna().replace('/', '_')
                     + "+" + currentDate;
             String nameFile = name + "+file.xml";
 
@@ -655,31 +650,31 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
             xmlSerializer.startTag(null, "FFF");
             xmlSerializer.startTag(null, "Info");
             xmlSerializer.startTag(null, "Dog");
-            xmlSerializer.text(InfoOfNakladnaPresenter.infoOfNakladna.getNameDogovir().replace("    ", ""));
+            xmlSerializer.text(DBtemp.getNameDogovir().replace("    ", ""));
             xmlSerializer.endTag(null, "Dog");
             xmlSerializer.startTag(null, "Nom");
-            xmlSerializer.text(InfoOfNakladnaPresenter.infoOfNakladna.getNumberNakladna());
+            xmlSerializer.text(DBtemp.getNumberNakladna());
             xmlSerializer.endTag(null, "Nom");
             xmlSerializer.startTag(null,"Data");
-            xmlSerializer.text(InfoOfNakladnaPresenter.infoOfNakladna.getDateNakladna());
+            xmlSerializer.text(DBtemp.getDateNakladna());
             xmlSerializer.endTag(null, "Data");
             xmlSerializer.startTag(null,"Avto");
-            xmlSerializer.text(InfoOfNakladnaPresenter.infoOfNakladna.getMarkaAvto());
+            xmlSerializer.text(DBtemp.getMarkaAvto());
             xmlSerializer.endTag(null, "Avto");
             xmlSerializer.startTag(null,"NomAvto");
-            xmlSerializer.text(InfoOfNakladnaPresenter.infoOfNakladna.getNomerAvto());
+            xmlSerializer.text(DBtemp.getNomerAvto());
             xmlSerializer.endTag(null, "NomAvto");
             xmlSerializer.startTag(null,"Driver");
-            xmlSerializer.text(InfoOfNakladnaPresenter.infoOfNakladna.getNameDriver());
+            xmlSerializer.text(DBtemp.getNameDriver());
             xmlSerializer.endTag(null, "Driver");
             xmlSerializer.startTag(null,"KEKV");
-            xmlSerializer.text(InfoOfNakladnaPresenter.infoOfNakladna.getKEKV());
+            xmlSerializer.text(DBtemp.getKEKV());
             xmlSerializer.endTag(null, "KEKV");
             xmlSerializer.startTag(null,"Type");
-            xmlSerializer.text(InfoOfNakladnaPresenter.infoOfNakladna.getTypePostach());
+            xmlSerializer.text(DBtemp.getTypePostach());
             xmlSerializer.endTag(null, "Type");
             xmlSerializer.startTag(null,"Plomba");
-            xmlSerializer.text(InfoOfNakladnaPresenter.infoOfNakladna.getNomerPlombi());
+            xmlSerializer.text(DBtemp.getNomerPlombi());
             xmlSerializer.endTag(null, "Plomba");
             xmlSerializer.endTag(null, "Info");
 
@@ -730,12 +725,12 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
 
     private void sendEmail() {
         String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
-        String nameFile = InfoOfNakladnaPresenter.infoOfNakladna.getNameDogovir() + "_" + currentDate + "_file.xml";
+        InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
+        String nameFile = DBtemp.getNameDogovir() + "_" + currentDate + "_file.xml";
         iDataOfNakladnaPresenter.onloadEmplInfo();
 //        File f = new File(getFilesDir(),nameFile);
 //        if (f.exists() && f.canRead()) {
         if (true) {
-
             File auxFile = new File(folder_uri_string, "readme");
 //            Toast.makeText(this, auxFile.getPath(), Toast.LENGTH_LONG).show();
             try {
@@ -770,12 +765,60 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
             String emplinfo =  iDataOfNakladnaPresenter.getEmploye().getMilitaryRank() + " " + iDataOfNakladnaPresenter.getEmploye().getLastName();
             sendIntent.putExtra(Intent.EXTRA_EMAIL, to);
             sendIntent.putExtra(Intent.EXTRA_SUBJECT, "Надходження товару від: " + emplinfo);
-            sendIntent.putExtra(Intent.EXTRA_TEXT, "Оприбуткування продуктів харчування за договором: " + InfoOfNakladnaPresenter.infoOfNakladna.getNameDogovir() + "  " +currentDate);
+            sendIntent.putExtra(Intent.EXTRA_TEXT, "Оприбуткування продуктів харчування за договором: " + DBtemp.getNameDogovir() + "  " +currentDate);
             startActivity(Intent.createChooser(sendIntent, "Email:"));
         } else {
             Toast.makeText(DataOfNakladnaView.this, "Error",
                     Toast.LENGTH_LONG).show();
         }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+//        Toast.makeText(getApplicationContext(), "onStart()", Toast.LENGTH_SHORT).show();
+        Log.i(TAG, "onStart()");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+//        Toast.makeText(getApplicationContext(), "onResume()", Toast.LENGTH_SHORT).show();
+        Log.i(TAG, "onResume()");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+//        Toast.makeText(getApplicationContext(), "onPause()", Toast.LENGTH_SHORT).show();
+        Log.i("j", "onPause()");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+//        Toast.makeText(getApplicationContext(), "onStop()", Toast.LENGTH_SHORT).show();
+        Log.i(TAG, "onStop()");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+
+//        Toast.makeText(getApplicationContext(), "onRestart()", Toast.LENGTH_SHORT).show();
+        Log.i(TAG, "onRestart()");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+//        Toast.makeText(getApplicationContext(), "onDestroy()", Toast.LENGTH_SHORT).show();
+        Log.i(TAG, "onDestroy()");
     }
 
 

@@ -1,6 +1,6 @@
 package com.example.prodapp.View.Settings;
 
-import com.example.prodapp.Model.Employe;
+import com.example.prodapp.Model.Employe.Employe;
 
 public interface ISettingView {
 

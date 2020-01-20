@@ -1,6 +1,6 @@
 package com.example.prodapp.Presenter.DataOfNakladna;
 
-import com.example.prodapp.Model.Employe;
+import com.example.prodapp.Model.Employe.Employe;
 import com.example.prodapp.Model.ProductsData;
 import com.example.prodapp.View.DataOfNakladna.IDataOfNakladnaView;
 
@@ -13,6 +13,9 @@ public class DataOfNakladnaPresenter implements IDataOfNakladnaPresenter {
 
     static public List<ProductsData> list;
     static public Employe employe;
+
+//    static public SQLiteDatabase sqLiteDatabase;
+
 
     public DataOfNakladnaPresenter(IDataOfNakladnaView iDataOfNakladnaView)
     {

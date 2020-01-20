@@ -2,7 +2,7 @@ package com.example.prodapp.View.Register;
 
 import android.app.Activity;
 
-import com.example.prodapp.Model.Employe;
+import com.example.prodapp.Model.Employe.Employe;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;

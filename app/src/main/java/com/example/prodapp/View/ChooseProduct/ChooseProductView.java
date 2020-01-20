@@ -9,6 +9,7 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.InputType;
@@ -27,12 +28,15 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.prodapp.Model.ChooseProduct.HandlerXMLParser;
+import com.example.prodapp.Model.InfoOfNakladna.DBInfoOfNakladna;
+import com.example.prodapp.Model.InfoOfNakladna.InfoOfNakladna;
 import com.example.prodapp.Model.ProductsData;
 import com.example.prodapp.Presenter.ChooseProduct.ChooseProductPresenter;
 import com.example.prodapp.Presenter.ChooseProduct.IChooseProductPresenter;
 import com.example.prodapp.Presenter.DataOfNakladna.DataOfNakladnaPresenter;
 import com.example.prodapp.Presenter.InfoOfNakladna.InfoOfNakladnaPresenter;
 import com.example.prodapp.R;
+import com.example.prodapp.View.ChoiseMenu.ChoiseMenuView;
 import com.example.prodapp.View.DataOfNakladna.DataOfNakladnaView;
 import com.example.prodapp.View.InfoOfNakladna.InfoOfNakladnaProdView;
 
@@ -124,7 +128,8 @@ public class ChooseProductView extends AppCompatActivity implements IChooseProdu
     {
         SAXParserFactory saxParserFactory = SAXParserFactory.newInstance();
         try {
-            String name = InfoOfNakladnaPresenter.infoOfNakladna.getNameDogovir() + ".xml";
+            InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
+            String name = DBtemp.getNameDogovir() + ".xml";
             InputStream is = getAssets().open(name);
             SAXParser saxParser = saxParserFactory.newSAXParser();
             HandlerXMLParser handler = new HandlerXMLParser();
@@ -369,17 +374,23 @@ public class ChooseProductView extends AppCompatActivity implements IChooseProdu
                 if ((getKilkist.getText().length() != 0) && (getKilkist.getText().toString().matches("\\s*\\d+(\\.?|\\,?)\\d{0,3}\\s*")))
                 {
                     if (getAllDate.getText().length() != 0 && getDateStart.getText().length() != 0 && getDateFinish.getText().length() != 0) {
-                        DataOfNakladnaPresenter.list.add(new ProductsData.Builder()
-                                .setName(list.get(position).getName())
+                        ProductsData tempProduct = new ProductsData.Builder()
+                                .setName(list.get(position).getName().replaceAll("\\t", ""))
                                 .setPrice(list.get(position).getPrice())
-                                .setKod(list.get(position).getKod())
-                                .setEduch(list.get(position).getEdYch())
-                                .setUnit(list.get(position).getUnit())
+                                .setKod(list.get(position).getKod().replaceAll("\\t", ""))
+                                .setEduch(list.get(position).getEdYch().replaceAll("\\t", ""))
+                                .setUnit(list.get(position).getUnit().replaceAll("\\t", ""))
                                 .setKilbkistb(Double.parseDouble(getKilkist.getText().toString().replace(',', '.')))
-                                .setDateStart(getDateStart.getText().toString())
-                                .setDateFinish(getDateFinish.getText().toString())
-                                .setDateTriv(getAllDate.getText().toString())
-                                .build());
+                                .setDateStart(getDateStart.getText().toString().replaceAll("\\t", ""))
+                                .setDateFinish(getDateFinish.getText().toString().replaceAll("\\t", ""))
+                                .setDateTriv(getAllDate.getText().toString().replaceAll("\\t", ""))
+                                .setAddPhoto("false")
+                                .build();
+                        DataOfNakladnaPresenter.list.add(tempProduct);
+                        if (DataOfNakladnaView.dbHelper.insertContact(tempProduct))
+                            Toast.makeText(ChooseProductView.this, "Add new element", Toast.LENGTH_SHORT).show();
+                        else
+                            Toast.makeText(ChooseProductView.this, "Not add new element", Toast.LENGTH_SHORT).show();
                         DataOfNakladnaView.view.getAdapter().notifyDataSetChanged();
 //                    DataOfNakladnaView.saveFile = false;
                         DataOfNakladnaPresenter.iDataOfNakladnaView.pressSummary(DataOfNakladnaPresenter.list);

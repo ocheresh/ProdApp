@@ -33,7 +33,8 @@
         </provider>
 
         <activity android:name=".View.ChooseProduct.ChooseProductView" />
-        <activity android:name=".View.DataOfNakladna.DataOfNakladnaView" />
+        <activity android:name=".View.DataOfNakladna.DataOfNakladnaView" >
+        </activity>
         <activity android:name=".View.InfoOfNakladna.InfoOfNakladnaProdView" />
         <activity android:name=".View.ChoiseMenu.ChoiseMenuView" />
         <activity android:name=".View.Register.RegisterActivity">

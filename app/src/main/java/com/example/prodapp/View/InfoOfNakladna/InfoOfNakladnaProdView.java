@@ -18,6 +18,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.prodapp.Model.InfoOfNakladna.DBInfoOfNakladna;
 import com.example.prodapp.Model.InfoOfNakladna.InfoOfNakladna;
 import com.example.prodapp.Model.QrCodeParser.QrCodeParser;
 import com.example.prodapp.Presenter.DataOfNakladna.IDataOfNakladnaPresenter;
@@ -48,6 +49,8 @@ public class InfoOfNakladnaProdView extends AppCompatActivity implements IInfoOf
 
     Calendar dateCalendar;
 
+    DBInfoOfNakladna dbInfoOfNakladna;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,6 +70,8 @@ public class InfoOfNakladnaProdView extends AppCompatActivity implements IInfoOf
         butaddinfo = findViewById(R.id.butInfoNakladna);
 
         dateCalendar = Calendar.getInstance();
+
+        dbInfoOfNakladna = new DBInfoOfNakladna(this);
 
         ArrayAdapter<?> adapter =
                 ArrayAdapter.createFromResource(this, R.array.dogovora, android.R.layout.simple_spinner_item);
@@ -150,8 +155,11 @@ public class InfoOfNakladnaProdView extends AppCompatActivity implements IInfoOf
             Toast.makeText(this, err, Toast.LENGTH_SHORT).show();
             return (false);
         }
-        else
+        else {
+            dbInfoOfNakladna.restartDataInf();
+            dbInfoOfNakladna.insertInfo(infoOfNakladna);
             Toast.makeText(this, "Інформація введена коректно.", Toast.LENGTH_SHORT).show();
+        }
         return (true);
     }
 

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.text.method.ScrollingMovementMethod;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +20,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.prodapp.Model.ProductsData;
+import com.example.prodapp.Presenter.DataOfNakladna.DataOfNakladnaPresenter;
 import com.example.prodapp.R;
 import com.example.prodapp.View.Register.RegisterActivity;
 import com.example.prodapp.View.SplashActivity;
@@ -32,7 +34,7 @@ public class AdapterCreateDataView extends RecyclerView.Adapter<AdapterCreateDat
 
     Context context;
     List<ProductsData> list = new ArrayList<>();
-    List<ProductsData> list1 = new ArrayList<>();
+//    List<ProductsData> list1 = new ArrayList<>();
     AdapterCreateDataView.OnItemListener monItemListener;
 
 
@@ -42,7 +44,7 @@ public class AdapterCreateDataView extends RecyclerView.Adapter<AdapterCreateDat
     {
         this.context = context;
         this.list = list;
-        this.list1 = list;
+//        this.list1 = list;
         this.monItemListener = onItemListener;
     }
 
@@ -68,30 +70,58 @@ public class AdapterCreateDataView extends RecyclerView.Adapter<AdapterCreateDat
 
         }
 
+        if (list.get(i).getAddphoto().equals("true"))
+        {
+            myHolder.imageButton.setImageResource(R.drawable.photo_icon_green);
+            myHolder.but_viewphoto.setClickable(true);
+            myHolder.but_viewphoto.setVisibility(View.VISIBLE);
+
+        }
+
+
+
         myHolder.imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 try {
-//                    Toast.makeText(context, list.get(i).getKod(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context, list.get(i).getKod(), Toast.LENGTH_SHORT).show();
+
+                    list.get(i).setAddphoto("true");
+                    DataOfNakladnaView.dbHelper.updateData(String.valueOf(i + 1), list.get(i));
+
+                    Toast.makeText(context, "one", Toast.LENGTH_SHORT).show();
+
+                    if (myHolder == null)
+                        Log.i("Holder: ", "holder is null");
+
                     myHolder.onItemListener.OnCameraItemClick(list.get(i).getKod());
                     myHolder.imageButton.setImageResource(R.drawable.photo_icon_green);
 //                    myHolder.textView_photoind.setText("Фото додано");
 //                    myHolder.textView_photoind.setTextColor(Color.parseColor("#20e631"));
 
+                    Toast.makeText(context, "two", Toast.LENGTH_SHORT).show();
                     myHolder.but_viewphoto.setClickable(true);
                     myHolder.but_viewphoto.setVisibility(View.VISIBLE);
+                    Toast.makeText(context, "three", Toast.LENGTH_SHORT).show();
 
                 }
-                catch (Exception e) {}
+                catch (Exception e) {
+                    Log.i("Error take photo: ", e.getMessage());
+                }
             }
         });
 
         myHolder.but_viewphoto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Animation animation = AnimationUtils.loadAnimation(context, R.anim.fadein);
-                myHolder.but_viewphoto.startAnimation(animation);
-                myHolder.onItemListener.OnViewPhoto(list.get(i).getKod().replaceAll("\\D", ""));
+                try {
+                    Animation animation = AnimationUtils.loadAnimation(context, R.anim.fadein);
+                    myHolder.but_viewphoto.startAnimation(animation);
+                    myHolder.onItemListener.OnViewPhoto(list.get(i).getKod().replaceAll("\\D", ""));
+                }
+                catch (Exception e){
+                    Log.i("Error view photo: ", e.getMessage());
+                }
             }
         });
 

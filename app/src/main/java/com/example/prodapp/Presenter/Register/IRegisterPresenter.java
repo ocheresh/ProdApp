@@ -1,8 +1,6 @@
 package com.example.prodapp.Presenter.Register;
 
-import com.example.prodapp.Model.Employe;
-
-import java.io.File;
+import com.example.prodapp.Model.Employe.Employe;
 
 public interface IRegisterPresenter {
 

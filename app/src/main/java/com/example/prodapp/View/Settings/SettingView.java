@@ -12,7 +12,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.prodapp.Model.Employe;
+import com.example.prodapp.Model.Employe.Employe;
 import com.example.prodapp.Presenter.Settings.ISettingsPresenter;
 import com.example.prodapp.Presenter.Settings.SettingsPresenter;
 import com.example.prodapp.R;

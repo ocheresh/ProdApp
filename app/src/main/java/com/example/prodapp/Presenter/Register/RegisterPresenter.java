@@ -1,6 +1,6 @@
 package com.example.prodapp.Presenter.Register;
 
-import com.example.prodapp.Model.Employe;
+import com.example.prodapp.Model.Employe.Employe;
 import com.example.prodapp.Model.Register.Register;
 import com.example.prodapp.View.Register.IRegisterView;
 
