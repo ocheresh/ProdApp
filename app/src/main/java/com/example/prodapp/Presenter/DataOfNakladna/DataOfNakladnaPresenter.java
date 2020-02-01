@@ -40,6 +40,9 @@ public class DataOfNakladnaPresenter implements IDataOfNakladnaPresenter {
     }
 
     @Override
+    public void onSendGmail() { iDataOfNakladnaView.pressSendGmail(); }
+
+    @Override
     public void onEdit(int position) {
         iDataOfNakladnaView.pressEdit(position, list);
     }

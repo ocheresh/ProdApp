@@ -2,8 +2,11 @@ package com.example.prodapp.View.InfoOfNakladna;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.Manifest;
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -30,6 +33,7 @@ import com.example.prodapp.View.DataOfNakladna.DataOfNakladnaView;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Locale;
 
 public class InfoOfNakladnaProdView extends AppCompatActivity implements IInfoOfNakladnaView {
@@ -73,6 +77,8 @@ public class InfoOfNakladnaProdView extends AppCompatActivity implements IInfoOf
 
         dbInfoOfNakladna = new DBInfoOfNakladna(this);
 
+        verifyStoragePermission();
+
         ArrayAdapter<?> adapter =
                 ArrayAdapter.createFromResource(this, R.array.dogovora, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -111,6 +117,7 @@ public class InfoOfNakladnaProdView extends AppCompatActivity implements IInfoOf
                 if (iInfoOfNakladnaPresenter.onSaveInfo())
                 {
                     Intent intent = new Intent(InfoOfNakladnaProdView.this, DataOfNakladnaView.class);
+                    intent.putExtra("path_folder", "stop");
                     startActivity(intent);
 
                 }
@@ -128,6 +135,18 @@ public class InfoOfNakladnaProdView extends AppCompatActivity implements IInfoOf
             editTextVodii.setText(temp.getNameDriver());
             editTextNomerZnak.setText(temp.getNomerAvto());
             editTextnumbernakladna.setText(temp.getNumberNakladna());
+        }
+    }
+
+    private void verifyStoragePermission() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_DENIED ||
+                    checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_DENIED ||
+            checkSelfPermission(Manifest.permission.INTERNET) == PackageManager.PERMISSION_DENIED ||
+            checkSelfPermission(Manifest.permission.GET_ACCOUNTS) == PackageManager.PERMISSION_DENIED) {
+                String[] permission = {Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.INTERNET, Manifest.permission.GET_ACCOUNTS};
+                requestPermissions(permission, 1000);
+            }
         }
     }
 
@@ -149,6 +168,7 @@ public class InfoOfNakladnaProdView extends AppCompatActivity implements IInfoOf
         infoOfNakladna.setKEKV(spinnerKekv.getSelectedItem().toString().replace("/", "_"));
         infoOfNakladna.setTypePostach(spinnerType.getSelectedItem().toString().replace("/", "_"));
         infoOfNakladna.setNomerPlombi(editTextPlomba.getText().toString().replace("/", "_"));
+        infoOfNakladna.setCreateDate(new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date()));
 
         String err = infoOfNakladna.checkInfoClass();
         if (!("Помилка:\n".equals(err))){

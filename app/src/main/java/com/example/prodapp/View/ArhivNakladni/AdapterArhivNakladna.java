@@ -4,10 +4,12 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CheckedTextView;
 import android.widget.Filter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,12 +18,14 @@ import com.example.prodapp.Model.ProductsData;
 import com.example.prodapp.R;
 import com.example.prodapp.View.ChooseProduct.AdapterChooseProduct;
 
+import java.io.File;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 
 public class AdapterArhivNakladna extends RecyclerView.Adapter<AdapterArhivNakladna.MyHolder> {
 
-    Context context;
+    static Context context;
     static List<String> list = new ArrayList<>();
     AdapterArhivNakladna.OnItemListener monItemListener;
 
@@ -74,6 +78,7 @@ public class AdapterArhivNakladna extends RecyclerView.Adapter<AdapterArhivNakla
         TextView textDataNakladnaName;
         TextView textDataCreateName;
         CheckedTextView checkedTextView;
+        Button butshowfile;
         AdapterArhivNakladna.OnItemListener onItemListener;
 
         public MyHolder(@NonNull View itemView, AdapterArhivNakladna.OnItemListener onItemListener) {
@@ -85,21 +90,39 @@ public class AdapterArhivNakladna extends RecyclerView.Adapter<AdapterArhivNakla
             textDataNakladnaName = itemView.findViewById(R.id.textDataNakladnaName);
             textDataCreateName = itemView.findViewById(R.id.textDataCreateName);
             checkedTextView = itemView.findViewById(R.id.checkedTextView);
+            butshowfile = itemView.findViewById(R.id.showarkhivbutton);
 
             this.onItemListener = onItemListener;
 
             itemView.setOnClickListener(this);
+
+            butshowfile.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int t = getAdapterPosition();
+//                    Toast.makeText(context, "Show " + list.get(t), Toast.LENGTH_SHORT).show();
+                    String [] temp = null;
+                    temp = list.get(t).split("\\+");
+                    if (temp.length >= 4) {
+                        String result = temp[0] + "+" + temp[1] + "+" + temp[2] + "+" + temp[3];
+                        onItemListener.OnItemClick(t, result);
+
+                    }
+//                    list.get(t);
+                }
+            });
         }
 
         @Override
         public void onClick(View v) {
-            int t = getAdapterPosition();
-            onItemListener.OnItemClick(t);
+//            int t = getAdapterPosition();
+            onItemListener.OnItemClickDelete(list.get(getAdapterPosition()));
         }
     }
 
     public interface OnItemListener
     {
-        void OnItemClick(int position);
+        void OnItemClick(int position, String path);
+        void OnItemClickDelete(String path);
     }
 }

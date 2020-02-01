@@ -7,6 +7,8 @@ import java.util.List;
 
 public interface IDataOfNakladnaView {
 
+    void pressSendGmail();
+
     void pressSave(List<ProductsData> list);
 
     void pressSend();

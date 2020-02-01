@@ -12,6 +12,8 @@ public interface IDataOfNakladnaPresenter {
 
     void onSend();
 
+    void onSendGmail();
+
     void onEdit(int position);
 
     void onBack();
@@ -27,4 +29,5 @@ public interface IDataOfNakladnaPresenter {
     IDataOfNakladnaView getIDataOfNakladnaView();
 
     public void setList(List<ProductsData> list);
+
 }

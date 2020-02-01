@@ -19,6 +19,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.prodapp.Model.DBHelper;
 import com.example.prodapp.Model.ProductsData;
 import com.example.prodapp.Presenter.DataOfNakladna.DataOfNakladnaPresenter;
 import com.example.prodapp.R;
@@ -33,7 +34,7 @@ import java.util.List;
 public class AdapterCreateDataView extends RecyclerView.Adapter<AdapterCreateDataView.MyHolder>  {
 
     Context context;
-    List<ProductsData> list = new ArrayList<>();
+    List<ProductsData> list;
 //    List<ProductsData> list1 = new ArrayList<>();
     AdapterCreateDataView.OnItemListener monItemListener;
 
@@ -84,25 +85,27 @@ public class AdapterCreateDataView extends RecyclerView.Adapter<AdapterCreateDat
             @Override
             public void onClick(View v) {
                 try {
-                    Toast.makeText(context, list.get(i).getKod(), Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(context, list.get(i).getKod(), Toast.LENGTH_SHORT).show();
 
                     list.get(i).setAddphoto("true");
+                    int numb = Integer.valueOf(list.get(i).getNumberphoto()) + 1;
+                    list.get(i).setNumberphoto(String.valueOf(numb));
                     DataOfNakladnaView.dbHelper.updateData(String.valueOf(i + 1), list.get(i));
 
-                    Toast.makeText(context, "one", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(context, "one", Toast.LENGTH_SHORT).show();
 
                     if (myHolder == null)
                         Log.i("Holder: ", "holder is null");
 
-                    myHolder.onItemListener.OnCameraItemClick(list.get(i).getKod());
+                    myHolder.onItemListener.OnCameraItemClick(list.get(i).getKod(), i);
                     myHolder.imageButton.setImageResource(R.drawable.photo_icon_green);
 //                    myHolder.textView_photoind.setText("Фото додано");
 //                    myHolder.textView_photoind.setTextColor(Color.parseColor("#20e631"));
 
-                    Toast.makeText(context, "two", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(context, "two", Toast.LENGTH_SHORT).show();
                     myHolder.but_viewphoto.setClickable(true);
                     myHolder.but_viewphoto.setVisibility(View.VISIBLE);
-                    Toast.makeText(context, "three", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(context, "three", Toast.LENGTH_SHORT).show();
 
                 }
                 catch (Exception e) {
@@ -156,7 +159,10 @@ public class AdapterCreateDataView extends RecyclerView.Adapter<AdapterCreateDat
             textView_number = itemView.findViewById(R.id.text_view_number);
             textView_sum = itemView.findViewById(R.id.text_view_suma);
             imageButton = itemView.findViewById(R.id.imageButton);
+            imageButton.setImageResource(R.drawable.photo_icon_green);
             but_viewphoto = itemView.findViewById(R.id.button_viewphoto);
+            but_viewphoto.setClickable(true);
+            but_viewphoto.setVisibility(View.VISIBLE);
 //            textView_photoind = itemView.findViewById(R.id.textPhotoind);
             this.onItemListener = onItemListener;
 
@@ -173,7 +179,7 @@ public class AdapterCreateDataView extends RecyclerView.Adapter<AdapterCreateDat
     public interface OnItemListener
     {
         void OnItemClick(int position);
-        void OnCameraItemClick(String kod);
+        void OnCameraItemClick(String kod, int i);
         void OnViewPhoto(String kod);
     }
 

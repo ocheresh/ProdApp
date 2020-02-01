@@ -28,6 +28,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.prodapp.Model.ChooseProduct.HandlerXMLParser;
+import com.example.prodapp.Model.DBHelper;
 import com.example.prodapp.Model.InfoOfNakladna.DBInfoOfNakladna;
 import com.example.prodapp.Model.InfoOfNakladna.InfoOfNakladna;
 import com.example.prodapp.Model.ProductsData;
@@ -388,12 +389,12 @@ public class ChooseProductView extends AppCompatActivity implements IChooseProdu
                                 .build();
                         DataOfNakladnaPresenter.list.add(tempProduct);
                         if (DataOfNakladnaView.dbHelper.insertContact(tempProduct))
-                            Toast.makeText(ChooseProductView.this, "Add new element", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(ChooseProductView.this, "Новий продукт доданий", Toast.LENGTH_SHORT).show();
                         else
-                            Toast.makeText(ChooseProductView.this, "Not add new element", Toast.LENGTH_SHORT).show();
-                        DataOfNakladnaView.view.getAdapter().notifyDataSetChanged();
-//                    DataOfNakladnaView.saveFile = false;
+                            Toast.makeText(ChooseProductView.this, "Продукт не доданий", Toast.LENGTH_SHORT).show();
+
                         DataOfNakladnaPresenter.iDataOfNakladnaView.pressSummary(DataOfNakladnaPresenter.list);
+                        DataOfNakladnaView.adapter.notifyDataSetChanged();
                         ChooseProductView.super.onBackPressed();
                     }
                     else
@@ -635,39 +636,43 @@ public class ChooseProductView extends AppCompatActivity implements IChooseProdu
             }
         });
 
-
-
         alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int whichButton) {
 
                 if ((getKilkist.getText().length() != 0) && (getKilkist.getText().toString().matches("\\s*\\d+(\\.?|\\,?)\\d{0,3}\\s*")))
                 {
                     if (getAllDate.getText().length() != 0 && getDateStart.getText().length() != 0 && getDateFinish.getText().length() != 0) {
-                        DataOfNakladnaPresenter.list.add(new ProductsData.Builder()
-                                .setName(list.get(position).getName())
+                        ProductsData tempProduct = new ProductsData.Builder()
+                                .setName(list.get(position).getName().replaceAll("\\t", ""))
                                 .setPrice(list.get(position).getPrice())
-                                .setKod(list.get(position).getKod())
-                                .setEduch(list.get(position).getEdYch())
-                                .setUnit(list.get(position).getUnit())
+                                .setKod(list.get(position).getKod().replaceAll("\\t", ""))
+                                .setEduch(list.get(position).getEdYch().replaceAll("\\t", ""))
+                                .setUnit(list.get(position).getUnit().replaceAll("\\t", ""))
                                 .setKilbkistb(Double.parseDouble(getKilkist.getText().toString().replace(',', '.')))
-                                .setDateStart(getDateStart.getText().toString())
-                                .setDateFinish(getDateFinish.getText().toString())
-                                .setDateTriv(getAllDate.getText().toString())
-                                .build());
-                        DataOfNakladnaView.view.getAdapter().notifyDataSetChanged();
-//                    DataOfNakladnaView.saveFile = false;
+                                .setDateStart(getDateStart.getText().toString().replaceAll("\\t", ""))
+                                .setDateFinish(getDateFinish.getText().toString().replaceAll("\\t", ""))
+                                .setDateTriv(getAllDate.getText().toString().replaceAll("\\t", ""))
+                                .setAddPhoto("false")
+                                .build();
+                        DataOfNakladnaPresenter.list.add(tempProduct);
+                        if (DataOfNakladnaView.dbHelper.insertContact(tempProduct))
+                            Toast.makeText(ChooseProductView.this, "Новий продукт доданий", Toast.LENGTH_SHORT).show();
+                        else
+                            Toast.makeText(ChooseProductView.this, "Продукт не доданий", Toast.LENGTH_SHORT).show();
+
                         DataOfNakladnaPresenter.iDataOfNakladnaView.pressSummary(DataOfNakladnaPresenter.list);
+                        DataOfNakladnaView.adapter.notifyDataSetChanged();
                         ChooseProductView.super.onBackPressed();
                     }
                     else
                     {
-                        Toast.makeText(ChooseProductView.this, "Термін вживання/використання введений некоректно.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ChooseProductView.this, "Помилка: Термін вживання/використання введений некоректно.", Toast.LENGTH_SHORT).show();
                         pressAddElement(position, getKilkist.getText().toString(), getDateStart.getText().toString(), getDateFinish.getText().toString(), getAllDate.getText().toString());
                     }
                 }
                 else
                 {
-                    Toast.makeText(ChooseProductView.this, "Кількість введена некоректно", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ChooseProductView.this, "Помилка: Кількість введена некоректно", Toast.LENGTH_SHORT).show();
                     pressAddElement(position, getKilkist.getText().toString(), getDateStart.getText().toString(), getDateFinish.getText().toString(), getAllDate.getText().toString());
                 }
 

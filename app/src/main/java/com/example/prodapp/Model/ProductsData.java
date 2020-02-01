@@ -15,6 +15,10 @@ public class ProductsData {
 
     private String addphoto = "false";
 
+
+
+    private String numberphoto = "1";
+
     public ProductsData()
     {
 
@@ -28,6 +32,7 @@ public class ProductsData {
         this.unit = data.getUnit();
         this.kod = data.getKod();
         this.addphoto = data.getAddphoto();
+        this.numberphoto = data.getNumberphoto();
     }
 
     public ProductsData(String name)
@@ -39,6 +44,14 @@ public class ProductsData {
     {
         this.name = name;
         this.price = price;
+    }
+
+    public String getNumberphoto() {
+        return numberphoto;
+    }
+
+    public void setNumberphoto(String numberphoto) {
+        this.numberphoto = numberphoto;
     }
 
     public String getAddphoto() {
@@ -164,6 +177,12 @@ public class ProductsData {
         public Builder setAddPhoto(String photo)
         {
             productsData.addphoto = photo;
+            return this;
+        }
+
+        public Builder setNumberOfphoto(String photo)
+        {
+            productsData.numberphoto = photo;
             return this;
         }
 

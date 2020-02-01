@@ -9,12 +9,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.Manifest;
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.util.Xml;
@@ -29,16 +31,30 @@ import android.widget.Toast;
 
 import com.example.prodapp.Model.DBHelper;
 import com.example.prodapp.Model.DataOfNakladna.SummaryTotal;
+import com.example.prodapp.Model.DriveServicesHelper;
 import com.example.prodapp.Model.Employe.Employe;
 import com.example.prodapp.Model.InfoOfNakladna.DBInfoOfNakladna;
 import com.example.prodapp.Model.InfoOfNakladna.InfoOfNakladna;
 import com.example.prodapp.Model.ProductsData;
+import com.example.prodapp.Model.ZipFiles;
 import com.example.prodapp.Presenter.DataOfNakladna.DataOfNakladnaPresenter;
 import com.example.prodapp.Presenter.DataOfNakladna.IDataOfNakladnaPresenter;
 import com.example.prodapp.R;
 import com.example.prodapp.View.ChooseProduct.ChooseProductView;
 import com.example.prodapp.View.ImageViewer.ImageActivity;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.common.api.Scope;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.api.client.extensions.android.http.AndroidHttp;
+import com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccountCredential;
+import com.google.api.client.json.gson.GsonFactory;
+import com.google.api.services.drive.Drive;
+import com.google.api.services.drive.DriveScopes;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -50,30 +66,38 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.StringWriter;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
+import java.util.zip.ZipOutputStream;
 
 
 public class DataOfNakladnaView extends AppCompatActivity implements AdapterCreateDataView.OnItemListener,  IDataOfNakladnaView {
 
-    private static final int IMAGE_CAPTURE_CODE = 1001;
+//    private static final int IMAGE_CAPTURE_CODE = 1001;
     public static RecyclerView view;
 
-    public AdapterCreateDataView adapter = null;
+    public static AdapterCreateDataView adapter = null;
     public static DBHelper dbHelper;
     public static ArrayList<Uri> list_uri_img = new ArrayList<Uri>();
+
+    public static DriveServicesHelper driveServicesHelper = null;
+    public static String currentDateFinal = null;
+
     String folder_uri_string;
     Uri image_uri;
     Uri file_uri;
-    static int kod_poriadok = 1;
+    static String get_path = null;
+//    public static boolean id_drive = false;
 
-    boolean camera = false;
-    static public boolean saveFile = false;
+//    boolean camera = false;
+//    static public boolean saveFile = false;
     static public String correctPathForPhotoFolder = "";
     static public String correctPathForPhotoPhoto = "";
 
@@ -84,6 +108,7 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
     FloatingActionButton fab;
 
     public static IDataOfNakladnaPresenter iDataOfNakladnaPresenter = null;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -98,6 +123,8 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
         iDataOfNakladnaPresenter = new DataOfNakladnaPresenter(this);
         dbHelper = new DBHelper(this);
 
+        requestSignIn();
+
         if (savedInstanceState != null)
         {
             iDataOfNakladnaPresenter.setList(dbHelper.readData());
@@ -106,6 +133,26 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
         else
         {
             dbHelper.restartData();
+            iDataOfNakladnaPresenter.setList(dbHelper.readData());
+            try {
+                get_path = getIntent().getExtras().getString("path_folder");
+            }
+            catch (Exception e)
+            {
+                Log.i("MyError ", e.getMessage());
+            }
+            if (get_path != null && !(get_path.equals("stop"))&& get_path.length() > 0)
+            {
+//                Toast.makeText(this, get_path, Toast.LENGTH_SHORT).show();
+                try {
+                    uploadFromArkhiv(get_path);
+                }
+                catch (Exception e)
+                {
+                    Log.e("MyError ", e.getMessage());
+                }
+
+            }
         }
 
         view.setLayoutManager(new LinearLayoutManager(this));
@@ -116,7 +163,7 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
         iDataOfNakladnaPresenter.onSummary();
 
         verifyStoragePermission();
-        Toast.makeText(getApplicationContext(), "onCreate()", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getApplicationContext(), "onCreate()", Toast.LENGTH_SHORT).show();
         Log.i(TAG, "onCreate()");
 
 
@@ -124,13 +171,14 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
             @Override
             public void onClick(View view) {
                 try {
-                    Log.i("Error add element: ", "Enter");
+//                    Log.i("Error add element: ", "Enter");
                     Intent myIntent = new Intent(DataOfNakladnaView.this, ChooseProductView.class);
                     startActivity(myIntent);
                 }
                 catch (Exception e)
                 {
                     Log.i("Error add element: ", e.getMessage());
+
                 }
 
             }
@@ -147,19 +195,240 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
 
     }
 
-//    @Override
-//    protected void onRestoreInstanceState(Bundle state){
-//        super.onRestoreInstanceState(state);
-////        name_array.addAll(state.getStringArrayList("key"));
-//        setListAdapter(arrayAdapter);
-//        arrayAdapter.notifyDataSetChanged();
-//    }
+    private void uploadFromArkhiv(String path)
+    {
+        File directory = new File(getFilesDir().getAbsolutePath() + "/" + path);
+        if (directory.exists()) {
+            File[] files = directory.listFiles();
+            for (int i = 0; i < files.length; i++)
+            {
+                if (files[i].getName().contains(".xml"))
+                {
+//                    Log.i("MyError ", files[i].getAbsolutePath());
+                    String temp [] = path.split("\\+");
+                    if (temp.length > 2)
+                        currentDateFinal = temp[3];
+//                    DBInfoOfNakladna.insertCurrentDate(this, temp[3]);
+                    readUploadFile(files[i], temp[3]);
+                }
+            }
+
+        }
+    }
+
+    private void readUploadFile(File file, String currentDate) {
+        ParserXML(file.getAbsolutePath(), currentDate);
+    }
+
+    protected void ParserXML(String path_xml, String currentDate)
+    {
+        XmlPullParserFactory parserFactory;
+        File file = new File(path_xml);
+        try
+        {
+            parserFactory = XmlPullParserFactory.newInstance();
+            XmlPullParser parser = parserFactory.newPullParser();
+
+            InputStream is = new FileInputStream(file.getPath());
+            parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
+            parser.setInput(is,null);
+
+            processParsing(parser, currentDate);
+
+        }
+        catch (XmlPullParserException e) {e.getMessage();}
+        catch (IOException e) {e.printStackTrace();}
+    }
+
+    private void processParsing(XmlPullParser parser, String currentDate) throws IOException, XmlPullParserException
+    {
+        while (parser.next() != XmlPullParser.END_DOCUMENT) {
+            if (parser.getEventType() != XmlPullParser.START_TAG) {
+                continue;
+            }
+            String name = parser.getName();
+            if (name.equals("Info")) {
+                if (readInfo(parser, currentDate) == null)
+                    Log.e("MyError", "Null Info");
+            } else if (name.equals("Specification")) {
+
+                List<ProductsData> list = readlistproduct(parser);
+
+                if ( list != null)
+                {
+                    iDataOfNakladnaPresenter.setList(list);
+                    dbHelper.restartData();
+                    dbHelper.insertContact(list);
+                }
+                else
+                    Log.e("MyError", "List in presenter is null");
+            }
+            }
+    }
+
+    private InfoOfNakladna readInfo(XmlPullParser parser, String currentDate) throws IOException, XmlPullParserException {
+
+        int eventType = parser.getEventType();
+        InfoOfNakladna infoOfNakladna = new InfoOfNakladna();
+
+
+
+        DBInfoOfNakladna dbInfoOfNakladna = new DBInfoOfNakladna(this);
+        dbInfoOfNakladna.restartDataInf();
+
+        Log.e("MyError", "Enter2");
+
+        while(eventType != XmlPullParser.END_DOCUMENT)
+        {
+            String eltName = null;
+
+            switch (eventType){
+                case XmlPullParser.START_TAG:
+                    eltName = parser.getName();
+
+                    if ("Dog".equals(eltName)) {
+                        infoOfNakladna.setNameDogovir(parser.nextText());
+
+                    }
+                    else if ("Nom".equals(eltName))
+                        infoOfNakladna.setNumberNakladna(parser.nextText());
+                    else if ("Data".equals(eltName))
+                        infoOfNakladna.setDateNakladna(parser.nextText());
+                    else if ("Avto".equals(eltName))
+                        infoOfNakladna.setMarkaAvto(parser.nextText());
+                    else if ("NomAvto".equals(eltName))
+                        infoOfNakladna.setNomerAvto(parser.nextText());
+                    else if ("Driver".equals(eltName))
+                        infoOfNakladna.setNameDriver(parser.nextText());
+                    else if ("KEKV".equals(eltName))
+                        infoOfNakladna.setKEKV(parser.nextText());
+                    else if ("Type".equals(eltName))
+                        infoOfNakladna.setTypePostach(parser.nextText());
+                    else if ("Plomba".equals(eltName))
+                        infoOfNakladna.setNomerPlombi(parser.nextText());
+//                    else if ("/Info".equals(eltName))
+//                    {
+//                        Log.e("MyError", infoOfNakladna.getNameDogovir());
+//                        dbInfoOfNakladna.insertInfo(infoOfNakladna);
+//                        return infoOfNakladna;
+//                    }
+                    break;
+                case XmlPullParser.END_TAG:
+                    eltName = parser.getName();
+
+                    if ("Info".equals(eltName))
+                    {
+                        Log.e("MyError", infoOfNakladna.getNameDogovir());
+                        dbInfoOfNakladna.insertInfo(infoOfNakladna);
+                        DBInfoOfNakladna.insertCurrentDate(this, currentDate);
+                        return infoOfNakladna;
+                    }
+                    break;
+            }
+            eventType = parser.next();
+        }
+        return null;
+    }
+
+    private List<ProductsData> readlistproduct(XmlPullParser parser) throws IOException, XmlPullParserException{
+        int eventType = parser.getEventType();
+        List<ProductsData> list = new ArrayList<>();
+        ProductsData productsData = null;
+//        InfoOfNakladna infoOfNakladna = new InfoOfNakladna();
+
+        while(eventType != XmlPullParser.END_DOCUMENT)
+        {
+            String eltName = null;
+
+            switch (eventType){
+                case XmlPullParser.START_TAG:
+                    eltName = parser.getName();
+
+                    if ("Product".equals(eltName))
+                        productsData = new ProductsData();
+                    else if ("Kod".equals(eltName)) {
+                        if (productsData != null)
+                            productsData.setKod(parser.nextText());
+                    }
+                    else if ("KodNam".equals(eltName)) {
+                        if (productsData != null)
+                            productsData.setName(parser.nextText());
+                    }
+                    else if ("Kol".equals(eltName)) {
+                            if (productsData != null)
+                                productsData.setKilbkistb(Double.parseDouble(parser.nextText()));
+                        }
+                    else if ("Price".equals(eltName)) {
+                        if (productsData != null)
+                            productsData.setPrice(Double.parseDouble(parser.nextText()));
+                    }
+                    else if ("DanaZ".equals(eltName)) {
+                                if (productsData != null)
+                                    productsData.setDataStart(parser.nextText());
+                            }
+                    else if ("DataP".equals(eltName)) {
+                                    if (productsData != null)
+                                        productsData.setDataFinish(parser.nextText());
+                                }
+                    else if ("Termin".equals(eltName)) {
+                                        if (productsData != null)
+                                            productsData.setDataTrival(parser.nextText());
+                                    }
+//                    else if ("/Product".equals(eltName)) {
+//                                            if (productsData != null) {
+//                                                list.add(productsData);
+//                                                productsData = null;
+//                                            }
+//                                        }
+//                    else if ("/Specification".equals(eltName))
+//                                            {
+//                                                return list;
 //
-//    @Override
-//    protected void onSaveInstanceState(Bundle outState){
-//        super.onSaveInstanceState(outState);
-////        outState.putStringArrayList("key",name_array);
+//                                            }
+                    break;
+
+                case XmlPullParser.END_TAG:
+                    eltName = parser.getName();
+
+                    if ("Specification".equals(eltName))
+                    {
+                        return list;
+                    }
+                    else if ("Product".equals(eltName)) {
+                        if (productsData != null) {
+                            list.add(productsData);
+                            productsData = null;
+                        }
+                    }
+                    break;
+            }
+;
+            eventType = parser.next();
+        }
+        return null;
+    }
+
+
+
+//    private String readText(XmlPullParser parser) throws IOException, XmlPullParserException {
+//        String result = "";
+//        if (parser.next() == XmlPullParser.TEXT) {
+//            result = parser.getText();
+//            parser.nextTag();
+//        }
+//        return result;
 //    }
+
+    private void requestSignIn() {
+        GoogleSignInOptions signInOptions = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestEmail()
+                .requestScopes(new Scope(DriveScopes.DRIVE_FILE))
+                .build();
+
+        GoogleSignInClient client = GoogleSignIn.getClient(this, signInOptions);
+
+        startActivityForResult(client.getSignInIntent(), 400);
+    }
 
     //Вспливаюче вікно для фотографування основної накладної та надсилання сформованого файлу
     private void photoNakladna()
@@ -168,11 +437,33 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
         final AlertDialog alert = builder.create();
         LayoutInflater inflater = DataOfNakladnaView.this.getLayoutInflater();
         final View dialog_layout = inflater.inflate(R.layout.dialog_dataofnakladna, null);
-//        alert.setTitle("Введіть інформацію про продукт\n" + list.get(position).getKod() + " " + list.get(position).getName());
         alert.setView(dialog_layout);
 
         final Button but_addphoto = dialog_layout.findViewById(R.id.buttonaddphoto);
         final Button but_sendphoto = dialog_layout.findViewById(R.id.but_sendphoto);
+
+        String currentDate = null;
+        if (DBInfoOfNakladna.readCurrentDate(this) == null
+                || DBInfoOfNakladna.readCurrentDate(this).length() < 3)
+            currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+        else
+            currentDate = DBInfoOfNakladna.readCurrentDate(this);
+        InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
+        String folder = DBtemp.getNameDogovir() + "+"
+                + DBtemp.getNumberNakladna() + "+" +  DBtemp.getDateNakladna().replace('/', '_')
+                + "+" + currentDate;
+        String photo_folder = folder + "_photo.jpg";
+
+        File photo_file = new File(getFilesDir().getAbsolutePath() +
+                File.separator + folder + File.separator + photo_folder);
+        if (photo_file.exists())
+        {
+            but_sendphoto.setClickable(true);
+            but_sendphoto.setBackgroundResource(R.drawable.fields_button_green);
+            but_sendphoto.setVisibility(View.VISIBLE);
+        }
+
+
 
         but_addphoto.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -189,7 +480,8 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
             public void onClick(View v) {
                 if (but_sendphoto.isClickable()) {
                     iDataOfNakladnaPresenter.onSave();
-                    sendEmail();
+                    pressSend();
+//                    sendEmail();
                     alert.cancel();
                 }
             }
@@ -213,11 +505,10 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.app_bar_save:
-//                iDataOfNakladnaPresenter.onSave();
+                iDataOfNakladnaPresenter.onSave();
 ////                saveFile = true;
-//                Toast.makeText(this, "Файл збережений.", Toast.LENGTH_SHORT).show();
-//                return true;
-//
+//                Toast.makeText(this, "Оприбуткування збережене.", Toast.LENGTH_SHORT).show();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -225,8 +516,13 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
 
 
     private boolean openCamera() {
-        create_folder();
-        String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+//        create_folder();
+        String currentDate = null;
+        if (DBInfoOfNakladna.readCurrentDate(this) == null
+                || DBInfoOfNakladna.readCurrentDate(this).length() < 3)
+            currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+        else
+            currentDate = DBInfoOfNakladna.readCurrentDate(this);
         InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
         String name = DBtemp.getNameDogovir() + "+"
                 + DBtemp.getNumberNakladna() + "+" +  DBtemp.getDateNakladna().replace('/', '_')
@@ -234,12 +530,11 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
         Intent camera = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
 
         File img = new File(getFilesDir().getAbsolutePath() + "/"
-                + name + "/" +  name + "_photo.png");
+                + name + "/" +  name + "_photo.jpg");
 
         image_uri = FileProvider.getUriForFile(
                 DataOfNakladnaView.this,
-                "com.example.prodapp", //(use your app signature + ".provider" )
-                img);
+                "com.example.prodapp", img);
 
         camera.putExtra(MediaStore.EXTRA_OUTPUT, image_uri);
         startActivityForResult(camera, 1);
@@ -259,7 +554,12 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
 
     private void create_folder()
     {
-        String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+        String currentDate = null;
+        if (DBInfoOfNakladna.readCurrentDate(this) == null
+                || DBInfoOfNakladna.readCurrentDate(this).length() < 3)
+            currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+        else
+            currentDate = DBInfoOfNakladna.readCurrentDate(this);
         InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
         String name = DBtemp.getNameDogovir() + "+"
                 + DBtemp.getNumberNakladna() + "+" +  DBtemp.getDateNakladna().replace('/', '_')
@@ -274,9 +574,29 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
         }
     }
 
+    private String create_folder_name()
+    {
+        String currentDate = null;
+        if (DBInfoOfNakladna.readCurrentDate(this) == null
+                || DBInfoOfNakladna.readCurrentDate(this).length() < 3)
+            currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+        else
+            currentDate = DBInfoOfNakladna.readCurrentDate(this);
+        InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
+        String name = DBtemp.getNameDogovir() + "+"
+                + DBtemp.getNumberNakladna() + "+" +  DBtemp.getDateNakladna().replace('/', '_')
+                + "+" + currentDate;
+        return (name);
+    }
+
     private void create_folder_photo_kod(String kod)
     {
-        String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+        String currentDate = null;
+        if (DBInfoOfNakladna.readCurrentDate(this) == null
+                || DBInfoOfNakladna.readCurrentDate(this).length() < 3)
+            currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+        else
+            currentDate = DBInfoOfNakladna.readCurrentDate(this);
         InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
         String name = DBtemp.getNameDogovir() + "+"
                 + DBtemp.getNumberNakladna() + "+" +  DBtemp.getDateNakladna().replace('/', '_')
@@ -293,10 +613,18 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
         }
     }
 
-    private void openCameraKod(String kod) {
+    private void openCameraKod(String kod, int i) {
         create_folder();
         create_folder_photo_kod(kod);
-        String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+        String currentDate = null;
+        if (DBInfoOfNakladna.readCurrentDate(this) == null
+                || DBInfoOfNakladna.readCurrentDate(this).length() < 3)
+            currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+        else
+            currentDate = DBInfoOfNakladna.readCurrentDate(this);
+        ProductsData productsData = DBHelper.readDataStat(this).get(i);
+        int number = Integer.parseInt(productsData.getNumberphoto());
+        Log.i("Message", productsData.getKod() + " " + number);
         InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
         String name = DBtemp.getNameDogovir() + "+"
                 + DBtemp.getNumberNakladna() + "+" +  DBtemp.getDateNakladna().replace('/', '_')
@@ -305,11 +633,18 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
 
         Intent camera= new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
+
         File img = null;
         img = new File(getFilesDir().getAbsolutePath() + "/"
                         + name + "/" + name_photo + "/" + kod.replaceAll("\\s", "")
-                        + "_" + String.valueOf(kod_poriadok) + "_photo.png");
-        kod_poriadok++;
+                        + "_" + String.valueOf(number) + "_photo.jpg");
+
+        Log.i("Message", productsData.getKod() + " " + number + " " + productsData.getNumberphoto());
+
+        dbHelper.updateDataStat(String.valueOf(i + 1), productsData);
+        iDataOfNakladnaPresenter.setList(dbHelper.readData());
+
+
 
             Uri temp = FileProvider.getUriForFile(
                     DataOfNakladnaView.this,
@@ -319,58 +654,10 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
 
             list_uri_img.add(temp);
 
-//        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-//        if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
-//            startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
-//        }
-
-
             camera.putExtra(MediaStore.EXTRA_OUTPUT, temp);
             if (camera.resolveActivity(getPackageManager()) != null)
                 startActivityForResult(camera, 1);
     }
-
-//    private void compress_photo(String photoPath)
-//    {
-//        final BitmapFactory.Options options = new BitmapFactory.Options();
-//        options.inJustDecodeBounds = true;
-//        options.inSampleSize = 2;  //you can also calculate your inSampleSize
-//        options.inJustDecodeBounds = false;
-//        options.inTempStorage = new byte[16 * 1024];
-//        options.inPreferredConfig = Bitmap.Config.ARGB_8888;
-//        Bitmap bmp= BitmapFactory.decodeFile(photoPath, options);
-//        FileOutputStream out = null;
-//        try {
-//            out = new FileOutputStream(photoPath);
-//            bmp.compress(Bitmap.CompressFormat.PNG, 100, out); // bmp is your Bitmap instance
-//            // PNG is a lossless format, the compression factor (100) is ignored
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        } finally {
-//            try {
-//                if (out != null) {
-//                    out.close();
-//                }
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//        }
-//    }
-
-//
-//    private void openCamera() {
-//        String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
-//        String namePicture = InfoOfNakladnaPresenter.infoOfNakladna.getNameDogovir() + "_" + currentDate + "_photo";
-//        ContentValues contentValues = new ContentValues();
-//        contentValues.put(MediaStore.Images.Media.DISPLAY_NAME, namePicture);
-//        contentValues.put(MediaStore.Images.Media.TITLE, namePicture);
-//        contentValues.put(MediaStore.Images.Media.DESCRIPTION, "From camera");
-//        image_uri = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, contentValues);
-//        Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-//        camera.putExtra(MediaStore.EXTRA_OUTPUT, image_uri);
-//        startActivityForResult(camera, IMAGE_CAPTURE_CODE);
-////        Toast.makeText(this, "Фото збережено.", Toast.LENGTH_SHORT).show();
-//    }
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -378,10 +665,9 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
             case 1000:{
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
                 {
-//                    openCamera();
                 }
                 else
-                    Toast.makeText(this, "Permission denied", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Доступ заборонений", Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -389,6 +675,126 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == 400) {
+            Log.i("MyError", "requestcode 400");
+            Log.i("MyError", String.valueOf(RESULT_OK));
+        }
+
+        switch (requestCode)
+        {
+            case 400:
+                if (requestCode != RESULT_OK)
+                {
+                Log.i("MyError", "handle signed it");
+                Toast.makeText(this, "Обліковий запис завантажений", Toast.LENGTH_SHORT).show();
+                handleSignIntent(data);
+                }
+                break;
+        }
+    }
+
+    private void handleSignIntent(Intent data) {
+        GoogleSignIn.getSignedInAccountFromIntent(data)
+                .addOnSuccessListener(new OnSuccessListener<GoogleSignInAccount>() {
+                    @Override
+                    public void onSuccess(GoogleSignInAccount googleSignInAccount) {
+                        GoogleAccountCredential credential = GoogleAccountCredential.usingOAuth2(DataOfNakladnaView.this, Collections.singleton(DriveScopes.DRIVE_FILE));
+
+                        credential.setSelectedAccount(googleSignInAccount.getAccount());
+
+                        Drive googleDriveServices = new Drive.Builder(
+                                AndroidHttp.newCompatibleTransport(),
+                                new GsonFactory(),
+                                credential)
+                                .setApplicationName("ProdApp")
+                                .build();
+
+                        driveServicesHelper = new DriveServicesHelper(googleDriveServices);
+                        toast_helper_success();
+                        if (driveServicesHelper == null) {
+                            handleSignIntent(data);
+                        }
+//                        Toast.makeText(this, "Обліковий запис завантажений", Toast.LENGTH_SHORT).show();
+                    }
+
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        toast_helper_fail(e.getMessage());
+                    }
+                });
+    }
+
+
+    public void toast_helper_fail(String error)
+    {
+        Toast.makeText(this, "Помилка при підключенні " + error, Toast.LENGTH_LONG).show();
+        Log.i("MyError Listener Fail", error);
+        File auxFile = new File(getFilesDir().getAbsolutePath(), "readme_err.txt");
+        try {
+            FileOutputStream fileos = new FileOutputStream(auxFile);
+            fileos.write(error.getBytes());
+            fileos.close();
+        }
+        catch (IOException e) {}
+    }
+
+    public void toast_helper_success()
+    {
+        Toast.makeText(this, "Підключення до Google Drive успішне", Toast.LENGTH_LONG).show();
+        Log.i("MyError Listener ", "success");
+    }
+
+    public boolean uploadpdffile(String filepath, String name)
+    {
+
+//        String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+//        InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
+//        String filepath = DBtemp.getNameDogovir() + "+"
+//                + DBtemp.getNumberNakladna() + "+" +  DBtemp.getDateNakladna().replace('/', '_')
+//                + "+" + currentDate + ".zip";
+
+
+        ProgressDialog progressDialog = new ProgressDialog(DataOfNakladnaView.this);
+        progressDialog.setTitle("Uploading to Google Drive");
+        progressDialog.setMessage("Please wait...");
+        progressDialog.show();
+
+//        String filepath = "/storage/emulated/0/mypdf.pdf";
+//        /home/ocheresh/Desktop/MyDriveApp/app/src/main/res/drawable/mypdf.pdf
+//        String filepath = "drawable://" + R.drawable.camera3;
+//        /data/data/com.example.mydriveapp/files/286_2_18_178_4+жжж+24_01_20+22-01-2020.zip
+//        String filepath = getFilesDir().getAbsolutePath() + "/" + "286_2_18_178_4+жжж+24_01_20+22-01-2020.zip";
+
+
+        if (driveServicesHelper == null)
+        {
+            Log.i("MyError", "Helper is null");
+            Toast.makeText(this, "Helper is null", Toast.LENGTH_SHORT).show();
+
+//            requestSignIn();
+//            uploadpdffile(filepath, name);
+//            return (false);
+        }
+
+        driveServicesHelper.createFilePDF(filepath, name, this)
+                .addOnSuccessListener(new OnSuccessListener<String>() {
+                    @Override
+                    public void onSuccess(String s) {
+                        progressDialog.dismiss();
+                        Toast.makeText(getApplicationContext(), "Завантаження файлу успішне", Toast.LENGTH_LONG).show();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        progressDialog.dismiss();
+                        Toast.makeText(getApplicationContext(), "Виникла помилка при завантаженні", Toast.LENGTH_LONG).show();
+                    }
+                });
+        return (true);
     }
 
     @Override
@@ -397,23 +803,27 @@ public class DataOfNakladnaView extends AppCompatActivity implements AdapterCrea
     }
 
     @Override
-    public void OnCameraItemClick(String kod) {
+    public void OnCameraItemClick(String kod, int i) {
         try {
-    String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
-    InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
-    String name = DBtemp.getNameDogovir() + "+"
-            + DBtemp.getNumberNakladna() + "+" + DBtemp.getDateNakladna().replace('/', '_')
-            + "+" + currentDate;
+            String currentDate = null;
+            if (DBInfoOfNakladna.readCurrentDate(this) == null
+                    || DBInfoOfNakladna.readCurrentDate(this).length() < 3)
+                currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+            else
+                currentDate = DBInfoOfNakladna.readCurrentDate(this);
+            InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
+            String name = DBtemp.getNameDogovir() + "+"
+                    + DBtemp.getNumberNakladna() + "+" + DBtemp.getDateNakladna().replace('/', '_')
+                    + "+" + currentDate;
 //        String nameFile = name + "+file.xml";
 
-
-    File folder = new File(getFilesDir().getAbsolutePath() +
+            File folder = new File(getFilesDir().getAbsolutePath() +
             File.separator + name);
     boolean success = true;
     if (!folder.exists()) {
         success = folder.mkdirs();
     }
-    openCameraKod(kod);
+    openCameraKod(kod, i);
 }
 catch (Exception e) {
     Log.i("Error camera click: ", e.getMessage());
@@ -424,7 +834,14 @@ catch (Exception e) {
     public void OnViewPhoto(String kod) {
 //        Toast.makeText(this, "Завантаження....", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(DataOfNakladnaView.this, ImageActivity.class);
-        String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+        String currentDate = DBInfoOfNakladna.readCurrentDate(this);
+        Log.i("MyError 1", currentDate);
+        if (currentDate == null
+                || currentDate.length() < 3)
+            currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+        Log.i("MyError 2", currentDate);
+//        else
+//            currentDate = DBInfoOfNakladna.readCurrentDate(this);
         InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
         String name_folder = DBtemp.getNameDogovir() + "+"
                 + DBtemp.getNumberNakladna() + "+" +  DBtemp.getDateNakladna().replace('/', '_')
@@ -445,9 +862,17 @@ catch (Exception e) {
 
 
     @Override
+    public void pressSendGmail() {
+        sendEmailtoGmail();
+    }
+
+    @Override
     public void pressSave(List<ProductsData> list) {
-        if (list.size() > 0)
+        list = DBHelper.readDataStat(this);
+        if (list.size() > 0) {
             writeFileXml(list);
+            Toast.makeText(this, "Оприбуткування збережене", Toast.LENGTH_SHORT).show();
+        }
         else
             Toast.makeText(this, "Файл не збережений. Список продуктів пустий", Toast.LENGTH_SHORT).show();
     }
@@ -458,8 +883,19 @@ catch (Exception e) {
 
         if (iDataOfNakladnaPresenter.getList().size() == 0)
             Toast.makeText(this, "Файл не надіслений. Список продуктів пустий", Toast.LENGTH_SHORT).show();
-        else
+        else {
+            String currentDate = null;
+            if (DBInfoOfNakladna.readCurrentDate(this) == null
+                    || DBInfoOfNakladna.readCurrentDate(this).length() < 3)
+                currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+            else
+                currentDate = DBInfoOfNakladna.readCurrentDate(this);
+            InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
+            String nameFile = DBtemp.getNameDogovir() + "_" + currentDate;
             sendEmail();
+            uploadpdffile(folder_uri_string + ".zip", nameFile);
+//            sendEmail();
+        }
 //        else if (saveFile == false)
 //            Toast.makeText(this, "Збережіть файл перед надсиланням.", Toast.LENGTH_SHORT).show();
     }
@@ -615,7 +1051,12 @@ catch (Exception e) {
 
     private void writeFileXml(List<ProductsData> list) {
         try {
-            String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+            String currentDate = null;
+            if (DBInfoOfNakladna.readCurrentDate(this) == null
+                    || DBInfoOfNakladna.readCurrentDate(this).length() < 3)
+                currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+            else
+                currentDate = DBInfoOfNakladna.readCurrentDate(this);
             InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
             String name = DBtemp.getNameDogovir() + "+"
                     + DBtemp.getNumberNakladna() + "+" +  DBtemp.getDateNakladna().replace('/', '_')
@@ -628,14 +1069,6 @@ catch (Exception e) {
             if (!folder.exists()) {
                 success = folder.mkdirs();
             }
-
-//            File img = new File(getFilesDir().getAbsolutePath() + "/"
-//                    + name + "/" +  name + "_photo.png");
-//
-//            image_uri = FileProvider.getUriForFile(
-//                    DataOfNakladnaView.this,
-//                    "com.example.prodapp", //(use your app signature + ".provider" )
-//                    img);
 
             File f = new File(folder, nameFile);
             folder_uri_string = folder.getAbsolutePath();
@@ -684,9 +1117,15 @@ catch (Exception e) {
                 xmlSerializer.startTag(null, "Kod");
                 xmlSerializer.text(list.get(i).getKod().replaceAll("\\D", ""));
                 xmlSerializer.endTag(null, "Kod");
+                xmlSerializer.startTag(null, "KodNam");
+                xmlSerializer.text(String.valueOf(list.get(i).getName()));
+                xmlSerializer.endTag(null, "KodNam");
                 xmlSerializer.startTag(null, "Kol");
                 xmlSerializer.text(String.valueOf(list.get(i).getKilbkistb()));
                 xmlSerializer.endTag(null, "Kol");
+                xmlSerializer.startTag(null, "Price");
+                xmlSerializer.text(String.valueOf(list.get(i).getPrice()));
+                xmlSerializer.endTag(null, "Price");
                 xmlSerializer.startTag(null, "DanaZ");
                 xmlSerializer.text(String.valueOf(list.get(i).getDataStart()));
                 xmlSerializer.endTag(null, "DanaZ");
@@ -723,59 +1162,152 @@ catch (Exception e) {
         }
     }
 
+//    private void sendMail(File outFile) {
+//        Uri uriToZip = Uri.fromFile(outFile);
+//        String sendText = "Dear friend,\n\n...";
+//
+//        Intent sendIntent = new Intent(Intent.ACTION_SEND);
+//        sendIntent.putExtra(android.content.Intent.EXTRA_EMAIL,
+//                new String[] { "checcodotti@gmail.com" });
+//        sendIntent.putExtra(android.content.Intent.EXTRA_TEXT, sendText);
+//        sendIntent.putExtra(android.content.Intent.EXTRA_SUBJECT,"Log of the test " +  expFilename);
+//
+//        //   sendIntent.setType("image/jpeg");
+//        //   sendIntent.setType("message/rfc822");
+//        sendIntent.setType("*/*");
+//        sendIntent.putExtra(android.content.Intent.EXTRA_STREAM, uriToZip);
+//        startActivity(Intent.createChooser(sendIntent, "Send Attachment !:"));
+//    }
+
     private void sendEmail() {
-        String currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
-        InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
-        String nameFile = DBtemp.getNameDogovir() + "_" + currentDate + "_file.xml";
+        String currentDate = null;
+        if (DBInfoOfNakladna.readCurrentDate(this) == null
+                || DBInfoOfNakladna.readCurrentDate(this).length() < 3)
+            currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+        else
+            currentDate = DBInfoOfNakladna.readCurrentDate(this);
+//        InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
+//        String nameFile = DBtemp.getNameDogovir() + "_" + currentDate;
         iDataOfNakladnaPresenter.onloadEmplInfo();
 //        File f = new File(getFilesDir(),nameFile);
 //        if (f.exists() && f.canRead()) {
         if (true) {
             File auxFile = new File(folder_uri_string, "readme");
-//            Toast.makeText(this, auxFile.getPath(), Toast.LENGTH_LONG).show();
             try {
                 FileOutputStream fileos = new FileOutputStream(auxFile);
                 fileos.write(currentDate.getBytes());
-//                Toast.makeText(this, "enter", Toast.LENGTH_SHORT).show();
                 fileos.close();
-//                Toast.makeText(this, auxFile.getPath(), Toast.LENGTH_SHORT).show();
             }
             catch (IOException e) {}
 
 
 
-            Intent sendIntent = new Intent(Intent.ACTION_SEND);
-            sendIntent.setType("*/*");
 
-//            ArrayList<Uri> list_uri = new ArrayList<Uri>();
+//            Intent sendIntent = new Intent(Intent.ACTION_SEND);
+//            sendIntent.setType("*/*");
 
-//            Uri contentUri = FileProvider.getUriForFile(this, "com.example.prodapp", f);
 
-            list_uri_img.add(image_uri);
-            list_uri_img.add(file_uri);
+
+
+
+//            list_uri_img.add(image_uri);
+//            list_uri_img.add(file_uri);
 //            list_uri = list_uri_img;
 
-            sendIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-            sendIntent.addFlags(Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
+            ZipFiles zipFiles = new ZipFiles(folder_uri_string, folder_uri_string+".zip");
+            zipFiles.zipDirectory();
 
-            sendIntent.setAction(Intent.ACTION_SEND_MULTIPLE);
-            sendIntent.putParcelableArrayListExtra(Intent.EXTRA_STREAM, list_uri_img);
 
-            String to[] = {iDataOfNakladnaPresenter.getEmploye().getEmailToSend()};
-            String emplinfo =  iDataOfNakladnaPresenter.getEmploye().getMilitaryRank() + " " + iDataOfNakladnaPresenter.getEmploye().getLastName();
-            sendIntent.putExtra(Intent.EXTRA_EMAIL, to);
-            sendIntent.putExtra(Intent.EXTRA_SUBJECT, "Надходження товару від: " + emplinfo);
-            sendIntent.putExtra(Intent.EXTRA_TEXT, "Оприбуткування продуктів харчування за договором: " + DBtemp.getNameDogovir() + "  " +currentDate);
-            startActivity(Intent.createChooser(sendIntent, "Email:"));
+//            Log.i("Error ", String.valueOf(list_uri_img.size()));
+//            for (int i = 0; i < list_uri_img.size(); i++)
+//            {
+//                Log.i("Error ", list_uri_img.get(i).getPath());
+//                Log.i("Error ", getFilesDir().getAbsolutePath());
+//            }
+
+
         } else {
-            Toast.makeText(DataOfNakladnaView.this, "Error",
-                    Toast.LENGTH_LONG).show();
+
         }
     }
+
+    public void sendEmailtoGmail()
+    {
+        String currentDate = null;
+        if (DBInfoOfNakladna.readCurrentDate(this) == null
+                || DBInfoOfNakladna.readCurrentDate(this).length() < 3)
+            currentDate = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());
+        else
+            currentDate = DBInfoOfNakladna.readCurrentDate(this);
+        InfoOfNakladna DBtemp = DBInfoOfNakladna.readData(this);
+
+        File tempfile = new File(folder_uri_string+".zip");
+        try {
+            if (tempfile.createNewFile())
+                Log.i("Error ", "file error created");
+            else
+                Log.i("Error", "File is created");
+        }
+        catch (Exception e)
+        {
+            Log.i("Error", e.getMessage());
+        }
+        ArrayList<Uri> senduri = new ArrayList<>();
+
+        Uri uri = FileProvider.getUriForFile(
+                DataOfNakladnaView.this,
+                "com.example.prodapp",
+                tempfile);
+
+        File products = new File(folder_uri_string + File.separator
+                + create_folder_name() + "+file.xml");
+        File photo_products = new File(folder_uri_string + File.separator
+                + create_folder_name() + "_photo.jpg");
+
+        Log.i("MyErrornameProduct", products.getAbsolutePath());
+        Log.i("MyErrornamePhotoProduct", photo_products.getAbsolutePath());
+
+        Uri uri1 = FileProvider.getUriForFile(
+                DataOfNakladnaView.this,
+                "com.example.prodapp",
+                products);
+
+        Uri uri2 = FileProvider.getUriForFile(
+                DataOfNakladnaView.this,
+                "com.example.prodapp",
+                photo_products);
+        if (products.exists())
+            senduri.add(uri1);
+        if (photo_products.exists())
+            senduri.add(uri2);
+
+        Intent sendIntent = new Intent(Intent.ACTION_SEND);
+        sendIntent.setType("*/*");
+        sendIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+        sendIntent.addFlags(Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
+
+        sendIntent.setAction(Intent.ACTION_SEND_MULTIPLE);
+//        sendIntent.putExtra(Intent.EXTRA_STREAM, senduri);
+        sendIntent.putParcelableArrayListExtra(Intent.EXTRA_STREAM, senduri);
+        String to[] = {iDataOfNakladnaPresenter.getEmploye().getEmailToSend()};
+        String emplinfo = iDataOfNakladnaPresenter.getEmploye().getMilitaryRank() + " " + iDataOfNakladnaPresenter.getEmploye().getLastName();
+        sendIntent.putExtra(Intent.EXTRA_EMAIL, to);
+        sendIntent.putExtra(Intent.EXTRA_SUBJECT, "Надходження товару від: " + emplinfo);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, "Оприбуткування продуктів харчування за договором: " + DBtemp.getNameDogovir()
+                + "  " + currentDate + "\n" + "https://drive.google.com/open?id=" + DBInfoOfNakladna.readStringId(this));
+        startActivity(Intent.createChooser(sendIntent, "Email:"));
+
+    }
+
+
 
     @Override
     protected void onStart() {
         super.onStart();
+//        super.onCreate(null);
+        adapter.notifyDataSetChanged();
+        view.setAdapter(adapter);
+
 
 //        Toast.makeText(getApplicationContext(), "onStart()", Toast.LENGTH_SHORT).show();
         Log.i(TAG, "onStart()");

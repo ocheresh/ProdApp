@@ -11,6 +11,7 @@ public class InfoOfNakladna {
     private String KEKV = "";
     private String typePostach = "";
     private String nomerPlombi = "";
+    private String createDate = "";
 
 
     public InfoOfNakladna() {};
@@ -95,4 +96,8 @@ public class InfoOfNakladna {
     public void setNomerAvto(String nomerAvto) {
         this.nomerAvto = nomerAvto;
     }
+
+    public String getCreateDate() { return createDate; }
+
+    public void setCreateDate(String createDate) { this.createDate = createDate; }
 }

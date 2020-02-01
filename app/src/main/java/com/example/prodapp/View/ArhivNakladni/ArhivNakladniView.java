@@ -7,12 +7,19 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.prodapp.Model.DeleteFiles;
 import com.example.prodapp.R;
+import com.example.prodapp.View.DataOfNakladna.DataOfNakladnaView;
+import com.example.prodapp.View.ImageViewer.ImageActivity;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -68,8 +75,42 @@ public class ArhivNakladniView extends AppCompatActivity implements AdapterArhiv
     }
 
     @Override
-    public void OnItemClick(final int position) {
+    public void OnItemClick(final int position, String path) {
+        Intent intent = new Intent(ArhivNakladniView.this, DataOfNakladnaView.class);
+        intent.putExtra("path_folder", path);
+        startActivity(intent);
 
+    }
+
+    @Override
+    public void OnItemClickDelete(String path) {
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert.setTitle("Видалення товару");
+        alert.setMessage("Видалити дані? ");
+
+        alert.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+                Log.i("MyError delete", path);
+                String temppath = getFilesDir().getAbsolutePath()
+                        + "/" + path.replace("+save", "");
+                File filezip = new File(temppath + ".zip");
+                if (filezip.exists())
+                    filezip.delete();
+                DeleteFiles deleteFiles = new DeleteFiles(temppath);
+                deleteFiles.deleteRecursive(new File(temppath));
+//                deleteFiles.deleteDirectory();
+                list.clear();
+                findPath();
+                myAdapter.notifyDataSetChanged();
+            }
+        });
+
+        alert.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int whichButton) {
+                // Canceled.
+            }
+        });
+        alert.show();
     }
 
     private String findPath()
@@ -86,7 +127,7 @@ public class ArhivNakladniView extends AppCompatActivity implements AdapterArhiv
 //        Log.d("Files", "Size: "+ files.length);
             for (int i = 0; i < files.length; i++) {
                 if (files[i].getName().startsWith("286_2_18_") && !(files[i].getName().contains(".xml"))
-                        && !(files[i].getName().contains(".png"))) {
+                        && !(files[i].getName().contains(".png")) && !(files[i].getName().contains("."))) {
                 File directory_temp = new File(files[i].getAbsolutePath());
                 File[] files_temp = directory_temp.listFiles();
                 for (int t = 0; t < files_temp.length; t++) {

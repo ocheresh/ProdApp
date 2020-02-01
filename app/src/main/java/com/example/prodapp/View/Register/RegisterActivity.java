@@ -19,6 +19,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.prodapp.Model.Employe.DBEmloye;
 import com.example.prodapp.Model.Employe.Employe;
 import com.example.prodapp.Presenter.Register.IRegisterPresenter;
 import com.example.prodapp.Presenter.Register.RegisterPresenter;
@@ -56,6 +57,8 @@ public class RegisterActivity extends AppCompatActivity implements IRegisterView
 
     IRegisterPresenter registerPresenter;
 
+    DBEmloye dbEmloye;
+
 
 
     @Override
@@ -63,12 +66,16 @@ public class RegisterActivity extends AppCompatActivity implements IRegisterView
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
+        dbEmloye = new DBEmloye(this);
+
         butFoundPath = findViewById(R.id.buttonFindPath);
         butDownoload = findViewById(R.id.buttonDownoload);
         txt_path = findViewById(R.id.text_path);
 
         registerPresenter = new RegisterPresenter(this);
         registerPresenter.onCheckExistFile();
+
+
 
         verifyStoragePermissions(this);
 
@@ -99,8 +106,11 @@ public class RegisterActivity extends AppCompatActivity implements IRegisterView
         if (temp_file.exists()) {
 //            writeFileXml(employe); //delete
             readFileXml(employe);
+
             if (employe != null && employe.check_class()) {
 //                Intent intent = new Intent(RegisterActivity.this, ImageActivity.class);
+                dbEmloye.restartData();
+                dbEmloye.insertContact(employe);
                 Intent intent = new Intent(RegisterActivity.this, SplashActivity.class);
                 startActivity(intent);
                 finish();

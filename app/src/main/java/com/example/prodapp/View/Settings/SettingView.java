@@ -1,13 +1,22 @@
 package com.example.prodapp.View.Settings;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import android.Manifest;
+import android.app.Activity;
 import android.content.Context;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
+import android.telephony.TelephonyManager;
+import android.util.Log;
 import android.util.Xml;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -37,12 +46,15 @@ public class SettingView extends AppCompatActivity implements ISettingView{
     EditText editTextNumber;
     EditText editTextRank;
     EditText editTextUnit;
-    TextView textViewSendEmail;
+    EditText textViewSendEmail;
+    TextView textnumbertel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_setting_view);
+
+        verifyStoragePermission();
 
         textViewName = findViewById(R.id.textViewSetName2);
         textViewSurname = findViewById(R.id.textViewSetSurname2);
@@ -50,7 +62,9 @@ public class SettingView extends AppCompatActivity implements ISettingView{
         editTextRank = findViewById(R.id.textViewSetRank2);
         editTextUnit = findViewById(R.id.textViewSetMilitaryUnit2);
         textViewSendEmail = findViewById(R.id.textViewSetEmailToSend2);
+        textnumbertel = findViewById(R.id.telephoneUser);
 
+//        textnumbertel.setText(readTelNumber());
 
         iSettingsPresenter = new SettingsPresenter(this);
         iSettingsPresenter.onReadInfo();
@@ -59,22 +73,61 @@ public class SettingView extends AppCompatActivity implements ISettingView{
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.confirm, menu);
+//        MenuInflater inflater = getMenuInflater();
+//        inflater.inflate(R.menu.confirm, menu);
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.app_bar_confirm:
-                iSettingsPresenter.onSaveInfo();
-                Toast.makeText(this, "Дані збережені", Toast.LENGTH_SHORT).show();
-                this.onBackPressed();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+    private void verifyStoragePermission() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_DENIED ||
+                    checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_DENIED ||
+                    checkSelfPermission(Manifest.permission.INTERNET) == PackageManager.PERMISSION_DENIED ||
+                    checkSelfPermission(Manifest.permission.GET_ACCOUNTS) == PackageManager.PERMISSION_DENIED ||
+            checkSelfPermission(Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_DENIED) {
+                String[] permission = {Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.INTERNET,
+                        Manifest.permission.GET_ACCOUNTS, Manifest.permission.READ_PHONE_STATE};
+                requestPermissions(permission, 1000);
+            }
         }
+    }
+
+    private String readTelNumber()
+    {
+        Log.i("MyError", "start");
+        try {
+            TelephonyManager tMgr = (TelephonyManager) this.getSystemService(Context.TELEPHONY_SERVICE);
+            Log.i("MyError", "start2");
+            Log.i("MyError", tMgr.getLine1Number());
+            return (tMgr.getLine1Number());
+        }
+        catch (SecurityException e){
+            Log.i("MyError", e.getMessage());
+        }
+
+        return ("sdasdasda");
+    }
+
+
+
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        switch (item.getItemId()) {
+//            case R.id.app_bar_confirm:
+//                iSettingsPresenter.onSaveInfo();
+//                Toast.makeText(this, "Дані збережені", Toast.LENGTH_SHORT).show();
+//                this.onBackPressed();
+//                return true;
+//            default:
+//                return super.onOptionsItemSelected(item);
+//        }
+//    }
+
+    public void save_settings(View v)
+    {
+        iSettingsPresenter.onSaveInfo();
+        Toast.makeText(this, "Дані збережені", Toast.LENGTH_SHORT).show();
+        this.onBackPressed();
     }
 
     @Override
@@ -114,6 +167,7 @@ public class SettingView extends AppCompatActivity implements ISettingView{
 
     @Override
     public void pressSetInfo(Employe employe) {
+        textnumbertel.setText(readTelNumber());
         textViewName.setText(employe.getFirstName());
         textViewSurname.setText(employe.getLastName());
         editTextNumber.setText(employe.getContactNo());
@@ -156,7 +210,7 @@ public class SettingView extends AppCompatActivity implements ISettingView{
             xmlSerializer.text(employe.getAdress());
             xmlSerializer.endTag(null, "Adress");
             xmlSerializer.startTag(null,"EmailToSend");
-            xmlSerializer.text(employe.getEmailToSend());
+            xmlSerializer.text(textViewSendEmail.getText().toString());
             xmlSerializer.endTag(null, "EmailToSend");
             xmlSerializer.endTag(null, "userData");
             xmlSerializer.endDocument();
