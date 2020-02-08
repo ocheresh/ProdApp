@@ -1,5 +1,5 @@
-package com.example.prodapp;
 
+package com.example.prodapp;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

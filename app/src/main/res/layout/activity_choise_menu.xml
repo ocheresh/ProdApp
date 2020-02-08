@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.ChoiseMenu.ChoiseMenuView">
+    tools:context="com.prod.prodapp.View.ChoiseMenu.ChoiseMenuView">
 
     <LinearLayout
         android:orientation="vertical"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.prodapp">
+    package="com.prod.prodapp">
 
     <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -16,17 +16,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:theme="@style/AppTheme">
-        <activity android:name=".View.ImageViewer.FullScreen"></activity>
-        <activity android:name=".View.ImageViewer.ImageActivity" />
-        <activity android:name=".View.SplashActivity" />
-        <activity android:name=".View.ArhivNakladni.ArhivNakladniView" />
-        <activity android:name=".View.QrCodeReader.QrCodeReader" />
-        <activity android:name=".View.Settings.SettingView" />
+        <activity android:name="com.prod.prodapp.View.ImageViewer.FullScreen"></activity>
+        <activity android:name="com.prod.prodapp.View.ImageViewer.ImageActivity" />
+        <activity android:name="com.prod.prodapp.View.SplashActivity" />
+        <activity android:name="com.prod.prodapp.View.ArhivNakladni.ArhivNakladniView" />
+        <activity android:name="com.prod.prodapp.View.Settings.SettingView" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.example.prodapp"
+            android:authorities="com.prod.prodapp"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -34,12 +34,12 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name=".View.ChooseProduct.ChooseProductView" />
-        <activity android:name=".View.DataOfNakladna.DataOfNakladnaView" >
+        <activity android:name="com.prod.prodapp.View.ChooseProduct.ChooseProductView" />
+        <activity android:name="com.prod.prodapp.View.DataOfNakladna.DataOfNakladnaView" >
         </activity>
-        <activity android:name=".View.InfoOfNakladna.InfoOfNakladnaProdView" />
-        <activity android:name=".View.ChoiseMenu.ChoiseMenuView" />
-        <activity android:name=".View.Register.RegisterActivity">
+        <activity android:name="com.prod.prodapp.View.InfoOfNakladna.InfoOfNakladnaProdView" />
+        <activity android:name="com.prod.prodapp.View.ChoiseMenu.ChoiseMenuView" />
+        <activity android:name="com.prod.prodapp.View.Register.RegisterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
