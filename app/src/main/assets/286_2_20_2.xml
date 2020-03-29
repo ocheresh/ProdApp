@@ -1,0 +1,4915 @@
+﻿<Company>
+	<Dogovor>
+		<NumberDogovora> 	286/2/20/2	</NumberDogovora>
+		<DataDogovora> 	11.02.2020	</DataDogovora>
+		<Postav> 	ТОВ ПРЕМІУМ КОМПАНІ	</Postav>
+	</Dogovor>
+	<Product>
+		<KodP> 	1001	</KodP>
+		<Naimenov> 	Баклажани свіжі	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	24	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	0,05	</Kolichestvo>
+		<Price> 	82	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1002	</KodP>
+		<Naimenov> 	Баклажани свіжі сезонні	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	24	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	4	</Kolichestvo>
+		<Price> 	15	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1003	</KodP>
+		<Naimenov> 	Буряк готовий до вживання	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	28	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	18	</Kolichestvo>
+		<Price> 	8	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1004	</KodP>
+		<Naimenov> 	Буряк столовий свіжий	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	42	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	18	</Kolichestvo>
+		<Price> 	7	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1005	</KodP>
+		<Naimenov> 	Гарбуз продовольчий свіжий	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	26	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	0,5	</Kolichestvo>
+		<Price> 	7	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1006	</KodP>
+		<Naimenov> 	Горошок зелений консервований	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	41	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	4	</Kolichestvo>
+		<Price> 	30	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1007	</KodP>
+		<Naimenov> 	Ікра баклажанна	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	154	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	12	</Kolichestvo>
+		<Price> 	32	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1008	</KodP>
+		<Naimenov> 	Ікра кабачкова	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	122	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	7	</Kolichestvo>
+		<Price> 	30	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1009	</KodP>
+		<Naimenov> 	Кабачки консервовані	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	28	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	9	</Kolichestvo>
+		<Price> 	22	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1010	</KodP>
+		<Naimenov> 	Кабачки свіжі	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	23	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	0,05	</Kolichestvo>
+		<Price> 	40	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1011	</KodP>
+		<Naimenov> 	Кабачки свіжі сезонні	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	23	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	4	</Kolichestvo>
+		<Price> 	6	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1012	</KodP>
+		<Naimenov> 	Капуста білоголова свіжа	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	27	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	35	</Kolichestvo>
+		<Price> 	8	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1013	</KodP>
+		<Naimenov> 	Капуста броколі свіжа сезонна	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	27	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	60	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1014	</KodP>
+		<Naimenov> 	Капуста квашена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	23	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	20	</Kolichestvo>
+		<Price> 	12	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1015	</KodP>
+		<Naimenov> 	Капуста пекінська свіжа	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	12	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	28	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1016	</KodP>
+		<Naimenov> 	Капуста цвітна свіжа	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	30	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	51	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1017	</KodP>
+		<Naimenov> 	Капуста цвітна свіжа сезонна	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	30	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	30	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1018	</KodP>
+		<Naimenov> 	Картопля свіжа	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	80	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	220	</Kolichestvo>
+		<Price> 	11	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1019	</KodP>
+		<Naimenov> 	Картопля свіжа рання	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	80	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	10	</Kolichestvo>
+		<Price> 	18	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1020	</KodP>
+		<Naimenov> 	Квасоля продовольча	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	16	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	24	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1021	</KodP>
+		<Naimenov> 	Квасоля консервована	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	16	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	30	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1022	</KodP>
+		<Naimenov> 	Квасоля консервована в томаті (у томатному соусі)	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	16	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	35	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1023	</KodP>
+		<Naimenov> 	Консерви, заправки для перших страв	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	34	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	8	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1024	</KodP>
+		<Naimenov> 	Кукурудза консервована	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	45	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	38	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1025	</KodP>
+		<Naimenov> 	Маслини без кісточки	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	81	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	98	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1026	</KodP>
+		<Naimenov> 	Морква свіжа	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	34	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	40	</Kolichestvo>
+		<Price> 	8	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1027	</KodP>
+		<Naimenov> 	Морква готова до вживання	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	28	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	8	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1028	</KodP>
+		<Naimenov> 	Огірки свіжі	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	14	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	50	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1029	</KodP>
+		<Naimenov> 	Огірки консервовані	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	16	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	9	</Kolichestvo>
+		<Price> 	28	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1030	</KodP>
+		<Naimenov> 	Огірки солоні	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	13	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	20	</Kolichestvo>
+		<Price> 	27	</Price>
+		<Pakyvan> 	до 50 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1031	</KodP>
+		<Naimenov> 	Огірки свіжі сезонні	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	14	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	20	</Kolichestvo>
+		<Price> 	15	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1032	</KodP>
+		<Naimenov> 	Оливки без кісточки	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	81	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	110	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1033	</KodP>
+		<Naimenov> 	Перець солодкий свіжий (болгарський жовтий)	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	26	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	79	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1034	</KodP>
+		<Naimenov> 	Перець солодкий свіжий сезонний (болгарський жовтий)	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	26	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	30	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1035	</KodP>
+		<Naimenov> 	Перець солодкий свіжий (болгарський зелений)	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	26	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	79	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1036	</KodP>
+		<Naimenov> 	Перець солодкий свіжий сезонний (болгарський зелений)	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	26	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	30	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1037	</KodP>
+		<Naimenov> 	Перець солодкий свіжий (болгарський червоний)	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	26	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	79	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1038	</KodP>
+		<Naimenov> 	Перець солодкий свіжий сезонний (болгарський червоний)	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	26	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	30	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1039	</KodP>
+		<Naimenov> 	Перець стручковий свіжий червоний	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	26	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	90	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1040	</KodP>
+		<Naimenov> 	Перець консервований солодкий (болгарський)	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	26	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	24	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1041	</KodP>
+		<Naimenov> 	Салат свіжий	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	16	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	83	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1042	</KodP>
+		<Naimenov> 	Салат свіжий сезонний	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	16	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	35	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1043	</KodP>
+		<Naimenov> 	Томат свіжий	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	23	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	50	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1044	</KodP>
+		<Naimenov> 	Томат свіжий сезонний	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	23	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	15	</Kolichestvo>
+		<Price> 	15	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1045	</KodP>
+		<Naimenov> 	Томат консервований	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	15	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	15	</Kolichestvo>
+		<Price> 	18	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1046	</KodP>
+		<Naimenov> 	Томат солоний	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	13	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	8	</Kolichestvo>
+		<Price> 	28	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1047	</KodP>
+		<Naimenov> 	Цибуля зелена свіжа	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	19	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	75	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1048	</KodP>
+		<Naimenov> 	Цибуля порей свіжа	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	38	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	40	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1049	</KodP>
+		<Naimenov> 	Цибуля ріпчаста свіжа	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	41	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	34	</Kolichestvo>
+		<Price> 	12	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1050	</KodP>
+		<Naimenov> 	Часник свіжий	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	149	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	50	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1051	</KodP>
+		<Naimenov> 	Шампіньйони свіжі	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	27	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	52	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1052	</KodP>
+		<Naimenov> 	Шампіньйони консервовані	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	30	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	77	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1053	</KodP>
+		<Naimenov> 	Щавель свіжий	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	22	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	0,3	</Kolichestvo>
+		<Price> 	56	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1054	</KodP>
+		<Naimenov> 	Щавель консервований	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	29	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	0,3	</Kolichestvo>
+		<Price> 	35	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1055	</KodP>
+		<Naimenov> 	Салат овочевий закусочний	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	16	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	0,3	</Kolichestvo>
+		<Price> 	15	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1056	</KodP>
+		<Naimenov> 	Спаржа свіжа	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	20	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	0,3	</Kolichestvo>
+		<Price> 	40	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1057	</KodP>
+		<Naimenov> 	Редис свіжий	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	19	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	15	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1058	</KodP>
+		<Naimenov> 	Редька свіжа	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	36	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	19	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1059	</KodP>
+		<Naimenov> 	Капуста морська свіжа	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	25	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	0,3	</Kolichestvo>
+		<Price> 	88	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1060	</KodP>
+		<Naimenov> 	М`ята свіжа	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	70	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	0,3	</Kolichestvo>
+		<Price> 	90	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1061	</KodP>
+		<Naimenov> 	Цибуля синя	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	44	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	15	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1062	</KodP>
+		<Naimenov> 	Цибуля червона	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	72	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	15	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1063	</KodP>
+		<Naimenov> 	Картопля пізня	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	80	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	220	</Kolichestvo>
+		<Price> 	10	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1064	</KodP>
+		<Naimenov> 	Капуста червоноголова свіжа	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	27	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	4	</Kolichestvo>
+		<Price> 	15	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1065	</KodP>
+		<Naimenov> 	Рукола свіжа	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	25	</Kalor>
+		<Grupa> 	ОВ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	120	</Price>
+		<Pakyvan> 	до 5,00	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1201	</KodP>
+		<Naimenov> 	Капуста броколі заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	34	</Kalor>
+		<Grupa> 	ЗОФ	</Grupa>
+		<Kolichestvo> 	0,3	</Kolichestvo>
+		<Price> 	39	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1202	</KodP>
+		<Naimenov> 	Вишня заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	52	</Kalor>
+		<Grupa> 	ЗОФ	</Grupa>
+		<Kolichestvo> 	0,3	</Kolichestvo>
+		<Price> 	61	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1203	</KodP>
+		<Naimenov> 	Горошок зелений заморожений	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	72	</Kalor>
+		<Grupa> 	ЗОФ	</Grupa>
+		<Kolichestvo> 	0,3	</Kolichestvo>
+		<Price> 	34	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1204	</KodP>
+		<Naimenov> 	Капуста цвітна заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	30	</Kalor>
+		<Grupa> 	ЗОФ	</Grupa>
+		<Kolichestvo> 	0,3	</Kolichestvo>
+		<Price> 	34	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1205	</KodP>
+		<Naimenov> 	Картопля фрі заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	80	</Kalor>
+		<Grupa> 	ЗОФ	</Grupa>
+		<Kolichestvo> 	0,3	</Kolichestvo>
+		<Price> 	34	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1206	</KodP>
+		<Naimenov> 	Кукурудза заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	50	</Kalor>
+		<Grupa> 	ЗОФ	</Grupa>
+		<Kolichestvo> 	0,3	</Kolichestvo>
+		<Price> 	40	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1207	</KodP>
+		<Naimenov> 	Морква заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	21	</Kalor>
+		<Grupa> 	ЗОФ	</Grupa>
+		<Kolichestvo> 	0,3	</Kolichestvo>
+		<Price> 	8	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1208	</KodP>
+		<Naimenov> 	Перець солодкий (болгарський) заморожений	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	26	</Kalor>
+		<Grupa> 	ЗОФ	</Grupa>
+		<Kolichestvo> 	0,3	</Kolichestvo>
+		<Price> 	38	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1209	</KodP>
+		<Naimenov> 	Полуниця заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	41	</Kalor>
+		<Grupa> 	ЗОФ	</Grupa>
+		<Kolichestvo> 	0,3	</Kolichestvo>
+		<Price> 	57	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1210	</KodP>
+		<Naimenov> 	Слива заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	41	</Kalor>
+		<Grupa> 	ЗОФ	</Grupa>
+		<Kolichestvo> 	0,3	</Kolichestvo>
+		<Price> 	28	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1211	</KodP>
+		<Naimenov> 	Смородина чорна заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	42	</Kalor>
+		<Grupa> 	ЗОФ	</Grupa>
+		<Kolichestvo> 	0,3	</Kolichestvo>
+		<Price> 	50	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1212	</KodP>
+		<Naimenov> 	Спаржа заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	21	</Kalor>
+		<Grupa> 	ЗОФ	</Grupa>
+		<Kolichestvo> 	0,3	</Kolichestvo>
+		<Price> 	33	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1213	</KodP>
+		<Naimenov> 	Чорниця заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	36	</Kalor>
+		<Grupa> 	ЗОФ	</Grupa>
+		<Kolichestvo> 	0,3	</Kolichestvo>
+		<Price> 	70	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1301	</KodP>
+		<Naimenov> 	Крупа горохова швидкого приготування	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	298	</Kalor>
+		<Grupa> 	КРШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	20	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1302	</KodP>
+		<Naimenov> 	Крупа гречана швидкого приготування	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	335	</Kalor>
+		<Grupa> 	КРШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	28	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1303	</KodP>
+		<Naimenov> 	Крупа кукурудзяна швидкого приготування	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	372	</Kalor>
+		<Grupa> 	КРШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	20	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1304	</KodP>
+		<Naimenov> 	Крупа перлова швидкого приготування	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	320	</Kalor>
+		<Grupa> 	КРШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	16	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1305	</KodP>
+		<Naimenov> 	Крупа пшенична швидкого приготування	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	326	</Kalor>
+		<Grupa> 	КРШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	15	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1306	</KodP>
+		<Naimenov> 	Крупа пшоняна швидкого приготування	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	348	</Kalor>
+		<Grupa> 	КРШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	18	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1307	</KodP>
+		<Naimenov> 	Крупа рисова швидкого приготування	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	79	</Kalor>
+		<Grupa> 	КРШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	24	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1308	</KodP>
+		<Naimenov> 	Крупа ячна швидкого приготування	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	84	</Kalor>
+		<Grupa> 	КРШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	10	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1401	</KodP>
+		<Naimenov> 	Пластівці вівсяні	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	358	</Kalor>
+		<Grupa> 	КР	</Grupa>
+		<Kolichestvo> 	8	</Kolichestvo>
+		<Price> 	14	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1402	</KodP>
+		<Naimenov> 	Крупа вівсяна	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	303	</Kalor>
+		<Grupa> 	КР	</Grupa>
+		<Kolichestvo> 	10	</Kolichestvo>
+		<Price> 	12	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1403	</KodP>
+		<Naimenov> 	Геркулес	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	305	</Kalor>
+		<Grupa> 	КР	</Grupa>
+		<Kolichestvo> 	10	</Kolichestvo>
+		<Price> 	14	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1404	</KodP>
+		<Naimenov> 	Крупа горохова	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	298	</Kalor>
+		<Grupa> 	КР	</Grupa>
+		<Kolichestvo> 	8	</Kolichestvo>
+		<Price> 	10	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1405	</KodP>
+		<Naimenov> 	Крупа гречана ядриця	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	335	</Kalor>
+		<Grupa> 	КР	</Grupa>
+		<Kolichestvo> 	10	</Kolichestvo>
+		<Price> 	27	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1406	</KodP>
+		<Naimenov> 	Крупа кукурудзяна	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	372	</Kalor>
+		<Grupa> 	КР	</Grupa>
+		<Kolichestvo> 	10	</Kolichestvo>
+		<Price> 	9	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1407	</KodP>
+		<Naimenov> 	Крупа манна	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	328	</Kalor>
+		<Grupa> 	КР	</Grupa>
+		<Kolichestvo> 	10	</Kolichestvo>
+		<Price> 	9	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1408	</KodP>
+		<Naimenov> 	Крупа перлова	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	320	</Kalor>
+		<Grupa> 	КР	</Grupa>
+		<Kolichestvo> 	12	</Kolichestvo>
+		<Price> 	8,5	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1409	</KodP>
+		<Naimenov> 	Крупа пшенична	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	326	</Kalor>
+		<Grupa> 	КР	</Grupa>
+		<Kolichestvo> 	5	</Kolichestvo>
+		<Price> 	8,5	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1410	</KodP>
+		<Naimenov> 	Крупа пшоняна	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	348	</Kalor>
+		<Grupa> 	КР	</Grupa>
+		<Kolichestvo> 	10	</Kolichestvo>
+		<Price> 	16	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1411	</KodP>
+		<Naimenov> 	Крупа ячна	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	84	</Kalor>
+		<Grupa> 	КР	</Grupa>
+		<Kolichestvo> 	14	</Kolichestvo>
+		<Price> 	8,5	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1412	</KodP>
+		<Naimenov> 	Пластівці кукурудзяні	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	372	</Kalor>
+		<Grupa> 	КР	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	16	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1413	</KodP>
+		<Naimenov> 	Пластівці різні з фруктами	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	345	</Kalor>
+		<Grupa> 	КР	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	60	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1414	</KodP>
+		<Naimenov> 	Плаcтівці 4 злаки	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	345	</Kalor>
+		<Grupa> 	КР	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	50	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1415	</KodP>
+		<Naimenov> 	Рис довгозернистий полірований	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	330	</Kalor>
+		<Grupa> 	КР	</Grupa>
+		<Kolichestvo> 	8	</Kolichestvo>
+		<Price> 	18,5	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1416	</KodP>
+		<Naimenov> 	Рис довгозернистий пропарений	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	330	</Kalor>
+		<Grupa> 	КР	</Grupa>
+		<Kolichestvo> 	30	</Kolichestvo>
+		<Price> 	18,5	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1417	</KodP>
+		<Naimenov> 	Рис довгозернистий шліфований	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	330	</Kalor>
+		<Grupa> 	КР	</Grupa>
+		<Kolichestvo> 	8	</Kolichestvo>
+		<Price> 	18,5	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1418	</KodP>
+		<Naimenov> 	Рис круглий	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	323	</Kalor>
+		<Grupa> 	КР	</Grupa>
+		<Kolichestvo> 	11	</Kolichestvo>
+		<Price> 	18,5	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1419	</KodP>
+		<Naimenov> 	Рис нешліфований	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	323	</Kalor>
+		<Grupa> 	КР	</Grupa>
+		<Kolichestvo> 	4	</Kolichestvo>
+		<Price> 	18,5	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1420	</KodP>
+		<Naimenov> 	Сніданки сухі зернові	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	350	</Kalor>
+		<Grupa> 	КР	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	40	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1421	</KodP>
+		<Naimenov> 	Крупа саго	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	336	</Kalor>
+		<Grupa> 	КР	</Grupa>
+		<Kolichestvo> 	5	</Kolichestvo>
+		<Price> 	45	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1501	</KodP>
+		<Naimenov> 	Вермішель довга	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	332	</Kalor>
+		<Grupa> 	МАК	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	15	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1502	</KodP>
+		<Naimenov> 	Макарони	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	332	</Kalor>
+		<Grupa> 	МАК	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	15	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1503	</KodP>
+		<Naimenov> 	Пера	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	332	</Kalor>
+		<Grupa> 	МАК	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	15	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1504	</KodP>
+		<Naimenov> 	Ріжки	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	332	</Kalor>
+		<Grupa> 	МАК	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	15	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1505	</KodP>
+		<Naimenov> 	Фігурні макаронні вироби	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	332	</Kalor>
+		<Grupa> 	МАК	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	15	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1601	</KodP>
+		<Naimenov> 	Базилік свіжий	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	35	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	200	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1602	</KodP>
+		<Naimenov> 	Базилік (спеції)	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	417	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	50	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1603	</KodP>
+		<Naimenov> 	Гірчиця харчова	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	350	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,8	</Kolichestvo>
+		<Price> 	28	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1604	</KodP>
+		<Naimenov> 	Дріжджі хлібопекарські пресовані	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	109	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,05	</Kolichestvo>
+		<Price> 	16	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1605	</KodP>
+		<Naimenov> 	Дріжджі хлібопекарські сухі	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	410	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,05	</Kolichestvo>
+		<Price> 	118	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1606	</KodP>
+		<Naimenov> 	Желатин харчовий	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	355	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,5	</Kolichestvo>
+		<Price> 	196	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1607	</KodP>
+		<Naimenov> 	Кетчуп	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	78	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,5	</Kolichestvo>
+		<Price> 	26	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1608	</KodP>
+		<Naimenov> 	Корінь селери	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	32	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	46	</Price>
+		<Pakyvan> 	до 20 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1609	</KodP>
+		<Naimenov> 	Кріп свіжий	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	31	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	5	</Kolichestvo>
+		<Price> 	75	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1610	</KodP>
+		<Naimenov> 	Кріп сушений	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	25	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	58	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1611	</KodP>
+		<Naimenov> 	Крохмаль картопляний	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	327	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	25	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1612	</KodP>
+		<Naimenov> 	Лист лавровий сухий	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	313	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,2	</Kolichestvo>
+		<Price> 	75	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1613	</KodP>
+		<Naimenov> 	Майонезний соус 30 %	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	480	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,5	</Kolichestvo>
+		<Price> 	25	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1614	</KodP>
+		<Naimenov> 	Майонез 67 %	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	629	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	32	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1615	</KodP>
+		<Naimenov> 	Орегано (спеції)	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	265	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	53	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1616	</KodP>
+		<Naimenov> 	Оцет 9 %	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	32	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	8	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1617	</KodP>
+		<Naimenov> 	Перець червоний мелений	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	318	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,05	</Kolichestvo>
+		<Price> 	47	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1618	</KodP>
+		<Naimenov> 	Петрушка свіжа	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	49	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	6	</Kolichestvo>
+		<Price> 	75	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1619	</KodP>
+		<Naimenov> 	Петрушка сушена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	45	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,05	</Kolichestvo>
+		<Price> 	60	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1620	</KodP>
+		<Naimenov> 	Порошок гірчичний	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	271	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,2	</Kolichestvo>
+		<Price> 	28	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1621	</KodP>
+		<Naimenov> 	Приправи для моркви по-корейськи	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	241	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,05	</Kolichestvo>
+		<Price> 	60	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1622	</KodP>
+		<Naimenov> 	Перець чорний горошком	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	255	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,05	</Kolichestvo>
+		<Price> 	103	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1623	</KodP>
+		<Naimenov> 	Перець чорний мелений	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	255	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,05	</Kolichestvo>
+		<Price> 	100	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1624	</KodP>
+		<Naimenov> 	Сіль кухонна екстра	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	0	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	12	</Kolichestvo>
+		<Price> 	4	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1625	</KodP>
+		<Naimenov> 	Сіль кухонна	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	0	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	12	</Kolichestvo>
+		<Price> 	4	</Price>
+		<Pakyvan> 	до 25 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1626	</KodP>
+		<Naimenov> 	Томатна паста	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	96	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	8	</Kolichestvo>
+		<Price> 	38	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1627	</KodP>
+		<Naimenov> 	Хрін	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	32	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,05	</Kolichestvo>
+		<Price> 	40	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1628	</KodP>
+		<Naimenov> 	Кориця мелена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	10	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	32	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1629	</KodP>
+		<Naimenov> 	Ванілін	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	288	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	220	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1630	</KodP>
+		<Naimenov> 	Ванільний цукор	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	402	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	30	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1631	</KodP>
+		<Naimenov> 	Сіль йодована	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	0	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	6	</Price>
+		<Pakyvan> 	до 25 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1632	</KodP>
+		<Naimenov> 	Желе фруктове в асортименті	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	113	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	200	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1633	</KodP>
+		<Naimenov> 	Оцет яблучний 9 %	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	22	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	10	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1634	</KodP>
+		<Naimenov> 	Кислота лимонна	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	0	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	36	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	1635	</KodP>
+		<Naimenov> 	Сода харчова	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	0	</Kalor>
+		<Grupa> 	СП	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	34	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2001	</KodP>
+		<Naimenov> 	Бекон	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	316	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	173	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2002	</KodP>
+		<Naimenov> 	Ковбаса варено-копчена першого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	216	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	115	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2003	</KodP>
+		<Naimenov> 	Ковбаса варено-копчена вищого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	260	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	115	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2004	</KodP>
+		<Naimenov> 	Ковбаса напівкопчена першого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	376	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	120	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2005	</KodP>
+		<Naimenov> 	Ковбаса напівкопчена вищого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	413	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	120	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2006	</KodP>
+		<Naimenov> 	Ковбаса сирокопчена першого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	465	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	165	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2007	</KodP>
+		<Naimenov> 	Ковбаса сирокопчена вищого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	473	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	165	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2008	</KodP>
+		<Naimenov> 	Консерви “Паштети м’ясні”	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	317	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	33	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2009	</KodP>
+		<Naimenov> 	Консерви  “Паштети м’ясні” вищого  ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	275	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	0,24	</Kolichestvo>
+		<Price> 	60	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2010	</KodP>
+		<Naimenov> 	Консерви м’ясорослинні (гречка з яловичиною)	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	290	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	33	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2011	</KodP>
+		<Naimenov> 	Консерви м’ясорослинні (перлова з яловичиною)	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	270	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	30	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2012	</KodP>
+		<Naimenov> 	Консерви “Свинина тушкована”	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	349	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	78	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2013	</KodP>
+		<Naimenov> 	Консерви “Яловичина тушкована вищого ґатунку”	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	232	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	78	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2014	</KodP>
+		<Naimenov> 	Качина тушка охолоджена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	348	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	100	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2015	</KodP>
+		<Naimenov> 	Індиче філе охолоджене	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	192	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	140	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2016	</KodP>
+		<Naimenov> 	Індиче філе заморожене	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	192	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	140	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2017	</KodP>
+		<Naimenov> 	Індича гомілка охолоджена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	192	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	75	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2018	</KodP>
+		<Naimenov> 	Індича гомілка заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	192	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	75	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2019	</KodP>
+		<Naimenov> 	Індиче стегно охолоджене	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	192	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	6	</Kolichestvo>
+		<Price> 	118	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2020	</KodP>
+		<Naimenov> 	Індиче стегно заморожене	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	192	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	6	</Kolichestvo>
+		<Price> 	118	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2021	</KodP>
+		<Naimenov> 	Індича тушка	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	192	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	77	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2022	</KodP>
+		<Naimenov> 	Куряче філе заморожене	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	113	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	4	</Kolichestvo>
+		<Price> 	88	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2023	</KodP>
+		<Naimenov> 	Куряче філе охолоджене	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	113	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	4	</Kolichestvo>
+		<Price> 	88	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2024	</KodP>
+		<Naimenov> 	Куряча гомілка заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	185	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	45	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2025	</KodP>
+		<Naimenov> 	Куряча гомілка охолоджена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	185	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	45	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2026	</KodP>
+		<Naimenov> 	Куряче крило заморожене	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	141	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	35	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2027	</KodP>
+		<Naimenov> 	Куряче крило охолоджене	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	141	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	35	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2028	</KodP>
+		<Naimenov> 	Куряче стегно заморожене	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	190	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	66	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2029	</KodP>
+		<Naimenov> 	Куряче стегно охолоджене	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	190	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	11	</Kolichestvo>
+		<Price> 	66	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2030	</KodP>
+		<Naimenov> 	Куряча тушка заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	241	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	10	</Kolichestvo>
+		<Price> 	44	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2031	</KodP>
+		<Naimenov> 	Куряча тушка охолоджена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	241	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	10	</Kolichestvo>
+		<Price> 	44	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2032	</KodP>
+		<Naimenov> 	Печінка куряча	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	140	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	17	</Kolichestvo>
+		<Price> 	33	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2033	</KodP>
+		<Naimenov> 	Сало свіже	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	841	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	20	</Kolichestvo>
+		<Price> 	65	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2034	</KodP>
+		<Naimenov> 	Сало солоне	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	816	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	65	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2035	</KodP>
+		<Naimenov> 	Сардельки першого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	198	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	85	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2036	</KodP>
+		<Naimenov> 	Сардельки вищого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	277	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	85	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2037	</KodP>
+		<Naimenov> 	Свинина, грудинка ціла охолоджена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	600	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	105	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2038	</KodP>
+		<Naimenov> 	Свинина, корейка без кістки заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	384	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	119,5	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2039	</KodP>
+		<Naimenov> 	Свинина, корейка без кістки охолоджена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	384	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	119,5	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2040	</KodP>
+		<Naimenov> 	Свинина, корейка з кісткою заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	384	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	119,5	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2041	</KodP>
+		<Naimenov> 	Свинина, корейка з кісткою охолоджена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	384	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	119,5	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2042	</KodP>
+		<Naimenov> 	Свинина, лопатка без кістки заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	305	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	6	</Kolichestvo>
+		<Price> 	115	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2043	</KodP>
+		<Naimenov> 	Свинина, лопатка без кістки охолоджена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	305	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	6	</Kolichestvo>
+		<Price> 	115	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2044	</KodP>
+		<Naimenov> 	Свинина півтуші, заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	355	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	19	</Kolichestvo>
+		<Price> 	85	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2045	</KodP>
+		<Naimenov> 	Свинина півтуші, охолоджена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	355	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	19	</Kolichestvo>
+		<Price> 	85	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2046	</KodP>
+		<Naimenov> 	Свинина, ошийок охолоджений	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	491	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	4	</Kolichestvo>
+		<Price> 	119,5	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2047	</KodP>
+		<Naimenov> 	Свинина, печінка заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	108	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	25	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2048	</KodP>
+		<Naimenov> 	Свинина, печінка охолоджена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	108	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	25	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2049	</KodP>
+		<Naimenov> 	Свинина, ребра заморожені	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	234	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	105	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2050	</KodP>
+		<Naimenov> 	Свинина, ребра охолоджені	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	234	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	105	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2051	</KodP>
+		<Naimenov> 	Свинина, стегно заморожене	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	305	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	4	</Kolichestvo>
+		<Price> 	115	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2052	</KodP>
+		<Naimenov> 	Свинина, стегно охолоджене	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	305	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	4	</Kolichestvo>
+		<Price> 	115	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2053	</KodP>
+		<Naimenov> 	Сосиски першого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	198	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	4	</Kolichestvo>
+		<Price> 	84	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2054	</KodP>
+		<Naimenov> 	Сосиски вищого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	277	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	4	</Kolichestvo>
+		<Price> 	85	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2055	</KodP>
+		<Naimenov> 	Шинка, грудинка (копчені)	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	514	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	120	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2056	</KodP>
+		<Naimenov> 	Яйця курячі першого ґатунку	</Naimenov>
+		<EdIzm>	шт	</EdIzm>
+		<EdYch> 	шт	</EdYch>
+		<EdKoef> 	1	 </EdKoef>
+		<Kalor> 	157	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	0,3	</Kolichestvo>
+		<Price> 	3	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2057	</KodP>
+		<Naimenov> 	Яйця курячі вищого ґатунку	</Naimenov>
+		<EdIzm>	шт	</EdIzm>
+		<EdYch> 	шт	</EdYch>
+		<EdKoef> 	1	 </EdKoef>
+		<Kalor> 	157	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	0,2	</Kolichestvo>
+		<Price> 	3	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2058	</KodP>
+		<Naimenov> 	Яловичина, задня частина заморожена без кістки	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	183	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	119	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2059	</KodP>
+		<Naimenov> 	Яловичина, задня частина охолоджена без кістки	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	183	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	119	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2060	</KodP>
+		<Naimenov> 	Яловичина, лопатка заморожена без кістки	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	183	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	7	</Kolichestvo>
+		<Price> 	119	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2061	</KodP>
+		<Naimenov> 	Яловичина, лопатка охолоджена без кістки	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	183	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	7	</Kolichestvo>
+		<Price> 	119	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2062	</KodP>
+		<Naimenov> 	Яловичина півтуші, заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	183	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	6	</Kolichestvo>
+		<Price> 	85	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2063	</KodP>
+		<Naimenov> 	Яловичина півтуші, охолоджена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	183	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	6	</Kolichestvo>
+		<Price> 	85	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2064	</KodP>
+		<Naimenov> 	Яловичина, печінка заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	98	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	8	</Kolichestvo>
+		<Price> 	30	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2065	</KodP>
+		<Naimenov> 	Яловичина, стейк (биток)	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	183	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	4	</Kolichestvo>
+		<Price> 	119	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2066	</KodP>
+		<Naimenov> 	М’ясні субпродукти другої категорії	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	200	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	15	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2067	</KodP>
+		<Naimenov> 	Телятина, задня частина заморожена без кістки	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	172	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	128	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2068	</KodP>
+		<Naimenov> 	Телятина, задня частина охолоджена без кістки	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	172	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	128	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2069	</KodP>
+		<Naimenov> 	Телятина, лопатка заморожена без кістки	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	172	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	128	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2070	</KodP>
+		<Naimenov> 	Телятина, лопатка охолоджена без кістки	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	172	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	128	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2071	</KodP>
+		<Naimenov> 	Телятина півтуші, заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	172	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	86	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2072	</KodP>
+		<Naimenov> 	Телятина півтуші, охолоджена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	172	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	86	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2073	</KodP>
+		<Naimenov> 	Телятина, стейк (биток)	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	172	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	130	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2074	</KodP>
+		<Naimenov> 	М’ясо кролика, тушка охолоджена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	183	</Kalor>
+		<Grupa> 	М	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	200	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2201	</KodP>
+		<Naimenov> 	Мерлуза, філе заморожене	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	86	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	118	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2202	</KodP>
+		<Naimenov> 	Горбуша без голови заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	151	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	154	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2203	</KodP>
+		<Naimenov> 	Камбала заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	90	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	6	</Kolichestvo>
+		<Price> 	96	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2204	</KodP>
+		<Naimenov> 	Консерви тунець в олії	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	232	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	111	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2205	</KodP>
+		<Naimenov> 	Консерви з риби дрібної у томаті першого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	119	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	58	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2206	</KodP>
+		<Naimenov> 	Консерви з риби дрібної у томаті вищого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	134	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	58	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2207	</KodP>
+		<Naimenov> 	Консерви рибні першого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	88	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	58	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2208	</KodP>
+		<Naimenov> 	Консерви рибні в олії першого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	88	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	58	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2209	</KodP>
+		<Naimenov> 	Консерви рибні в олії вищого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	88	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	58	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2210	</KodP>
+		<Naimenov> 	Консерви рибні вищого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	88	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	58	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2211	</KodP>
+		<Naimenov> 	Консерви рибні у томаті першого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	88	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	59	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2212	</KodP>
+		<Naimenov> 	Консерви рибні у томаті вищого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	88	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	59	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2213	</KodP>
+		<Naimenov> 	Консерви сардини в олії першого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	88	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	62	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2214	</KodP>
+		<Naimenov> 	Консерви сардини в олії вищого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	88	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	62	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2215	</KodP>
+		<Naimenov> 	Консерви шпроти в олії першого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	363	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	80	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2216	</KodP>
+		<Naimenov> 	Консерви шпроти в олії вищого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	363	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	80	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2217	</KodP>
+		<Naimenov> 	Короп охолоджений	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	95	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	60	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2218	</KodP>
+		<Naimenov> 	Крабові палички заморожені	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	88	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	48	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2219	</KodP>
+		<Naimenov> 	Минтай, філе заморожене	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	70	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	55	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2220	</KodP>
+		<Naimenov> 	Минтай заморожений	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	70	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	4,5	</Kolichestvo>
+		<Price> 	55	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2221	</KodP>
+		<Naimenov> 	Минтай без голови заморожений	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	70	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	4,5	</Kolichestvo>
+		<Price> 	58	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2222	</KodP>
+		<Naimenov> 	Осетр охолоджений	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	161	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	370	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2223	</KodP>
+		<Naimenov> 	Сайда заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	81	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	5	</Kolichestvo>
+		<Price> 	38	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2224	</KodP>
+		<Naimenov> 	Сайда без голови заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	81	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	5	</Kolichestvo>
+		<Price> 	62	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2225	</KodP>
+		<Naimenov> 	Сайра заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	180	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	5	</Kolichestvo>
+		<Price> 	70	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2226	</KodP>
+		<Naimenov> 	Сайра без голови заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	180	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	5	</Kolichestvo>
+		<Price> 	72	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2227	</KodP>
+		<Naimenov> 	Скумбрія заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	49	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	5	</Kolichestvo>
+		<Price> 	68	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2228	</KodP>
+		<Naimenov> 	Скумбрія без голови заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	153	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	5	</Kolichestvo>
+		<Price> 	72	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2229	</KodP>
+		<Naimenov> 	Форель охолоджена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	99	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	0,4	</Kolichestvo>
+		<Price> 	190	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2230	</KodP>
+		<Naimenov> 	Хек заморожений	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	86	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	5	</Kolichestvo>
+		<Price> 	58	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2231	</KodP>
+		<Naimenov> 	Хек без голови заморожений	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	86	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	5	</Kolichestvo>
+		<Price> 	63	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2232	</KodP>
+		<Naimenov> 	Хек, філе заморожене	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	86	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	0,4	</Kolichestvo>
+		<Price> 	78	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2233	</KodP>
+		<Naimenov> 	Тріска без голови заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	69	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	80	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2234	</KodP>
+		<Naimenov> 	Тріска, філе заморожена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	69	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	100	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2235	</KodP>
+		<Naimenov> 	Сом без голови заморожений	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	115	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	100	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2236	</KodP>
+		<Naimenov> 	Сом без голови охолоджений	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	115	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	100	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2237	</KodP>
+		<Naimenov> 	Філе оселедця (солоне)	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	217	</Kalor>
+		<Grupa> 	Р	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	50	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2301	</KodP>
+		<Naimenov> 	Маргарин столовий 70 %	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	743	</Kalor>
+		<Grupa> 	Жир	</Grupa>
+		<Kolichestvo> 	8	</Kolichestvo>
+		<Price> 	22	</Price>
+		<Pakyvan> 	до 20 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2302	</KodP>
+		<Naimenov> 	Масло вершкове селянське 72,5 % - 79,9 %	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	899	</Kalor>
+		<Grupa> 	Жир	</Grupa>
+		<Kolichestvo> 	25	</Kolichestvo>
+		<Price> 	105	</Price>
+		<Pakyvan> 	до 20 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2303	</KodP>
+		<Naimenov> 	Масло вершкове селянське 72,5 % - 79,9 %	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	899	</Kalor>
+		<Grupa> 	Жир	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	115	</Price>
+		<Pakyvan> 	до 0,300 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2304	</KodP>
+		<Naimenov> 	Масло бутербродне 61,5 % - 72,4 %	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	747	</Kalor>
+		<Grupa> 	Жир	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	120	</Price>
+		<Pakyvan> 	до 0,300 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2305	</KodP>
+		<Naimenov> 	Олія оливкова	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	898	</Kalor>
+		<Grupa> 	Жир	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	90	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2306	</KodP>
+		<Naimenov> 	Олія соняшникова нерафінована	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	899	</Kalor>
+		<Grupa> 	Жир	</Grupa>
+		<Kolichestvo> 	6	</Kolichestvo>
+		<Price> 	33	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2307	</KodP>
+		<Naimenov> 	Олія соняшникова рафінована	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	899	</Kalor>
+		<Grupa> 	Жир	</Grupa>
+		<Kolichestvo> 	10	</Kolichestvo>
+		<Price> 	33	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	2308	</KodP>
+		<Naimenov> 	Жир тваринний	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	882	</Kalor>
+		<Grupa> 	Жир	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	5	</Price>
+		<Pakyvan> 	до 20 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3001	</KodP>
+		<Naimenov> 	Варення з малини	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	273	</Kalor>
+		<Grupa> 	МДШ	</Grupa>
+		<Kolichestvo> 	0,5	</Kolichestvo>
+		<Price> 	58	</Price>
+		<Pakyvan> 	до 20 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3002	</KodP>
+		<Naimenov> 	Варення з полуниці	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	285	</Kalor>
+		<Grupa> 	МДШ	</Grupa>
+		<Kolichestvo> 	0,5	</Kolichestvo>
+		<Price> 	58	</Price>
+		<Pakyvan> 	до 20 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3003	</KodP>
+		<Naimenov> 	Варення плодово-ягідне	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	242	</Kalor>
+		<Grupa> 	МДШ	</Grupa>
+		<Kolichestvo> 	0,5	</Kolichestvo>
+		<Price> 	57	</Price>
+		<Pakyvan> 	до 20 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3004	</KodP>
+		<Naimenov> 	Джем плодово-ягідний	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	254	</Kalor>
+		<Grupa> 	МДШ	</Grupa>
+		<Kolichestvo> 	0,49	</Kolichestvo>
+		<Price> 	30	</Price>
+		<Pakyvan> 	до 20 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3005	</KodP>
+		<Naimenov> 	Льодяники різні	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	291	</Kalor>
+		<Grupa> 	МДШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	45	</Price>
+		<Pakyvan> 	до 20 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3006	</KodP>
+		<Naimenov> 	Мед натуральний	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	308	</Kalor>
+		<Grupa> 	МДШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	59	</Price>
+		<Pakyvan> 	до 20 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3007	</KodP>
+		<Naimenov> 	Повидло яблучне	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	280	</Kalor>
+		<Grupa> 	МДШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	24	</Price>
+		<Pakyvan> 	до 20 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3008	</KodP>
+		<Naimenov> 	Варення з малини індивідуального пакування	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	273	</Kalor>
+		<Grupa> 	МДШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	85	</Price>
+		<Pakyvan> 	до 0,03 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3009	</KodP>
+		<Naimenov> 	Варення з полуниці індивідуального пакування	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	285	</Kalor>
+		<Grupa> 	МДШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	85	</Price>
+		<Pakyvan> 	до 0,03 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3010	</KodP>
+		<Naimenov> 	Варення плодово-ягідне індивідуального пакування	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	242	</Kalor>
+		<Grupa> 	МДШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	85	</Price>
+		<Pakyvan> 	до 0,03 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3011	</KodP>
+		<Naimenov> 	Джем плодово-ягідний індивідуального пакування	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	254	</Kalor>
+		<Grupa> 	МДШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	75	</Price>
+		<Pakyvan> 	до 0,03 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3012	</KodP>
+		<Naimenov> 	Льодяники різні індивідуального пакування	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	291	</Kalor>
+		<Grupa> 	МДШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	44	</Price>
+		<Pakyvan> 	до 0,03 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3013	</KodP>
+		<Naimenov> 	Мед натуральний індивідуального пакування	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	308	</Kalor>
+		<Grupa> 	МДШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	115	</Price>
+		<Pakyvan> 	до 0,03 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3014	</KodP>
+		<Naimenov> 	Повидло яблучне індивідуального пакування	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	280	</Kalor>
+		<Grupa> 	МДШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	85	</Price>
+		<Pakyvan> 	до 0,03 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3015	</KodP>
+		<Naimenov> 	Горіхова паста	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	588	</Kalor>
+		<Grupa> 	МДШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	90	</Price>
+		<Pakyvan> 	до 2 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3016	</KodP>
+		<Naimenov> 	Батончик енергетичний	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	556	</Kalor>
+		<Grupa> 	МДШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	79	</Price>
+		<Pakyvan> 	до 0,1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3017	</KodP>
+		<Naimenov> 	Шоколад молочний	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	552	</Kalor>
+		<Grupa> 	МДШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	170	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3018	</KodP>
+		<Naimenov> 	Шоколад молочний індивідуального пакування	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	552	</Kalor>
+		<Grupa> 	МДШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	218	</Price>
+		<Pakyvan> 	до 0,03 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3019	</KodP>
+		<Naimenov> 	Шоколад темний (чорний)	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	546	</Kalor>
+		<Grupa> 	МДШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	170	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3020	</KodP>
+		<Naimenov> 	Шоколад темний (чорний) індивідуального пакування	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	546	</Kalor>
+		<Grupa> 	МДШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	218	</Price>
+		<Pakyvan> 	до 0,03 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3021	</KodP>
+		<Naimenov> 	Батончик шоколадний з арахісом	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	580	</Kalor>
+		<Grupa> 	МДШ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	100	</Price>
+		<Pakyvan> 	до 0,20 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3101	</KodP>
+		<Naimenov> 	Бринза	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	298	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	102	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3102	</KodP>
+		<Naimenov> 	Вершки питні порційні	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	209	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	130	</Price>
+		<Pakyvan> 	до 0,02 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3103	</KodP>
+		<Naimenov> 	Вершки кондитерські (кулінарні)	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	107	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	70	</Price>
+		<Pakyvan> 	до 2 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3104	</KodP>
+		<Naimenov> 	Йогурт з добавками від 1,5 %	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	51	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	4	</Kolichestvo>
+		<Price> 	44	</Price>
+		<Pakyvan> 	до 0,150 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3105	</KodP>
+		<Naimenov> 	Йогурт натуральний від 1,5 %	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	50	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	4	</Kolichestvo>
+		<Price> 	44	</Price>
+		<Pakyvan> 	до 0,150 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3106	</KodP>
+		<Naimenov> 	Кефір нежирний	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	37	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	22	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3107	</KodP>
+		<Naimenov> 	Кефір від 2,5 %	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	59	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	23	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3108	</KodP>
+		<Naimenov> 	Молоко згущене 8,5 %	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	315	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	0,2	</Kolichestvo>
+		<Price> 	42	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3109	</KodP>
+		<Naimenov> 	Молоко пастеризоване 1 % - 2,4 %	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	58	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	24	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3110	</KodP>
+		<Naimenov> 	Молоко ультрапастеризоване 1,5 %	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	59	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	23	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3111	</KodP>
+		<Naimenov> 	Молоко ультрапастеризоване 2,5 %	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	60	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	25	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3112	</KodP>
+		<Naimenov> 	Молоко ультрапастеризоване 3,2 %	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	65	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	26	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3113	</KodP>
+		<Naimenov> 	Сир кисломолочний 9 %	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	156	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	5	</Kolichestvo>
+		<Price> 	81	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3114	</KodP>
+		<Naimenov> 	Сир кисломолочний не жирний	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	89	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	1,5	</Kolichestvo>
+		<Price> 	82	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3115	</KodP>
+		<Naimenov> 	Сир плавлений індивідуального пакування	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	148	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	0,5	</Kolichestvo>
+		<Price> 	62	</Price>
+		<Pakyvan> 	до 0,20 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3116	</KodP>
+		<Naimenov> 	Сир російський	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	371	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	8	</Kolichestvo>
+		<Price> 	95	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3117	</KodP>
+		<Naimenov> 	Сир напівтвердий	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	348	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	8	</Kolichestvo>
+		<Price> 	95	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3118	</KodP>
+		<Naimenov> 	Сир твердий сичужний	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	380	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	8	</Kolichestvo>
+		<Price> 	95	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3119	</KodP>
+		<Naimenov> 	Сир фета	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	226	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	0,5	</Kolichestvo>
+		<Price> 	102	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3120	</KodP>
+		<Naimenov> 	Сметана 15 % - 20 %	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	263	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	0,5	</Kolichestvo>
+		<Price> 	60	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3121	</KodP>
+		<Naimenov> 	Сметана 21 % - 25 %	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	206	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	0,5	</Kolichestvo>
+		<Price> 	60	</Price>
+		<Pakyvan> 	до 1 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3122	</KodP>
+		<Naimenov> 	Молоко пастеризоване від 2,5 %	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	51	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	24	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3123	</KodP>
+		<Naimenov> 	Десерт сирковий	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	390	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	43	</Price>
+		<Pakyvan> 	до 0,25 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	3124	</KodP>
+		<Naimenov> 	Сир Моцарела	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	242	</Kalor>
+		<Grupa> 	МОЛ	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	210	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4001	</KodP>
+		<Naimenov> 	Апельсиновий сік до 0,3 л	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	55	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	27	</Price>
+		<Pakyvan> 	до 0,3 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4002	</KodP>
+		<Naimenov> 	Апельсиновий сік	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	55	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	19	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4003	</KodP>
+		<Naimenov> 	Виноградний сік до 0,3 л	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	72	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	27	</Price>
+		<Pakyvan> 	до 0,3 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4004	</KodP>
+		<Naimenov> 	Виноградний сік	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	72	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	19	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4005	</KodP>
+		<Naimenov> 	Вишневий сік до 0,3 л	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	53	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	40	</Price>
+		<Pakyvan> 	до 0,3 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4006	</KodP>
+		<Naimenov> 	Вишневий сік	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	53	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	30	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4007	</KodP>
+		<Naimenov> 	Вода газована солодка 0,5 л	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	38	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	7	</Price>
+		<Pakyvan> 	до 0,5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4008	</KodP>
+		<Naimenov> 	Вода газована солодка 1,5 л	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	38	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	6	</Price>
+		<Pakyvan> 	до 1,5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4009	</KodP>
+		<Naimenov> 	Вода мінеральна 0,33 л	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	0	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	0,3	</Kolichestvo>
+		<Price> 	6	</Price>
+		<Pakyvan> 	до 0,33 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4010	</KodP>
+		<Naimenov> 	Вода мінеральна 0,5 л	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	0	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	6	</Price>
+		<Pakyvan> 	до 0,5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4011	</KodP>
+		<Naimenov> 	Вода мінеральна 1,5 л	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	0	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	6	</Price>
+		<Pakyvan> 	до 1,5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4012	</KodP>
+		<Naimenov> 	Вода питна бутильована до 1,5 л	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	0	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	20	</Kolichestvo>
+		<Price> 	3,5	</Price>
+		<Pakyvan> 	до 1,5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4013	</KodP>
+		<Naimenov> 	Гранатовий сік	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	64	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	1,5	</Kolichestvo>
+		<Price> 	65	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4014	</KodP>
+		<Naimenov> 	Грейпфрутовий сік	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	36	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	1,5	</Kolichestvo>
+		<Price> 	19	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4015	</KodP>
+		<Naimenov> 	Кава натуральна мелена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	223	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	0,05	</Kolichestvo>
+		<Price> 	405	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4016	</KodP>
+		<Naimenov> 	Кава розчинна	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	118	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	0,05	</Kolichestvo>
+		<Price> 	308	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4017	</KodP>
+		<Naimenov> 	Кавовий напій	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	337	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	0,05	</Kolichestvo>
+		<Price> 	103	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4018	</KodP>
+		<Naimenov> 	Какао-порошок	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	373	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	0,05	</Kolichestvo>
+		<Price> 	28	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4019	</KodP>
+		<Naimenov> 	Мультивітамінний сік до 0,3 л	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	65	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	27	</Price>
+		<Pakyvan> 	до 0,3 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4020	</KodP>
+		<Naimenov> 	Мультивітамінний сік	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	65	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	19	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4021	</KodP>
+		<Naimenov> 	Томатний сік до 0,3 л	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	18	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	27	</Price>
+		<Pakyvan> 	до 0,3 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4022	</KodP>
+		<Naimenov> 	Томатний сік	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	18	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	19	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4023	</KodP>
+		<Naimenov> 	Енергетичний напій	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	47	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	41	</Price>
+		<Pakyvan> 	до 0,5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4024	</KodP>
+		<Naimenov> 	Цукор індивідуального пакування	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	377	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	20	</Kolichestvo>
+		<Price> 	32	</Price>
+		<Pakyvan> 	до 0,03 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4025	</KodP>
+		<Naimenov> 	Цукор	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	379	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	40	</Kolichestvo>
+		<Price> 	14	</Price>
+		<Pakyvan> 	до 50 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4026	</KodP>
+		<Naimenov> 	Чай зелений пакетований	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	140	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	0,15	</Kolichestvo>
+		<Price> 	214	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4027	</KodP>
+		<Naimenov> 	Чай зелений нефасований	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	140	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	0,75	</Kolichestvo>
+		<Price> 	145	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4028	</KodP>
+		<Naimenov> 	Чай чорний з добавками пакетований	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	140	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	0,15	</Kolichestvo>
+		<Price> 	224	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4029	</KodP>
+		<Naimenov> 	Чай чорний пакетований	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	151	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	0,2	</Kolichestvo>
+		<Price> 	220	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4030	</KodP>
+		<Naimenov> 	Чай чорний нефасований	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	151	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	0,75	</Kolichestvo>
+		<Price> 	74	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4031	</KodP>
+		<Naimenov> 	Яблучний сік до 0,3 л	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	47	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	27	</Price>
+		<Pakyvan> 	до 0,3 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4032	</KodP>
+		<Naimenov> 	Яблучний сік	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	47	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	19	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4033	</KodP>
+		<Naimenov> 	Напій швидкорозчинний фруктовий	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	42	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	0,1	</Kolichestvo>
+		<Price> 	85	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4034	</KodP>
+		<Naimenov> 	Сік лимонний	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	30	</Kalor>
+		<Grupa> 	Н	</Grupa>
+		<Kolichestvo> 	0,1	</Kolichestvo>
+		<Price> 	50	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4101	</KodP>
+		<Naimenov> 	Ананас консервований	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	87	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	44	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4102	</KodP>
+		<Naimenov> 	Ананас свіжий	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	52	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	42	</Price>
+		<Pakyvan> 	до 40 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4103	</KodP>
+		<Naimenov> 	Апельсин	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	43	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	31	</Price>
+		<Pakyvan> 	до 40 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4104	</KodP>
+		<Naimenov> 	Банан	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	96	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	33	</Price>
+		<Pakyvan> 	до 40 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4105	</KodP>
+		<Naimenov> 	Виноград	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	72	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	52	</Price>
+		<Pakyvan> 	до 40 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4106	</KodP>
+		<Naimenov> 	Арахіс смажений	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	555	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	0,1	</Kolichestvo>
+		<Price> 	57	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4107	</KodP>
+		<Naimenov> 	Горіх грецький ядро	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	656	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	0,1	</Kolichestvo>
+		<Price> 	120	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4108	</KodP>
+		<Naimenov> 	Горіх кеш`ю	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	647	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	0,1	</Kolichestvo>
+		<Price> 	392	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4109	</KodP>
+		<Naimenov> 	Горіх фундук ядро сушений	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	701	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	0,1	</Kolichestvo>
+		<Price> 	215	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4110	</KodP>
+		<Naimenov> 	Грейпфрут	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	37	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	32	</Price>
+		<Pakyvan> 	до 40 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4111	</KodP>
+		<Naimenov> 	Груша свіжа (рання) сезонна	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	42	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	25	</Price>
+		<Pakyvan> 	до 40 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4112	</KodP>
+		<Naimenov> 	Груша пізня	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	42	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	45	</Price>
+		<Pakyvan> 	до 40 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4113	</KodP>
+		<Naimenov> 	Груша консервована	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	41	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	95	</Price>
+		<Pakyvan> 	до 40 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4114	</KodP>
+		<Naimenov> 	Диня	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	35	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	6	</Kolichestvo>
+		<Price> 	8	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4115	</KodP>
+		<Naimenov> 	Кавун	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	27	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	6	</Kolichestvo>
+		<Price> 	8	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4116	</KodP>
+		<Naimenov> 	Ківі	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	47	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	41	</Price>
+		<Pakyvan> 	до 40 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4117	</KodP>
+		<Naimenov> 	Курага	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	232	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	0,5	</Kolichestvo>
+		<Price> 	50	</Price>
+		<Pakyvan> 	до 40 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4118	</KodP>
+		<Naimenov> 	Лимон	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	34	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	0,5	</Kolichestvo>
+		<Price> 	39	</Price>
+		<Pakyvan> 	до 40 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4119	</KodP>
+		<Naimenov> 	Мак	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	556	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	0,5	</Kolichestvo>
+		<Price> 	97	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4120	</KodP>
+		<Naimenov> 	Малина свіжа	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	43	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	0,5	</Kolichestvo>
+		<Price> 	70	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4121	</KodP>
+		<Naimenov> 	Мандарин	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	38	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	30	</Price>
+		<Pakyvan> 	до 40 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4122	</KodP>
+		<Naimenov> 	Персик консервований	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	42	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	50	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4123	</KodP>
+		<Naimenov> 	Родзинки	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	281	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	50	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4124	</KodP>
+		<Naimenov> 	Суміш сухофруктів	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	253	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	10	</Kolichestvo>
+		<Price> 	35	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4125	</KodP>
+		<Naimenov> 	Суміш фруктів консервовані	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	42	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	68	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4126	</KodP>
+		<Naimenov> 	Хурма	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	61	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	47	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4127	</KodP>
+		<Naimenov> 	Черешня	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	52	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	45	</Price>
+		<Pakyvan> 	до 20 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4128	</KodP>
+		<Naimenov> 	Чорнослив без кісточки	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	262	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	61	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4129	</KodP>
+		<Naimenov> 	Нектарин	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	44	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	40	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4130	</KodP>
+		<Naimenov> 	Яблука свіжі сезонні	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	47	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	24	</Price>
+		<Pakyvan> 	до 40 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4131	</KodP>
+		<Naimenov> 	Яблука ранні	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	47	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	24	</Price>
+		<Pakyvan> 	до 40 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4132	</KodP>
+		<Naimenov> 	Яблука пізні	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	47	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	26	</Price>
+		<Pakyvan> 	до 40 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4133	</KodP>
+		<Naimenov> 	Насіння льону	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	53	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	0,01	</Kolichestvo>
+		<Price> 	43	</Price>
+		<Pakyvan> 	до 40 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4134	</KodP>
+		<Naimenov> 	Шипшина сушена	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	51	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	50,97	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4135	</KodP>
+		<Naimenov> 	Слива свіжа сезонна	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	46	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	25	</Price>
+		<Pakyvan> 	до 40 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4136	</KodP>
+		<Naimenov> 	Гарбузове насіння чищене	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	446	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	100	</Price>
+		<Pakyvan> 	до 30 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4137	</KodP>
+		<Naimenov> 	Інжир сушений	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	257	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	125	</Price>
+		<Pakyvan> 	до 40 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4138	</KodP>
+		<Naimenov> 	Абрикос	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	48	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	25	</Price>
+		<Pakyvan> 	до 40 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4139	</KodP>
+		<Naimenov> 	Персик	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	39	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	45	</Price>
+		<Pakyvan> 	до 40 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4140	</KodP>
+		<Naimenov> 	Журавлина	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	46	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	92	</Price>
+		<Pakyvan> 	до 40 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4141	</KodP>
+		<Naimenov> 	Полуниця	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	30	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	30	</Price>
+		<Pakyvan> 	до 40 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4142	</KodP>
+		<Naimenov> 	Смородина чорна	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	44	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	30	</Price>
+		<Pakyvan> 	до 5 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	4143	</KodP>
+		<Naimenov> 	Авокадо	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	212	</Kalor>
+		<Grupa> 	Фр	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	50	</Price>
+		<Pakyvan> 	до 20 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	5001	</KodP>
+		<Naimenov> 	Батон	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	243	</Kalor>
+		<Grupa> 	Хл	</Grupa>
+		<Kolichestvo> 	50	</Kolichestvo>
+		<Price> 	22	</Price>
+		<Pakyvan> 	до 50 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	5002	</KodP>
+		<Naimenov> 	Борошно житнє	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	305	</Kalor>
+		<Grupa> 	Хл	</Grupa>
+		<Kolichestvo> 	45	</Kolichestvo>
+		<Price> 	6	</Price>
+		<Pakyvan> 	до 50 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	5003	</KodP>
+		<Naimenov> 	Борошно пшеничне першого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	329	</Kalor>
+		<Grupa> 	Хл	</Grupa>
+		<Kolichestvo> 	45	</Kolichestvo>
+		<Price> 	8	</Price>
+		<Pakyvan> 	до 50 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	5004	</KodP>
+		<Naimenov> 	Борошно пшеничне другого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	324	</Kalor>
+		<Grupa> 	Хл	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	7	</Price>
+		<Pakyvan> 	до 50 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	5005	</KodP>
+		<Naimenov> 	Борошно пшеничне вищого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	334	</Kalor>
+		<Grupa> 	Хл	</Grupa>
+		<Kolichestvo> 	7	</Kolichestvo>
+		<Price> 	9	</Price>
+		<Pakyvan> 	до 50 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	5006	</KodP>
+		<Naimenov> 	Бублики	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	339	</Kalor>
+		<Grupa> 	Хл	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	29	</Price>
+		<Pakyvan> 	до 25 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	5007	</KodP>
+		<Naimenov> 	Вафлі з масляними начинками	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	542	</Kalor>
+		<Grupa> 	Хл	</Grupa>
+		<Kolichestvo> 	7	</Kolichestvo>
+		<Price> 	36	</Price>
+		<Pakyvan> 	до 25 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	5008	</KodP>
+		<Naimenov> 	Вафлі з фруктовими начинками	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	334	</Kalor>
+		<Grupa> 	Хл	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	36	</Price>
+		<Pakyvan> 	до 25 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	5009	</KodP>
+		<Naimenov> 	Галети	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	393	</Kalor>
+		<Grupa> 	Хл	</Grupa>
+		<Kolichestvo> 	3	</Kolichestvo>
+		<Price> 	31	</Price>
+		<Pakyvan> 	до 25 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	5010	</KodP>
+		<Naimenov> 	Здобна випічка	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	288	</Kalor>
+		<Grupa> 	Хл	</Grupa>
+		<Kolichestvo> 	10	</Kolichestvo>
+		<Price> 	41	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	5011	</KodP>
+		<Naimenov> 	Печиво вівсяне	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	414	</Kalor>
+		<Grupa> 	Хл	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	26	</Price>
+		<Pakyvan> 	до 25 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	5012	</KodP>
+		<Naimenov> 	Печиво до кави	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	417	</Kalor>
+		<Grupa> 	Хл	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	30	</Price>
+		<Pakyvan> 	до 25 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	5013	</KodP>
+		<Naimenov> 	Печиво з листкового тіста з фруктовою начинкою	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	447	</Kalor>
+		<Grupa> 	Хл	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	41	</Price>
+		<Pakyvan> 	до 25 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	5014	</KodP>
+		<Naimenov> 	Печиво “Марія”	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	396	</Kalor>
+		<Grupa> 	Хл	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	25	</Price>
+		<Pakyvan> 	до 25 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	5015	</KodP>
+		<Naimenov> 	Сухарі	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	330	</Kalor>
+		<Grupa> 	Хл	</Grupa>
+		<Kolichestvo> 	6	</Kolichestvo>
+		<Price> 	30	</Price>
+		<Pakyvan> 	до 25 кг	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	5016	</KodP>
+		<Naimenov> 	Хліб тривалого зберігання	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	265	</Kalor>
+		<Grupa> 	Хл	</Grupa>
+		<Kolichestvo> 	1	</Kolichestvo>
+		<Price> 	13	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	5017	</KodP>
+		<Naimenov> 	Хліб житній	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	214	</Kalor>
+		<Grupa> 	Хл	</Grupa>
+		<Kolichestvo> 	200	</Kolichestvo>
+		<Price> 	13	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	5018	</KodP>
+		<Naimenov> 	Хліб житній (нарізний)	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	214	</Kalor>
+		<Grupa> 	Хл	</Grupa>
+		<Kolichestvo> 	25	</Kolichestvo>
+		<Price> 	14	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	5019	</KodP>
+		<Naimenov> 	Хліб з пшеничного борошна першого ґатунку	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	226	</Kalor>
+		<Grupa> 	Хл	</Grupa>
+		<Kolichestvo> 	200	</Kolichestvo>
+		<Price> 	14	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	5020	</KodP>
+		<Naimenov> 	Хліб з пшеничного борошна першого ґатунку (нарізний)	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	226	</Kalor>
+		<Grupa> 	Хл	</Grupa>
+		<Kolichestvo> 	25	</Kolichestvo>
+		<Price> 	14,11	</Price>
+		<Pakyvan> 	-	</Pakyvan>
+	</Product>
+	<Product>
+		<KodP> 	5021	</KodP>
+		<Naimenov> 	Булочка для гамбургера	</Naimenov>
+		<EdIzm>	г	</EdIzm>
+		<EdYch> 	кг	</EdYch>
+		<EdKoef> 	1000	 </EdKoef>
+		<Kalor> 	334	</Kalor>
+		<Grupa> 	Хл	</Grupa>
+		<Kolichestvo> 	2	</Kolichestvo>
+		<Price> 	45	</Price>
+		<Pakyvan> 	до 10 кг	</Pakyvan>
+	</Product>
+</Company>		

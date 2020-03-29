@@ -1,13 +1,18 @@
 <resources>
     <string name="app_name">Облік продуктів харчування</string>
     <string-array name="dogovora">
-        <item>286_2_18_178_4</item>
-        <item>286_2_18_179_5</item>
-        <item>286_2_18_180_6</item>
-        <item>286_2_18_181_6</item>
-        <item>286_2_18_182_6</item>
-        <item>286_2_19_9_2</item>
-        <item>286_2_19_24_2</item>
+        <item>286_2_20_1</item>
+        <item>286_2_20_2</item>
+        <item>286_2_20_3</item>
+        <item>286_2_20_4</item>
+        <item>286_2_20_5</item>
+        <item>286_2_20_5</item>
+        <item>286_2_20_6</item>
+        <item>286_2_20_7</item>
+        <item>286_2_20_8</item>
+        <item>286_2_20_9</item>
+        <item>286_2_20_11</item>
+        <item>286_2_20_12</item>
     </string-array>
     <string-array name="KEKV">
         <item>особовий склад (2230)</item>

@@ -117,7 +117,7 @@ public class ArhivNakladniView extends AppCompatActivity implements AdapterArhiv
         if (directory.exists()) {
             File[] files = directory.listFiles();
             for (int i = 0; i < files.length; i++) {
-                if (files[i].getName().startsWith("286_2_18_") && !(files[i].getName().contains(".xml"))
+                if (files[i].getName().startsWith("286_2_") && !(files[i].getName().contains(".xml"))
                         && !(files[i].getName().contains(".png")) && !(files[i].getName().contains("."))) {
                 File directory_temp = new File(files[i].getAbsolutePath());
                 File[] files_temp = directory_temp.listFiles();

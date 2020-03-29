@@ -206,10 +206,13 @@ public class RegisterActivity extends AppCompatActivity implements IRegisterView
             if (data != null) {
                 Uri uri = data.getData();
                 String path = uri.getPath();
+//                File f = getExternalFilesDir("file.xml");
+//                path = f.getPath();
                 path = path.substring(path.indexOf(":") + 1);
                 if (path.contains("emulated")) {
                     path = path.substring(path.indexOf("0") + 1);
                 }
+
                 txt_path.setText(path);
                 ParserXML(path, registerPresenter.getEmploye());
             }
